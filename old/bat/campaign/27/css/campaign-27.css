@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/* --------------------------------- 글로 미니 보물찾기 이벤트 전용 css ---------------------------------  */ 
+
+/* 태블릿공통 ~ 웹 */ 
+@media (min-width:738px) {
+	.sub.campaign .camp_neoextra  .sec_top .img_prd {width: 1160px; margin:0 auto;}
+	.sub.campaign .camp_neoextra  .sec_top .img_prd img {width:100%;}
+	
+	
+
+}
+
+@media (min-width:738px) and (max-width:1024px){
+	.sub.campaign .camp_neoextra  .sec_top .img_prd {width:100%; margin:0;}
+
+
+}
+
+@media (max-width:737px) {
+	.sub.campaign .camp_neoextra  .sec_top .img_prd img {width:100%;}
+	.sub.campaign .area_btn {margin-top:2rem;}
+}

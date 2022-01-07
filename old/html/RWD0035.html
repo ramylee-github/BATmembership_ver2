@@ -1,0 +1,903 @@
+<!--
+#*
+ *  파 일 명 :  RWD0035.jsp
+ *  설    명 :  서브 페이지 - my 점포
+ *  작 성 자 :  
+ *  작 성 일 :  
+ *  버    전 :  1.0
+ *  기타사항 :
+ *  Copyrights 2017 by ㈜ 유비원. All right reserved.
+*# 
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" type="text/css" href='../css/base.css'/>
+	<link rel="stylesheet" type="text/css" href='../css/layout.css'/>
+	<link rel="stylesheet" type="text/css" href='../css/module.css'/>
+	<link rel="stylesheet" type="text/css" href='../css/content.css'/>
+</head>
+<body>
+
+<div id="ub-container" class="sub mystore"><!-- 메인 : main, 서브 : sub brand, sub news, sub mystore (메뉴별로 서브 클래스 나뉨 단, 보드나 관리자 화면은 예외적일 수 있음)  -->
+	<!-- page-header -->
+	<!-- gnb -->
+	<div class="ub_top">
+		<div class="top_inner">
+			<!-- 햄버거 메뉴 테블릿, 모바일에서만 노출 -->
+			<a href="javascript:;" class="btn_nav">
+				<img src="../img/main/mob/btn_nav.png" alt="menu" />
+				<img src="../img/main/mob/btn_nav_t.png" alt="menu" class="tablet" />
+			</a>
+			<!-- //테블릿, 모바일에서만 노출 -->
+			<!--title area -->
+			<h1>
+				<a href="javascript:fnMoveHome();">
+					<img src="../img/web/img_logo.png" alt="super pass" class="tit1" />
+					<img src="../img/web/img_logo2.png" alt="super pass" class="tit2" />
+					<img src="../img/mob/img_logo.png" alt="super pass" class="mob" />
+				</a>
+			</h1>
+			<!--//title area -->
+			<!--gnb area -->
+			<nav class="gnb">
+				<ul>
+					<li>
+						<a href="javascript:;" class="depth1">이달의 캠페인</a>
+						<!--2depth area -->
+						<div class="depth2">
+							<ul>
+								<li>
+									<a href="javascript:;">캠페인 소개</a>
+								</li>
+								<li>
+									<a href="javascript:;">제품별 정보</a>
+								</li>
+								<li>
+									<a href="javascript:;">퀴즈풀기</a>
+								</li>
+							</ul>
+						</div>
+						<!--//2depth area -->
+					</li>
+					<li>
+						<a href="javascript:;" class="depth1">My 슈퍼패스</a>
+						<!--2depth area -->
+						<div class="depth2"></div>
+						<!--//2depth area -->
+					</li>
+					<li>
+						<a href="javascript:;" class="depth1">점포운영특강</a>
+						<!--2depth area -->
+						<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;">상권분석</a>
+							</li>
+							<li>
+								<a href="javascript:;">담배판매법규</a>
+							</li>
+							<li>
+								<a href="javascript:;">세제혜택안내</a>
+							</li>
+							<li>
+								<a href="javascript:;">소매 트렌드</a>
+							</li>
+							<li>
+								<a href="javascript:;">편의점 가맹조건</a>
+							</li>
+						</ul>
+						</div>
+						<!--//2depth area -->
+					</li>
+					<li>
+						<a href="javascript:;" class="depth1">브랜드 소개</a>
+						<!--2depth area -->
+						<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;">던힐</a>
+								<!--3depth area -->
+								<div class="depth3">
+									<ul>
+										<li>
+											<a href="javascript:;">-
+												<span>브랜드 이야기</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">-
+												<span>제품소개</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!--//3depth area -->
+							</li>
+							<li>
+								<a href="javascript:;">로스만</a>
+								<!--3depth area -->
+								<div class="depth3">
+									<ul>
+										<li>
+											<a href="javascript:;">-
+												<span>브랜드 이야기</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">-
+												<span>제품소개</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!--//3depth area -->
+							</li>
+						</ul>
+						</div>
+						<!--//2depth area -->
+					</li>
+					<li>
+						<a href="RWD6001.ub" class="depth1">BAT 소식</a>
+						<!--2depth area -->
+						<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;">뉴스</a>
+							</li>
+							<li>
+								<a href="javascript:;">설문  </a>
+							</li>
+						</ul>
+						</div>
+						<!--//2depth area -->
+					</li>
+				</ul>
+			</nav>
+			<!--//gnb area -->
+			<!--small gnb area -->
+			<div class="nav_small">
+				<a href="POR0001.ub" class="info_system">시스템 관리</a>
+				<a href="javascript:;" class="info_change">정보변경</a>
+				<a href="javascript:;" class="logout">로그아웃</a>
+			</div>
+			<!--//small gnb area -->
+			<span class="label_private">
+				<img src="../img/main/web/img_private.png" alt="소매점주전용 본 제작물을 일반 소비자에게 절대 공개하지 마십시오" class="private1" />
+				<img src="../img/main/web/img_private2.png" alt="소매점주전용 본 제작물을 일반 소비자에게 절대 공개하지 마십시오" class="private2" />
+				<img src="../img/main/mob/img_private.png" alt="소매점주전용 본 제작물을 일반 소비자에게 절대 공개하지 마십시오" class="mob" />
+			</span>
+		</div>
+	</div> 
+	<!-- 레프트메뉴(태블릿, 모바일) -->
+	<div class="leftmenu">
+		<div class="top">
+			<!-- small gnb area -->
+			<div class="nav_small">
+				<a href="javascript:;" class="info_change">정보변경</a>
+				<a href="javascript:;" class="logout">로그아웃</a>
+			</div>
+			<!-- //small gnb area -->
+			<!-- point information area -->
+			<div class="info_point">
+				<div class="txt">
+					장그래
+					<span class="branch">[강남점]</span>
+					님의<br />
+					포인트는 
+					<strong>500,000</strong>
+					<span class="unit">P</span>
+					입니다.
+				</div>
+			</div>
+			<!-- //point information area -->
+			<!-- tmr information area -->
+			<div class="info_tmr">
+				<span class="tit">담당광고사원</span>
+				<span class="cont">
+					<strong>김근수 과장</strong>
+					<strong>010-1234-5678</strong>
+				</span>
+			</div>
+			<!-- //tmr information area -->
+		</div>
+		<!-- gnb area -->
+		<nav class="gnb">
+			<ul>
+				<li>
+					<a href="javascript:;" class="menu1 on">브랜드 소개</a>
+					<!-- 2depth area -->
+					<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;" class="menu2 on">던힐</a>
+								<!-- 3depth area -->
+								<div class="depth3">
+									<ul>
+										<li>
+											<a href="javascript:;">- 
+												<span>브랜드 이야기</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">- 
+												<span>제품 소개</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!-- //3depth area -->
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2 on">로스만</a>
+								<!-- 3depth area -->
+								<div class="depth3">
+									<ul>
+									</ul>
+								</div>
+								<!-- //3depth area -->
+							</li>
+						</ul>
+					</div>
+					<!-- //2depth area -->
+				</li>
+				<li>
+					<a href="javascript:;" class="menu1 nosub">My 슈퍼패스</a>
+					<!-- 2depth area --><div class="depth2"></div><!-- //2depth area -->
+				</li>
+				<li>
+					<a href="javascript:;" class="menu1 on">점포운영특강</a>
+					<!-- 2depth area -->
+					<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;">상권분석</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">담배판매법규</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">세제혜택안내</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">소매트렌드</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">편의점 가맹조건</a>
+							</li>
+						</ul>
+					</div>
+					<!-- //2depth area -->
+				</li>
+				<li>
+					<a href="javascript:;" class="menu1 on">BAT 소식</a>
+					<!-- 2depth area -->
+					<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;" class="menu2">뉴스</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">설문</a>
+							</li>
+						</ul>
+					</div>
+					<!-- //2depth area -->
+				</li>
+			</ul>
+		</nav>
+		<!-- //gnb area -->
+	</div>
+	<div class="darkLayer"></div>
+	<!--// page-header -->
+	
+	<!-- page-content -->
+	<div id="ub_content" class="ub_content"> 
+		<!-- visual area -->
+		<div class="area_visual">
+			<div class="pattern"></div>
+			<div class="inner">
+				<h2>My 점포</h2>
+				<p>나의 실제 주문량과 적정 주문량을 확인하세요.</p>
+			</div>
+		</div>
+		<!--  visual area -->
+		<!-- inc / page-location -->
+		<div class="location">
+			<ul>
+				<li class="home">
+					<a href="javascript:fnMoveHome();">Home</a>
+				</li>
+				<li class="submenu">
+					<select id="navi1" style="display:none;width:180px;">
+						<option value="menu1">사이클컴즈</option>
+						<option value="menu2">프로모션</option>
+						<option value="menu3">My 슈퍼패스</option>
+						<option value="menu4">매출 도우미</option>
+						<option value="menu5">BAT 소식</option>
+						<option value="menu6">시스템관리</option>
+					</select>
+				</li>
+				<li class="submenu">
+					<select id="navi2" style="display:none;width:180px;">
+						<option value="menu21">던힐</option>
+						<option value="menu22">로스만</option>
+					</select>
+				</li>
+			</ul>
+		</div>	
+		<!--// inc / page-location -->
+		<div class="content">
+			<strong class="tit_small">내 점포 월 정기 제안 주문량</strong>
+			<span class="txt_guide">(제안 주문량은 결품 방지를 위한 주문량으로, 자사 제품의 판매량의 의해 계산되어집니다.)</span>
+			<div class="sec_top">
+				<p>고객님께서는 2주차, 4주차 화요일에 주문이 예정되어있으며,</p>
+				<div class="ub-layout floatBox">
+					<div class="ub-layout leftBox">
+						<span class="ico_product"></span>
+						<p class="txt_ordernum">
+							제안 주문량 <strong>10보루</strong> 중<br />
+							<strong class="txt_emp">8보루</strong>를 주문하셨습니다.
+						</p>
+					</div>
+					<div class="ub-layout rightBox">
+						<span class="ico_product"></span>
+						<p class="txt_ordernum">
+							제안 주문량 <strong>3대의 디바이스</strong> 중<br />
+							<strong class="txt_emp">2대</strong>를 주문하셨습니다.
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<strong class="tit_small">내 점포 주문량</strong>
+			<span class="txt_guide">(과거 주문내역을 필터를 통해 확인하실 수 있습니다.)</span>
+			<!-- WEB -->
+			<div class="sec_mid web">
+				<div class="area_srch">
+					<form id="searchForm" name="searchForm" method="post">
+						<table>
+							<caption>포인트 적립/차감 내역 검색</caption>
+							<colgroup>
+							<col style="width:65px;">
+							<col style="width:560px;">
+							<col style="width:65px;">
+							<col style="width:auto;">
+						</colgroup>
+							<tbody>
+								<tr>
+									<th>
+										<label>기간</label>
+									</th>
+									<td>
+										<input type="radio" id="searchType0" name="searchType" class="radio" value="" checked="">
+										<label for="searchType0">월</label>
+										<input type="radio" id="searchType1" name="searchType" class="radio" value="">
+										<label for="searchType1">일</label>
+										<div class="wrap_input">
+											<input type="text" style="text-align: left; width:92px;" value="2018-05-12" metaformat="date" name="searchDateStart" id="searchDateStart" class="ub-control input-text calendar hasDatepicker"><img class="ui-datepicker-trigger" src="../img/common/calendar.gif" alt="Calandar" title="Calandar">
+											<label class="ub-control label">~</label>
+											<input type="text" style="text-align: left; width:92px;" value="2018-06-12" metaformat="date" name="searchDateEnd" id="searchDateEnd" class="ub-control input-text calendar hasDatepicker"><img class="ui-datepicker-trigger" src="../img/common/calendar.gif" alt="Calandar" title="Calandar">
+										</div>
+									</td>
+									<th>
+										<label>기간</label>
+									</th>
+									<td>
+										<select style="width:200px;">
+											<option selected>제품선택</option>
+											<option>제품1</option>
+											<option>제품2</option>
+										</select>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+					<span class="btn type1 srch">
+						<a href="javascript:;">검색</a>
+					</span>
+				</div>
+				<div class="area_graph">
+					<img src="../img/web/temp_graph.jpg" alt="임시 그래프 이미지" />
+				</div>
+			</div>
+			<!-- //WEB -->
+			<!-- MOB -->
+			<div class="sec_mid mob">
+				<div class="area_srch">
+					<form id="searchForm" name="searchForm" method="post">
+							<table>
+								<caption>포인트 적립/차감 내역 검색</caption>
+								<colgroup>
+									<col style="width:auto;">
+								</colgroup>
+									<tbody>
+										<tr>
+											<td>
+												<input type="radio" id="searchType0" name="searchType" class="radio" value="" checked="">
+												<label for="searchType0"><span></span>월</label>
+												<input type="radio" id="searchType1" name="searchType" class="radio" value="">
+												<label for="searchType1"><span></span>일</label>
+												<input type="text" id="input_01" class="input-text datepicker picker__input" name="searchDateStart" style="width:75px; margin-left:7px;" value="2018-05-12" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="input_01_root"> ~ 
+												<input type="text" id="input_01" class="input-text datepicker picker__input" name="searchDateEnd" style="width:75px;" value="2018-06-12" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="input_01_root">
+												<span class="btn type1 srch">
+													<a href="javascript:fnGetList();">검색</a>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<select style="width:100%; margin-top:5px;">
+													<option selected>제품선택</option>
+													<option>제품1</option>
+													<option>제품2</option>
+												</select>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+						</form>
+				</div>
+				<div class="area_graph">
+					<img src="../img/mob/temp_graph_m.jpg" alt="임시 그래프 이미지" style="width:100%;" />
+				</div>
+			</div>
+			<!-- //MOB -->
+			
+			<strong class="tit_small">내 점포 적정 주문량 계산기</strong>
+			<span class="txt_guide">(적정 주문량은 지난 6회 평균 주문량에 의해 계산되며, 전화주문 시 보고 얘기하시면 많은 도움이 됩니다.)</span>
+			<!-- WEB -->
+			<div class="sec_btm web">
+				<form>
+					<table>
+						<caption>내 점포 적정 주문량 계산기 for WEB</caption>
+						<colgroup>
+							<col style="width:auto;">
+							<col style="width:87px;">
+							<col style="width:87px;">
+							<col style="width:87px;">
+							<col style="width:87px;">
+							<col style="width:87px;">
+							<col style="width:87px;">
+							<col style="width:87px;">
+							<col style="width:108px;">
+							<col style="width:108px;">
+							<col style="width:108px;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>제품</th>
+								<th>
+									1<small>st</small>콜
+								</th>
+								<th>
+									2<small>nd</small>콜
+								</th>
+								<th>
+									3<small>th</small>콜
+								</th>
+								<th>
+									4<small>th</small>콜
+								</th>
+								<th>
+									5<small>th</small>콜
+								</th>
+								<th>
+									6<small>th</small>콜
+								</th>
+								<th class="bg05">6번 평균 발주량</th>
+								<th class="bg06">재고</th>
+								<th class="bg03">적정발주량</th>
+								<th class="bg09">현재발주량</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<img src="../img/brand/img_dunhill1.jpg" alt="던힐 6mg" />
+									던힐 6mg
+								</td>
+								<td class="text-right">15</td>
+								<td class="text-right">8</td>
+								<td class="text-right">15</td>
+								<td class="text-right">8</td>
+								<td class="text-right">15</td>
+								<td class="text-right">8</td>
+								<td class="bg08 text-right">11.5</td>
+								<td class="text-center">
+									<input type="text" name="" class="input-text" style="width:73px;" />
+								</td>
+								<td class="bg07 text-right">1,128</td>
+								<td class="bg10 text-right">5<span class="txt-color01">(-1)</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="../img/brand/img_dunhill11.jpg" alt="던힐 1mg frost" />
+									던힐 1mg Frost
+								</td>
+								<td class="text-right">15</td>
+								<td class="text-right">8</td>
+								<td class="text-right">15</td>
+								<td class="text-right">8</td>
+								<td class="text-right">15</td>
+								<td class="text-right">8</td>
+								<td class="bg08 text-right">11.5</td>
+								<td class="text-center">
+									<input type="text" name="" class="input-text" style="width:73px;" />
+								</td>
+								<td class="bg07 text-right">1,128</td>
+								<td class="bg10 text-right"></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="../img/brand/img_dunhill17.jpg" alt="던힐 파인컷 리믹스 one" />
+									던힐 파인컷 리믹스 One
+								</td>
+								<td class="text-right">15</td>
+								<td class="text-right">8</td>
+								<td class="text-right">15</td>
+								<td class="text-right">8</td>
+								<td class="text-right">15</td>
+								<td class="text-right">8</td>
+								<td class="bg08 text-right">11.5</td>
+								<td class="text-center">
+									<input type="text" name="" class="input-text" style="width:73px;" />
+								</td>
+								<td class="bg07 text-right">1,128</td>
+								<td class="bg10 text-right"></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="../img/brand/img_dunhill16.jpg" alt="던힐 파인컷 부스트" />
+									던힐 파인컷 부스트
+								</td>
+								<td class="text-right">15</td>
+								<td class="text-right">8</td>
+								<td class="text-right">15</td>
+								<td class="text-right">8</td>
+								<td class="text-right">15</td>
+								<td class="text-right">8</td>
+								<td class="bg08 text-right">11.5</td>
+								<td class="text-center">
+									<input type="text" name="" class="input-text" style="width:73px;" />
+								</td>
+								<td class="bg07 text-right">1,128</td>
+								<td class="bg10 text-right"></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="../img/brand/img_dunhill10.jpg" alt="던힐 3mg" />
+									던힐 3mg
+								</td>
+								<td class="text-right">15</td>
+								<td class="text-right">8</td>
+								<td class="text-right">15</td>
+								<td class="text-right">8</td>
+								<td class="text-right">15</td>
+								<td class="text-right">8</td>
+								<td class="bg08 text-right">11.5</td>
+								<td class="text-center">
+									<input type="text" name="" class="input-text" style="width:73px;" />
+								</td>
+								<td class="bg07 text-right">1,128</td>
+								<td class="bg10 text-right"></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="../img/brand/img_dunhill15.jpg" alt="던힐 파인컷 스위치" />
+									던힐 파인컷 스위치
+								</td>
+								<td class="text-right">15</td>
+								<td class="text-right">8</td>
+								<td class="text-right">15</td>
+								<td class="text-right">8</td>
+								<td class="text-right">15</td>
+								<td class="text-right">8</td>
+								<td class="bg08 text-right">11.5</td>
+								<td class="text-center">
+									<input type="text" name="" class="input-text" style="width:73px;" />
+								</td>
+								<td class="bg07 text-right">1,128</td>
+								<td class="bg10 text-right"></td>
+							</tr>
+							<tr>
+								<th class="bg04">총 주문량</th>
+								<td class="bg04 text-right">217</td>
+								<td class="bg04 text-right">52</td>
+								<td class="bg04 text-right">8217</td>
+								<td class="bg04 text-right"></td>
+								<td class="bg04 text-right">217</td>
+								<td class="bg04 text-right">88</td>
+								<td class="bg04 text-right">111.5</td>
+								<td class="bg04 text-right"></td>
+								<td class="bg04 text-right">102</td>
+								<td class="bg04 text-right"></td>
+							</tr>
+							<tr>
+								<th class="bg04">총 주문금액</th>
+								<td class="bg04 text-right">1,217,269</td>
+								<td class="bg04 text-right">4,052</td>
+								<td class="bg04 text-right">128,217</td>
+								<td class="bg04 text-right"></td>
+								<td class="bg04 text-right">128,217</td>
+								<td class="bg04 text-right">128,217</td>
+								<td class="bg04 text-right">128,217</td>
+								<td class="bg04 text-right"></td>
+								<td class="bg04 text-center">
+									<strong>*지불예정금액</strong>
+								</td>
+								<td class="bg04 text-right">
+									<strong>5,000,000</strong>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+				<div class="ub-layout floatBox">
+					<div class="ub-layout rightBox">
+						<span class="btn type1 calcul">
+							<a href="javascript:fnCalcOrder();">계산하기</a>
+						</span>
+					</div>
+				</div>
+			</div>
+			<!-- //WEB -->
+			<!-- MOB -->
+			<div class="sec_btm mob">
+				<form>
+					<table>
+						<caption>내 점포 적정 주문량 계산기 for Mobile</caption>
+						<colgroup>
+							<col style="width:auto;">
+							<col style="width:19%;">
+							<col style="width:16%;">
+							<col style="width:15%;">
+							<col style="width:19%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>제품</th>
+								<th class="bg05">6번<br/>평균발주량</th>
+								<th class="bg06">재고</th>
+								<th class="bg03">적정<br />발주량</th>
+								<th class="bg09">현재<br />발주량</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<img src="../img/brand/img_dunhill1.jpg" alt="던힐 6mg" />
+									<span class="p_name">던힐 6mg</span>
+								</td>
+								<td class="bg08 text-right">11.5</td>
+								<td class="text-center">
+									<input type="text" name="" class="input-text" style="width:100%;" />
+								</td>
+								<td class="bg07 text-right">1,128</td>
+								<td class="bg10 text-right">5<span class="txt-color01">(-1)</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="../img/brand/img_dunhill11.jpg" alt="던힐 1mg frost" />
+									<span class="p_name">던힐 1mg Frost</span>
+								</td>
+								<td class="bg08 text-right">11.5</td>
+								<td class="text-center">
+									<input type="text" name="" class="input-text" style="width:100%;" />
+								</td>
+								<td class="bg07 text-right">1,128</td>
+								<td class="bg10 text-right">5<span class="txt-color01">(-1)</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="../img/brand/img_dunhill17.jpg" alt="던힐 파인컷 리믹스 one" />
+									<span class="p_name">던힐 파인컷 리믹스 One</span>
+								</td>
+								<td class="bg08 text-right">11.5</td>
+								<td class="text-center">
+									<input type="text" name="" class="input-text" style="width:100%;" />
+								</td>
+								<td class="bg07 text-right">1,128</td>
+								<td class="bg10 text-right">5<span class="txt-color01">(-1)</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="../img/brand/img_dunhill16.jpg" alt="던힐 파인컷 부스트" />
+									<span class="p_name">던힐 파인컷 부스트</span>
+								</td>
+								<td class="bg08 text-right">11.5</td>
+								<td class="text-center">
+									<input type="text" name="" class="input-text" style="width:100%;" />
+								</td>
+								<td class="bg07 text-right">1,128</td>
+								<td class="bg10 text-right">5<span class="txt-color01">(-1)</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="../img/brand/img_dunhill10.jpg" alt="던힐 3mg" />
+									<span class="p_name">던힐 3mg</span>
+								</td>
+								<td class="bg08 text-right">11.5</td>
+								<td class="text-center">
+									<input type="text" name="" class="input-text" style="width:100%;" />
+								</td>
+								<td class="bg07 text-right">1,128</td>
+								<td class="bg10 text-right">5<span class="txt-color01">(-1)</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="../img/brand/img_dunhill15.jpg" alt="던힐 파인컷 스위치" />
+									<span class="p_name">던힐 파인컷 스위치</span>
+								</td>
+								<td class="bg08 text-right">11.5</td>
+								<td class="text-center">
+									<input type="text" name="" class="input-text" style="width:100%;" />
+								</td>
+								<td class="bg07 text-right">1,128</td>
+								<td class="bg10 text-right">5<span class="txt-color01">(-1)</span></td>
+							</tr>
+							<tr>
+								<th class="bg04">총 주문량</th>
+								<td class="bg04 text-right"></td>
+								<td class="bg04 text-right">111.5</td>
+								<td class="bg04 text-right"></td>
+								<td class="bg04 text-right">102</td>
+							</tr>
+							<tr>
+								<th class="bg04">총 주문금액</th>
+								<td class="bg04 text-right">1,128,217</td>
+								<td class="bg04 text-right">-</td>
+								<td class="bg04 text-center" style="padding:0;">
+									<strong>지불<br>예정금액</strong>
+								</td>
+								<td class="bg04 text-right">
+									<strong>5,000,000</strong>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+				<div class="ub-layout floatBox">
+					<div class="ub-layout rightBox">
+						<span class="btn type1 calcul">
+							<a href="javascript:fnCalcOrder();">계산하기</a>
+						</span>
+					</div>
+				</div>
+			</div>
+			<!-- //MOB -->
+
+			<strong class="tit_small mt20">이 달의 추천제품</strong>
+			<div class="sec_recommend">
+				<div class="ach_rate ub-layout floatBox">
+					<div class="ub-layout leftBox">
+						<img src="../img/web/ico_achievement.png" alt="달성" />
+<!-- 						<img src="../..../img/web/ico_achievement_none.png" alt="미달성" /> -->
+					</div>
+					<div class="ub-layout leftBox">
+						<!-- 달성 -->
+						<p>
+							점주님께서는 이 달의 추천 제품 목표를 <mark>달성</mark> 하였으며,<br />
+							2분기 동안 이달의 추천제품을 <strong class="emp underline">3개월 중 1회</strong> 달성하였습니다.
+						</p>
+						<!-- //달성 -->
+						<!-- 미달성 -->
+<!-- 						<p> -->
+<!-- 							점주님께서는 이 달의 추천 제품 <strong class="emp underline">123개 중 60개 이상</strong> 발주 시 이번달 목표를 달성하게 되며, <br /> -->
+<!-- 							2분기 동안 이달의 추천 제품을 <strong class="emp underline">3개월 중 1회</strong> 달성하게 됩니다. -->
+<!-- 						</p> -->
+						<!-- //미달성 -->
+					</div>
+				</div>
+				<ul class="list_ach_product">
+					<li>
+						<div class="inner">
+							<img src="../img/brand/img_dunhill16.jpg" alt="던힐 파인컷 부스트" />
+							<span class="name_product">던힐 파인컷 부스트</span>
+						</div>
+					</li>
+					<li>
+						<div class="inner">
+							<img src="../img/brand/img_dunhill16.jpg" alt="던힐 파인컷 부스트" />
+							<span class="name_product">던힐 파인컷 부스트</span>
+						</div>
+					</li>
+					<li>
+						<div class="inner">
+							<img src="../img/brand/img_dunhill16.jpg" alt="던힐 파인컷 부스트" />
+							<span class="name_product">던힐 파인컷 부스트</span>
+							<span class="ico_success">
+								<img src="../img/web/ico_success.png" alt="success" />
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="inner">
+							<img src="../img/brand/img_dunhill16.jpg" alt="던힐 파인컷 부스트" />
+							<span class="name_product">던힐 파인컷 부스트</span>
+							<span class="ico_success">
+								<img src="../img/web/ico_success.png" alt="success" />
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="inner">
+							<img src="../img/brand/img_dunhill16.jpg" alt="던힐 파인컷 부스트" />
+							<span class="name_product">던힐 파인컷 부스트</span>
+						</div>
+					</li>
+					<li>
+						<div class="inner">
+							<img src="../img/brand/img_dunhill16.jpg" alt="던힐 파인컷 부스트" />
+							<span class="name_product">던힐 파인컷 부스트</span>
+						</div>
+					</li>
+					<li>
+						<div class="inner">
+							<img src="../img/brand/img_dunhill16.jpg" alt="던힐 파인컷 부스트" />
+							<span class="name_product">던힐 파인컷 부스트</span>
+						</div>
+					</li>
+					<li><div class="inner"></div></li><!-- 제품 이미지 없을 경우 -->
+				</ul>
+				<p class="txt_guide mb20">* 이달의 추천제품은 점포의 재고와 관계없이 주변상권 분석을 통해 추천되는 제품입니다. </p>
+			</div>
+		</div>	
+	</div>
+	<!--// page-content -->
+
+	<!--  ub-foot -->
+	<div id="ub_foot" class="ub_foot">
+		<div class="inner">
+			<div class="flex-layout align-start">
+				<div class="ub-layout leftBox">
+					<ul>
+						<li>
+							<span class="address">서울특별시 강남구 테헤란로 152 강남파이낸스센터 42층</span>
+						</li>
+						<li>
+							<span class="call"><a href="tel:080-787-1000" >080-787-1000</a></span>
+						</li>
+						<li>
+							<a href="javascript:viewAgreement();" class="policy">이용약관</a>
+						</li>
+					</ul>
+				</div>
+				<div class="ub-layout rightBox">
+					<span class="copy">Copyright © BAT Korea All rights reserved.</span>
+				</div>
+			</div>
+		</div>
+		<div class="txt_warning">
+			<span>흡연은 폐암등 각종 질병의 원인! 그래도 피우시겠습니까?<br /> 담배연기에는 발암성 물질인 나프틸아민, 니켈, 벤젠, 비닐 크롤라이드, 비소, 카드뮴이 들어있습니다.<br /> 금연상담전화 1544-9030</span>
+		</div>
+		<!-- Layer 팝업 로드 위치 -->
+		<div id="divAgreeView"></div>
+		<!-- 첫로그인 환영팝업 -->
+		<div id="divFirstLogin"></div>
+	</div>
+	<!-- //ub-foot -->
+	
+	<!--   inc / scrollup (서브화면에서만 노출) -->
+	<div class="btn_scrollup">
+		<a href="javascript:;"  id="backtotop">위로 이동</a>
+	</div>
+	<!--  //inc / include -->
+</div>
+
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){  
+    $('.datepicker').pickadate({
+    	format: 'yyyy-mm-dd',	
+    });
+});
+</script>
+</body>
+</html>

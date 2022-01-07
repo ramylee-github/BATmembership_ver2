@@ -1,0 +1,580 @@
+<!--
+#*
+ *  파 일 명 :  RWD0028.jsp
+ *  설    명 :  서브 페이지 - 점포운영 도우미 - 유용한 법률상식
+ *  작 성 자 :  
+ *  작 성 일 :  
+ *  버    전 :  1.0
+ *  기타사항 :
+ *  Copyrights 2017 by ㈜ 유비원. All right reserved.
+*# 
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" type="text/css" href='../css/base.css'/>
+	<link rel="stylesheet" type="text/css" href='../css/layout.css'/>
+	<link rel="stylesheet" type="text/css" href='../css/module.css'/>
+	<link rel="stylesheet" type="text/css" href='../css/content.css'/>
+</head>
+<body>
+
+<div id="ub-container" class="sub cyclecomms"><!-- 메인 : main, 서브 : sub brand, sub news, sub mysuperpass, sub campaign (메뉴별로 서브 클래스 나뉨 단, 보드나 관리자 화면은 예외적일 수 있음)  -->
+	<!-- page-header -->
+	<!-- gnb -->
+	<div class="ub_top">
+		<div class="top_inner">
+			<!-- 햄버거 메뉴 테블릿, 모바일에서만 노출 -->
+			<a href="javascript:;" class="btn_nav">
+				<img src="../img/main/mob/btn_nav.png" alt="menu" />
+				<img src="../img/main/mob/btn_nav_t.png" alt="menu" class="tablet" />
+			</a>
+			<!-- //테블릿, 모바일에서만 노출 -->
+			<!--title area -->
+			<h1>
+				<a href="javascript:fnMoveHome();">
+					<img src="../img/web/img_logo.png" alt="super pass" class="tit1" />
+					<img src="../img/web/img_logo2.png" alt="super pass" class="tit2" />
+					<img src="../img/mob/img_logo.png" alt="super pass" class="mob" />
+				</a>
+			</h1>
+			<!--//title area -->
+			<!--gnb area -->
+			<nav class="gnb">
+				<ul>
+					<li>
+						<a href="javascript:;" class="depth1">이달의 캠페인</a>
+						<!--2depth area -->
+						<div class="depth2">
+							<ul>
+								<li>
+									<a href="javascript:;">캠페인 소개</a>
+								</li>
+								<li>
+									<a href="javascript:;">제품별 정보</a>
+								</li>
+								<li>
+									<a href="javascript:;">퀴즈풀기</a>
+								</li>
+							</ul>
+						</div>
+						<!--//2depth area -->
+					</li>
+					<li>
+						<a href="javascript:;" class="depth1">My 슈퍼패스</a>
+						<!--2depth area -->
+						<div class="depth2"></div>
+						<!--//2depth area -->
+					</li>
+					<li>
+						<a href="javascript:;" class="depth1">점포운영특강</a>
+						<!--2depth area -->
+						<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;">상권분석</a>
+							</li>
+							<li>
+								<a href="javascript:;">담배판매법규</a>
+							</li>
+							<li>
+								<a href="javascript:;">세제혜택안내</a>
+							</li>
+							<li>
+								<a href="javascript:;">소매 트렌드</a>
+							</li>
+							<li>
+								<a href="javascript:;">편의점 가맹조건</a>
+							</li>
+						</ul>
+						</div>
+						<!--//2depth area -->
+					</li>
+					<li>
+						<a href="javascript:;" class="depth1">브랜드 소개</a>
+						<!--2depth area -->
+						<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;">던힐</a>
+								<!--3depth area -->
+								<div class="depth3">
+									<ul>
+										<li>
+											<a href="javascript:;">-
+												<span>브랜드 이야기</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">-
+												<span>제품소개</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!--//3depth area -->
+							</li>
+							<li>
+								<a href="javascript:;">로스만</a>
+								<!--3depth area -->
+								<div class="depth3">
+									<ul>
+										<li>
+											<a href="javascript:;">-
+												<span>브랜드 이야기</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">-
+												<span>제품소개</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!--//3depth area -->
+							</li>
+						</ul>
+						</div>
+						<!--//2depth area -->
+					</li>
+					<li>
+						<a href="RWD6001.ub" class="depth1">BAT 소식</a>
+						<!--2depth area -->
+						<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;">뉴스</a>
+							</li>
+							<li>
+								<a href="javascript:;">설문  </a>
+							</li>
+						</ul>
+						</div>
+						<!--//2depth area -->
+					</li>
+				</ul>
+			</nav>
+			<!--//gnb area -->
+			<!--small gnb area -->
+			<div class="nav_small">
+				<a href="POR0001.ub" class="info_system">시스템 관리</a>
+				<a href="javascript:;" class="info_change">정보변경</a>
+				<a href="javascript:;" class="logout">로그아웃</a>
+			</div>
+			<!--//small gnb area -->
+			<span class="label_private">
+				<img src="../img/main/web/img_private.png" alt="소매점주전용 본 제작물을 일반 소비자에게 절대 공개하지 마십시오" class="private1" />
+				<img src="../img/main/web/img_private2.png" alt="소매점주전용 본 제작물을 일반 소비자에게 절대 공개하지 마십시오" class="private2" />
+				<img src="../img/main/mob/img_private.png" alt="소매점주전용 본 제작물을 일반 소비자에게 절대 공개하지 마십시오" class="mob" />
+			</span>
+		</div>
+	</div> 
+	<!-- 레프트메뉴(태블릿, 모바일) -->
+	<div class="leftmenu">
+		<div class="top">
+			<!-- small gnb area -->
+			<div class="nav_small">
+				<a href="javascript:;" class="info_change">정보변경</a>
+				<a href="javascript:;" class="logout">로그아웃</a>
+			</div>
+			<!-- //small gnb area -->
+			<!-- point information area -->
+			<div class="info_point">
+				<div class="txt">
+					장그래
+					<span class="branch">[강남점]</span>
+					님의<br />
+					포인트는 
+					<strong>500,000</strong>
+					<span class="unit">P</span>
+					입니다.
+				</div>
+			</div>
+			<!-- //point information area -->
+			<!-- tmr information area -->
+			<div class="info_tmr">
+				<span class="tit">담당광고사원</span>
+				<span class="cont">
+					<strong>김근수 과장</strong>
+					<strong>010-1234-5678</strong>
+				</span>
+			</div>
+			<!-- //tmr information area -->
+		</div>
+		<!-- gnb area -->
+		<nav class="gnb">
+			<ul>
+				<li>
+					<a href="javascript:;" class="menu1 on">브랜드 소개</a>
+					<!-- 2depth area -->
+					<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;" class="menu2 on">던힐</a>
+								<!-- 3depth area -->
+								<div class="depth3">
+									<ul>
+										<li>
+											<a href="javascript:;">- 
+												<span>브랜드 이야기</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">- 
+												<span>제품 소개</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!-- //3depth area -->
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2 on">로스만</a>
+								<!-- 3depth area -->
+								<div class="depth3">
+									<ul>
+									</ul>
+								</div>
+								<!-- //3depth area -->
+							</li>
+						</ul>
+					</div>
+					<!-- //2depth area -->
+				</li>
+				<li>
+					<a href="javascript:;" class="menu1 nosub">My 슈퍼패스</a>
+					<!-- 2depth area --><div class="depth2"></div><!-- //2depth area -->
+				</li>
+				<li>
+					<a href="javascript:;" class="menu1 on">점포운영특강</a>
+					<!-- 2depth area -->
+					<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;">상권분석</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">담배판매법규</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">세제혜택안내</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">소매트렌드</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">편의점 가맹조건</a>
+							</li>
+						</ul>
+					</div>
+					<!-- //2depth area -->
+				</li>
+				<li>
+					<a href="javascript:;" class="menu1 on">BAT 소식</a>
+					<!-- 2depth area -->
+					<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;" class="menu2">뉴스</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">설문</a>
+							</li>
+						</ul>
+					</div>
+					<!-- //2depth area -->
+				</li>
+			</ul>
+		</nav>
+		<!-- //gnb area -->
+	</div>
+	<div class="darkLayer"></div>
+	<!--// page-header -->
+	
+	<!-- page-content -->
+	<div id="ub_content" class="ub_content"> 
+		<!-- visual area -->
+		<div class="area_visual">
+			<div class="pattern"></div>
+			<div class="inner">
+				<h2>점포운영 도우미</h2>
+				<p>자주 바뀌는 트렌드와 법규, 최신정보를 얻어가세요.</p>
+			</div>
+		</div>
+		<!--  visual area -->
+		<!-- inc / page-location -->
+		<div class="location">
+			<ul>
+				<li class="home">
+					<a href="javascript:fnMoveHome();">Home</a>
+				</li>
+				<li class="submenu">
+					<select id="navi1" style="display:none;width:180px;">
+						<option value="menu1">사이클컴즈</option>
+						<option value="menu2">프로모션</option>
+						<option value="menu3">My 슈퍼패스</option>
+						<option value="menu4">매출 도우미</option>
+						<option value="menu5">BAT 소식</option>
+						<option value="menu6">시스템관리</option>
+					</select>
+				</li>
+				<li class="submenu">
+					<select id="navi2" style="display:none;width:180px;">
+						<option value="menu21">던힐</option>
+						<option value="menu22">로스만</option>
+					</select>
+				</li>
+			</ul>
+		</div>	
+		<!--// inc / page-location -->
+		<div class="content">
+			<strong class="tit_small">담배소매인 양도/양수</strong>
+			<div class="transfer">
+				<img src="../img/cyclecomms/img_commonsense1_m.jpg" alt="" class="mob"  />
+				<img src="../img/cyclecomms/img_commonsense1.jpg" alt=""  class="web" />
+			</div>
+			<strong class="tit_small">담배판매 영업정지 기준요약</strong>
+			<!-- standard web mark up -->
+			<div class="web">
+				<table class="standard">
+					<colgroup>
+						<col style="width:auto;">
+						<col style="width:15%;">
+						<col style="width:15%;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th rowspan="2">위반사항</th>
+							<th colspan="2">영업정지 기준</th>
+						</tr>
+						<tr>
+							<th class="border_left">1차 위반</th>
+							<th>2차 위반</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="on">
+							<td>
+								<span class="txt">밀조, 위조되거나 절취, 강취된 담배를 판매한 경우</span>
+								<div class="img">
+									<img src="../img/cyclecomms/img_commonsense2.png" alt=""  />
+								</div>
+							</td>
+							<td class="text-center">3개월</td>
+							<td class="text-center">6개월</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="txt">청소년에게 담배를 판매한 경우</span>
+								<div class="img">
+									<img src="../img/cyclecomms/img_commonsense3.png" alt=""  />
+								</div>
+							</td>
+							<td class="text-center">2개월</td>
+							<td class="text-center">3개월</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="txt">담배의 포장 및 내용물을 바꾸어 판매한 경우</span>
+								<div class="img">
+									<img src="../img/cyclecomms/img_commonsense4.png" alt=""  />
+								</div>
+							</td>
+							<td class="text-center">2개월</td>
+							<td class="text-center">4개월</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="txt">공고된 판매가격으로 담배를 판매하지 아니한 경우</span>
+								<div class="img">
+									<img src="../img/cyclecomms/img_commonsense5.png" alt=""  />
+								</div>
+							</td>
+							<td class="text-center">1개월</td>
+							<td class="text-center">3개월</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="txt">위치변경승인을 받지 않고 영업소의 위치를 변경한 경우</span>
+								<div class="img">
+									<img src="../img/cyclecomms/img_commonsense6.png" alt=""  />
+								</div>
+							</td>
+							<td class="text-center">15일</td>
+							<td class="text-center">1개월</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- //standard web mark up -->
+			<!-- standard mob mark up -->
+			<div class="mob">
+				<dl class="standard_m ">
+					<dt class="on">밀조, 위조되거나 절취, 강취된 담배를 판매한 경우</dt>
+					<dd>
+						<span>1차위반 : 3개월, 2차위반 : 3개월</span>
+						<img src="../img/cyclecomms/img_commonsense2_m.png" alt=""  />
+					</dd>
+					<dt>청소년에게 담배를 판매한 경우</dt>
+					<dd>
+						<span>1차위반 : 2개월, 2차위반 : 3개월</span>
+						<img src="../img/cyclecomms/img_commonsense3_m.png" alt=""  />
+					</dd>
+					<dt>담배의 포장 및 내용물을 바꾸어 판매한 경우</dt>
+					<dd>
+						<span>1차위반 : 2개월, 2차위반 : 4개월</span>
+						<img src="../img/cyclecomms/img_commonsense4_m.png" alt=""  />
+					</dd>
+					<dt>공고된 판매가격으로 담배를 판매하지 아니한 경우</dt>
+					<dd>
+						<span>1차위반 : 1개월, 2차위반 : 3개월</span>
+						<img src="../img/cyclecomms/img_commonsense5_m.png" alt=""  />
+					</dd>
+					<dt>위치변경승인을 받지 않고 영업소의 위치를 변경한 경우</dt>
+					<dd>
+						<span>1차위반 : 15일, 2차위반 : 1개월</span>
+						<img src="../img/cyclecomms/img_commonsense6_m.png" alt=""  />
+					</dd>
+				</dl>
+			</div>
+			<!-- //standard mob mark up -->
+			<div class="area_download">
+				<strong>더 자세한 법률 상식 다운받기</strong>
+				<span class="btn type1">
+					<a href="javascript:;">다운로드</a>
+				</span>
+			</div>
+			<strong class="tit_small">담배 소매인 지정취소 사유</strong>
+			<div class="ub-layout floatBox web">
+				<div class="ub-layout leftBox">
+					<strong class="tit_small2">위반사항</strong>
+				</div>
+				<div class="ub-layout rightBox">
+					<span class="txt_guide">※ 지정취소를 받은 소매인은 받을 날부터 <span class="txt">2년간 신규로 담배 소매인 지정을 받을 수 없음</span></span>
+				</div>
+			</div>
+			<div class="guide_violation mob">
+				<span class="txt_guide">※ 지정취소를 받은 소매인은 받을 날부터 <span class="txt">2년간 신규로 담배 소매인 지정을 받을 수 없음</span></span>
+				<strong class="tit_small2">위반사항</strong>
+			</div>
+			<dl class="violation">
+				<dt>부정한 방법으로 소매인 지정을 받을때</dt>
+				<dd>사업자등록증, 임대차계약서 등 신규 소매인지정 시 제출해야 하는 서류를 허위로 작성하거나 위·변조하여 관할 시·군·구청에 제출하고 소매인 지정을 받은 경우</dd>
+				<dt>사업자등록증, 임대차계약서 등 신규 소매인지정 시 제출해야 하는 서류를 허위로 작성하거나 위조변조하여 관할 시군구청에 제출하고 소매인 지정을 받은 경우</dt>
+				<dd>
+					다만, 법인의 대표자가 그 사유에 해당하게 된 경우로서 6개월 이내에 그 대표자를 다른사람으로 바꿨을 때에는 그러하지 아니하다.<br />
+					*담배사업법 제 16조 제 2항 제 1호 각목의 결격사유란?<br />
+					소매인 지정을 받을 수 없는 사유에 해당하는 의사결정능력이 없는 상태의 판단력이 불완전한 사람<br />
+					즉 피성년후견인, 피한정후견인이거나 파산 선고를 받은 경우, 담배사업법 위반으로 징역형의 실형 또는 집행유예를 선고 받은 경우를 말함
+				</dd>
+				<dt>담배사업법 제16조 제2항 제1호 각목의 결격하유 중 1에 해당하는 경우</dt>
+				<dd></dd>
+				<dt>최근 5년간 2회의 영업정지처분을 받은 사실이 있는 자가 다시 영업정지처분 사유에 해당하는 행위를 한 때</dt>
+				<dd>각기 다르더라도 누적 3회에 해당하면 지정취소 사유에 해당함</dd>
+				<dt>영업정지 기간중에 영업을 한 때</dt>
+				<dd>영업’이란 담배의 판매만을 의미하므로, 다른 물품의 판매 또는 영업에 영향을 미치지 않음</dd>
+				<dt>폐업신고 또는 휴업신고를 하지 아니하고 60일 이상 영업을 하지 아니한 때</dt>
+				<dd>주의사항) 관할세무서에만 사업자등록의 폐업 신고만 하고 관할 시•군•구청의 지역경제과 등 담배 소매업 관련 부서에 폐업 신고하지 않을 경우 지정 </dd>
+				<dt class="last">정당한 사유없이 90일 이상 제조업자 수입판매업자 또는 도매업자로부터 담배를 매입하지 아니한 때</dt>
+				<dd class="last">소매인으로 지정된 후 담배소매인 지정기준에 미달하게 된 때. 단, 도시계획 등으로 인해 도로의 형태가 바뀌어 소매 점포 간 거리가 줄어드는 경우 등은 제외됨</dd>
+			</dl>
+		</div>	
+	</div>
+	<!--// page-content -->
+
+<!--  ub-foot -->
+<div id="ub_foot" class="ub_foot">
+	<div class="inner">
+		<div class="flex-layout align-start">
+			<div class="ub-layout leftBox">
+				<ul>
+					<li>
+						<span class="address">서울특별시 강남구 테헤란로 152 강남파이낸스센터 42층</span>
+					</li>
+					<li>
+						<span class="call"><a href="tel:080-787-1000" >080-787-1000</a></span>
+					</li>
+					<li>
+						<a href="javascript:viewAgreement();" class="policy">이용약관</a>
+					</li>
+				</ul>
+			</div>
+			<div class="ub-layout rightBox">
+				<span class="copy">Copyright © BAT Korea All rights reserved.</span>
+			</div>
+		</div>
+	</div>
+	<div class="txt_warning">
+		<span>흡연은 폐암등 각종 질병의 원인! 그래도 피우시겠습니까?<br /> 담배연기에는 발암성 물질인 나프틸아민, 니켈, 벤젠, 비닐 크롤라이드, 비소, 카드뮴이 들어있습니다.<br /> 금연상담전화 1544-9030</span>
+	</div>
+	<!-- Layer 팝업 로드 위치 -->
+	<div id="divAgreeView"></div>
+	<!-- 첫로그인 환영팝업 -->
+	<div id="divFirstLogin"></div>
+</div>
+<!-- //ub-foot -->
+
+<!--   inc / scrollup (서브화면에서만 노출) -->
+<div class="btn_scrollup">
+	<a href="javascript:;"  id="backtotop">위로 이동</a>
+</div>
+<!--  //inc / include -->
+</div>
+
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	//담배판매 영업정지 기준요약(web)
+	if($(".standard tbody tr").hasClass("on")==true){
+		$(".standard tbody tr.on").children().children(".img").css({"display":"block"});
+	}
+	$(".standard tbody tr").click(function(){
+			if($(this).hasClass("on")==false){
+				$(".standard tbody tr.on").children().children(".img").slideUp(600);
+				$(".standard tbody tr.on").removeClass("on");
+				$(this).addClass("on");
+				$(this).children().children(".img").slideDown(600);
+			}else{
+				$(this).removeClass("on");
+				$(this).children().children(".img").slideUp(600);
+
+				}
+	});
+	//담배판매 영업정지 기준요약(mob)
+	if($(".standard_m dt").hasClass("on")==true){
+		$(".standard_m dt.on").next().css({"display":"block"});
+	}
+	$(".standard_m dt").click(function(){
+		if($(this).hasClass("on")==false){
+			$(".standard_m dt.on").next().slideUp(600);
+			$(".standard_m dt.on").removeClass("on");
+			$(this).addClass("on");
+			$(this).next().slideDown(600);
+		}else{
+			$(this).removeClass("on");
+			$(this).next().slideUp(600);
+
+			}
+	});
+	//위반사항
+	$(".violation dt").click(function(){
+			if($(this).hasClass("on")==false){
+				$(".violation dt.on").next().slideUp(600);
+				$(".violation dt.on").removeClass("on");
+				$(this).addClass("on");
+				$(this).next().slideDown(600);
+			}else{
+				$(this).removeClass("on");
+				$(this).next().slideUp(600);
+
+				}
+	});
+});
+</script>
+</body>
+</html>

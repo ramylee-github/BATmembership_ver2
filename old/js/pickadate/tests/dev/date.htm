@@ -1,0 +1,118 @@
+<!doctype html>
+
+<meta charset="utf-8">
+
+<meta name="author" content="Amsul - http://amsul.ca">
+<meta name="viewport" content="width=device-width,user-scalable=no">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+<title>Pickadate.js</title>
+
+<link rel="stylesheet" href="../../lib/themes/classic.css">
+<link rel="stylesheet" href="../../lib/themes/classic.date.css">
+
+<!--[if lt IE 9]>
+    <script>document.createElement('section')</script>
+    <style type="text/css">
+        .holder {
+            position: relative;
+            z-index: 10000;
+        }
+        .datepicker {
+            display: block;
+        }
+    </style>
+<![endif]-->
+<style type="text/css">
+<!--
+.picker__holder {max-width:300px;}
+
+.inputdesign,
+.inputdesign2 {position:relative; margin:20px 0;} 
+.inputdesign label {position:absolute; left:0; height:29px; padding:4px 0 0 40px; background:url('../../lib/images/check02.png') no-repeat;} 
+.inputdesign2 label {position:absolute; left:0; height:29px; padding:4px 0 0 40px; background:url('../../lib/images/radio.png') no-repeat;} 
+.inputdesign input[type="checkbox"]:checked + label,
+.inputdesign2 input[type="radio"]:checked + label {background-position:0 -34px;}
+.inputdesign input[type="checkbox"],
+.inputdesign2 input[type="radio"] {margin:5px;}
+
+.picker:focus,
+.picker--opened .picker__holder:focus {outline:0;}
+.picker--opened .picker__holder {box-shadow:none;}
+.picker__holder {border:0; border-radius:0;}
+.picker__box {padding:0;}
+.picker__header {padding:.75em 0; margin:0; border:1px solid #ccc; background:#d3dff4;}
+.picker__table {margin:0; padding:.75em 0; border-left:1px solid #ccc; border-right:1px solid #ccc;}
+.picker__footer {border:1px solid #ccc; background:#dcdcdc;}
+.picker__year {font-style:normal;}
+.picker__nav--prev, 
+.picker__nav--next {top:0.3em;}
+.picker__nav--prev {left:3em;}
+.picker__nav--next {right:3em;}
+.picker__nav--prev:before, 
+.picker__nav--next:before {border-top:.5em solid transparent; border-bottom:.5em solid transparent;}
+.picker__nav--prev:before {border-right:0.5em solid #000000;}
+.picker__nav--next:before {border-left:0.5em solid #000000;}
+.picker__weekday {padding:1em;}
+.picker__day--today {background-color:#fcf5ad;}
+.picker__day--today:before {display:none;}
+.picker__button--today, 
+.picker__button--close {border:0; background:#dcdcdc;}
+.picker__button--clear {display:none;}
+.picker__button--today:before {top:2px; margin-right:5px; border:0.55em solid #fcf5ad;}
+//-->
+</style>
+
+
+<body>
+
+    <section class="section">
+
+        <form>
+            <fieldset>
+                <h3><label for="input_01">Pick a date. Go ahead...</label></h3>
+                <input
+                    id="input_01"
+                    class="datepicker"
+                    name="date"
+                    type="text"
+                    autofocuss
+                    value="14 August, 2014"
+                    data-valuee="2014-08-08">
+
+					<div class="inputdesign">
+						<input type="checkbox" id="checkk" name="checkk" />
+						<label for="checkk">커스텀 체크박스</label>
+					</div>
+
+					<div class="inputdesign2">
+						<input type="radio" id="radioo" name="radioo" />
+						<label for="radioo">커스텀 라디오버튼</label>
+					</div>
+            </fieldset>
+        </form>
+
+    </section>
+
+
+    <script src="../jquery.1.7.0.js"></script>
+    <script src="../../lib/picker.js"></script>
+    <script src="../../lib/picker.date.js"></script>
+    <script src="../../lib/translations/ko_KR.js"></script>
+
+    <script type="text/javascript">
+
+       $('.datepicker').pickadate()
+
+
+
+
+    </script>
+
+
+</body>
+
+
+

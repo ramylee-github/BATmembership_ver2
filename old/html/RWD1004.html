@@ -1,0 +1,481 @@
+<!--
+#*
+ *  파 일 명 :  RWD1004.jsp
+ *  설    명 :  서브페이지 - 브랜드 소개 > 던힐 이야기
+ *  작 성 자 :  
+ *  작 성 일 :  
+ *  버    전 :  1.0
+ *  기타사항 :
+ *  Copyrights 2017 by ㈜ 유비원. All right reserved.
+*# 
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" type="text/css" href='../css/base.css'/>
+	<link rel="stylesheet" type="text/css" href='../css/layout.css'/>
+	<link rel="stylesheet" type="text/css" href='../css/module.css'/>
+	<link rel="stylesheet" type="text/css" href='../css/content.css'/>
+</head>
+<body>
+
+<div id="ub-container" class="sub brand"><!-- 메인 : main, 서브 : sub brand, sub news, sub loyalty, sub communication, sub report, sub hubadmin, sub systemadmin(메뉴별로 서브 클래스 나뉨 단, 보드나 관리자 화면은 예외적일 수 있음)  -->
+	<!-- page-header -->
+	<!-- gnb -->
+	<div class="ub_top">
+		<div class="top_inner">
+			<!-- 햄버거 메뉴 테블릿, 모바일에서만 노출 -->
+			<a href="javascript:;" class="btn_nav">
+				<img src="../img/main/mob/btn_nav.png" alt="menu" />
+				<img src="../img/main/mob/btn_nav_t.png" alt="menu" class="tablet" />
+			</a>
+			<!-- //테블릿, 모바일에서만 노출 -->
+			<!--title area -->
+			<h1>
+				<a href="javascript:fnMoveHome();">
+					<img src="../img/web/img_logo.png" alt="super pass" class="tit1" />
+					<img src="../img/web/img_logo2.png" alt="super pass" class="tit2" />
+					<img src="../img/mob/img_logo.png" alt="super pass" class="mob" />
+				</a>
+			</h1>
+			<!--//title area -->
+			<!--gnb area -->
+			<nav class="gnb">
+				<ul>
+					<li>
+						<a href="javascript:;" class="depth1">이달의 캠페인</a>
+						<!--2depth area -->
+						<div class="depth2">
+							<ul>
+								<li>
+									<a href="javascript:;">캠페인 소개</a>
+								</li>
+								<li>
+									<a href="javascript:;">제품별 정보</a>
+								</li>
+								<li>
+									<a href="javascript:;">퀴즈풀기</a>
+								</li>
+							</ul>
+						</div>
+						<!--//2depth area -->
+					</li>
+					<li>
+						<a href="javascript:;" class="depth1">My 슈퍼패스</a>
+						<!--2depth area -->
+						<div class="depth2"></div>
+						<!--//2depth area -->
+					</li>
+					<li>
+						<a href="javascript:;" class="depth1">점포운영특강</a>
+						<!--2depth area -->
+						<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;">상권분석</a>
+							</li>
+							<li>
+								<a href="javascript:;">담배판매법규</a>
+							</li>
+							<li>
+								<a href="javascript:;">세제혜택안내</a>
+							</li>
+							<li>
+								<a href="javascript:;">소매 트렌드</a>
+							</li>
+							<li>
+								<a href="javascript:;">편의점 가맹조건</a>
+							</li>
+						</ul>
+						</div>
+						<!--//2depth area -->
+					</li>
+					<li>
+						<a href="javascript:;" class="depth1">브랜드 소개</a>
+						<!--2depth area -->
+						<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;">던힐</a>
+								<!--3depth area -->
+								<div class="depth3">
+									<ul>
+										<li>
+											<a href="javascript:;">-
+												<span>브랜드 이야기</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">-
+												<span>제품소개</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!--//3depth area -->
+							</li>
+							<li>
+								<a href="javascript:;">로스만</a>
+								<!--3depth area -->
+								<div class="depth3">
+									<ul>
+										<li>
+											<a href="javascript:;">-
+												<span>브랜드 이야기</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">-
+												<span>제품소개</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!--//3depth area -->
+							</li>
+						</ul>
+						</div>
+						<!--//2depth area -->
+					</li>
+					<li>
+						<a href="RWD6001.ub" class="depth1">BAT 소식</a>
+						<!--2depth area -->
+						<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;">뉴스</a>
+							</li>
+							<li>
+								<a href="javascript:;">설문  </a>
+							</li>
+						</ul>
+						</div>
+						<!--//2depth area -->
+					</li>
+				</ul>
+			</nav>
+			<!--//gnb area -->
+			<!--small gnb area -->
+			<div class="nav_small">
+				<a href="POR0001.ub" class="info_system">시스템 관리</a>
+				<a href="javascript:;" class="info_change">정보변경</a>
+				<a href="javascript:;" class="logout">로그아웃</a>
+			</div>
+			<!--//small gnb area -->
+			<span class="label_private">
+				<img src="../img/main/web/img_private.png" alt="소매점주전용 본 제작물을 일반 소비자에게 절대 공개하지 마십시오" class="private1" />
+				<img src="../img/main/web/img_private2.png" alt="소매점주전용 본 제작물을 일반 소비자에게 절대 공개하지 마십시오" class="private2" />
+				<img src="../img/main/mob/img_private.png" alt="소매점주전용 본 제작물을 일반 소비자에게 절대 공개하지 마십시오" class="mob" />
+			</span>
+		</div>
+	</div> 
+	<!-- 레프트메뉴(태블릿, 모바일) -->
+	<div class="leftmenu">
+		<div class="top">
+			<!-- small gnb area -->
+			<div class="nav_small">
+				<a href="javascript:;" class="info_change">정보변경</a>
+				<a href="javascript:;" class="logout">로그아웃</a>
+			</div>
+			<!-- //small gnb area -->
+			<!-- point information area -->
+			<div class="info_point">
+				<div class="txt">
+					장그래
+					<span class="branch">[강남점]</span>
+					님의<br />
+					포인트는 
+					<strong>500,000</strong>
+					<span class="unit">P</span>
+					입니다.
+				</div>
+			</div>
+			<!-- //point information area -->
+			<!-- tmr information area -->
+			<div class="info_tmr">
+				<span class="tit">담당광고사원</span>
+				<span class="cont">
+					<strong>김근수 과장</strong>
+					<strong>010-1234-5678</strong>
+				</span>
+			</div>
+			<!-- //tmr information area -->
+		</div>
+		<!-- gnb area -->
+		<nav class="gnb">
+			<ul>
+				<li>
+					<a href="javascript:;" class="menu1 on">브랜드 소개</a>
+					<!-- 2depth area -->
+					<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;" class="menu2 on">던힐</a>
+								<!-- 3depth area -->
+								<div class="depth3">
+									<ul>
+										<li>
+											<a href="javascript:;">- 
+												<span>브랜드 이야기</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">- 
+												<span>제품 소개</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!-- //3depth area -->
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2 on">로스만</a>
+								<!-- 3depth area -->
+								<div class="depth3">
+									<ul>
+									</ul>
+								</div>
+								<!-- //3depth area -->
+							</li>
+						</ul>
+					</div>
+					<!-- //2depth area -->
+				</li>
+				<li>
+					<a href="javascript:;" class="menu1 nosub">My 슈퍼패스</a>
+					<!-- 2depth area --><div class="depth2"></div><!-- //2depth area -->
+				</li>
+				<li>
+					<a href="javascript:;" class="menu1 on">점포운영특강</a>
+					<!-- 2depth area -->
+					<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;">상권분석</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">담배판매법규</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">세제혜택안내</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">소매트렌드</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">편의점 가맹조건</a>
+							</li>
+						</ul>
+					</div>
+					<!-- //2depth area -->
+				</li>
+				<li>
+					<a href="javascript:;" class="menu1 on">BAT 소식</a>
+					<!-- 2depth area -->
+					<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;" class="menu2">뉴스</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">설문</a>
+							</li>
+						</ul>
+					</div>
+					<!-- //2depth area -->
+				</li>
+			</ul>
+		</nav>
+		<!-- //gnb area -->
+	</div>
+	<div class="darkLayer"></div>
+	<!--// page-header -->
+	
+	<!-- page-content -->
+	<div id="ub_content" class="ub_content"> 
+		<div class="area_visual">
+			<div class="pattern"></div>
+			<div class="inner">
+				<h2>브랜드 소개</h2>
+				<p>꾸준히 사랑받고 있는 던힐과 로스만을 중심으로 다양하고 혁신적인 제품을 선보이겠습니다.</p>
+			</div>
+		</div>
+		<!-- inc / page-location -->
+		<div class="location">
+			<ul>
+				<li class="home">
+					<a href="javascript:fnMoveHome();">Home</a>
+				</li>
+				<li class="submenu">
+					<select id="navi1" style="display:none;width:180px;">
+						<option value="menu1">사이클컴즈</option>
+						<option value="menu2">프로모션</option>
+						<option value="menu3">My 슈퍼패스</option>
+						<option value="menu4">매출 도우미</option>
+						<option value="menu5">BAT 소식</option>
+						<option value="menu6">시스템관리</option>
+					</select>
+				</li>
+				<li class="submenu">
+					<select id="navi2" style="display:none;width:180px;">
+						<option value="menu21">던힐</option>
+						<option value="menu22">로스만</option>
+					</select>
+				</li>
+			</ul>
+		</div>	
+		<!--// inc / page-location -->
+		<div class="content web" style="padding:13px 0 0;">
+			<strong class="tit_small">던할의 철학</strong>
+			<!-- philosophy  -->
+			<dl class="philosophy">
+				<dt>
+					<img src="../img/brand/img_story1.png" alt="던힐의 철학" />
+				</dt>
+				<dd>
+					각기 다른 입맛의 전세계인들에게 100년이 넘도록 사랑 받은 담배,<br />
+					던힐의 이야기는 상대방의 기호를 먼저 생각하는 영국 젠틀맨의 정신에서 시작됩니다.
+				</dd>
+				<dd>
+					던힐은 1907년, 한 런던의 거리(St, James Street 1A)에서 시작되어, 고객 개개인의 만족을 목표로 담배를 맞춤 제조<br />
+					하는 서비스를 제공했습니다.
+				</dd>
+				<dd>
+					<strong>그 가치가 계승되어 완성된 다양한 제품군, 지금 바로 확인해 보세요!</strong>
+				</dd>
+			</dl>
+			<!-- //philosophy  -->
+			<!-- item_detail  -->
+			<strong class="tit_small2">소비자의 폭넓은 취향을 고려한 굵기별 제품들</strong>
+			<div class="ub-layout floatBox item_detail">
+				<div class="ub-layout leftBox">
+					<dl>
+						<dd>
+							<a href="BAT1007.ub">
+								<img src="../img/brand/img_thick_d.jpg" alt="던힐 굵은담배" />
+							</a>
+						</dd>
+						<dt>
+							<a href="BAT1007.ub">굵은 담배</a>
+						</dt>
+					</dl>
+				</div>
+				<div class="ub-layout leftBox">
+					<dl>
+						<dd>
+							<a href="BAT1007.ub">
+								<img src="../img/brand/img_thin_d.jpg" alt="던힐 얇은담배" />
+							</a>
+						</dd>
+						<dt>
+							<a href="BAT1007.ub">얇은 담배</a>
+						</dt>
+					</dl>
+				</div>
+			</div>
+			<strong class="tit_small2">발빠르게 트렌드를 겨냥한 캡슐/가향 제품들</strong>
+			<div class="ub-layout floatBox item_detail">
+				<div class="ub-layout leftBox">
+					<dl>
+						<dd>
+							<a href="BAT1007.ub">
+								<img src="../img/brand/img_single_d.jpg" alt="던힐 단일가향" />
+							</a>
+						</dd>
+						<dt>
+							<a href="BAT1007.ub">단일 가향</a>
+						</dt>
+					</dl>
+				</div>
+				<div class="ub-layout leftBox">
+					<dl>
+						<dd>
+							<a href="BAT1007.ub">
+								<img src="../img/brand/img_complex_d.jpg" alt="던힐 복합가향" />
+							</a>
+						</dd>
+						<dt>
+							<a href="BAT1007.ub">복합 가향</a>
+						</dt>
+					</dl>
+				</div>
+			</div>
+			<!-- //item_detail  -->
+			<strong class="tit_small">던할의 품질과 혁신</strong>
+			<ul class="list_story">
+				<li>
+					<img src="../img/brand/img_story2.jpg" alt="장인정신" />
+					<div>
+						<strong>장인정신</strong>
+						<p>마스터 블렌더가 직접 엄선한 담뱃잎만이 영국 정통 스타일로 블랜딩되어 던힐 담배로 태어납니다.</p>
+					</div>
+				</li>
+				<li>
+					<img src="../img/brand/img_story3.jpg" alt="진보적 이미지 구축" />
+					<div>
+						<strong>진보적 이미지 구축</strong>
+						<p>변하는 고객의 취향에 발 맞춰 진화하는 던힐의 글로벌 로고입니다.</p>
+					</div>
+				</li>
+				<li>
+					<img src="../img/brand/img_story4.jpg" alt="던힐 고유의 필터" />
+					<div>
+						<strong>던힐 고유의 필터</strong>
+						<p>담배의 풍미를 부드럽고 풍부하게 느낄 수 있는 튜브형태의 필터는 끝맛까지 깔끔하게 전달합니다.</p>
+					</div>
+				</li>
+			</ul>
+		</div>	
+		<div class="mob">
+			<img src="../img/brand/img_story_temp1.jpg" style="max-width:100%;" alt="임시이미지" />
+		</div>
+	</div>
+	<!--// page-content -->
+
+	<!--  ub-foot -->
+	<div id="ub_foot" class="ub_foot">
+		<div class="inner">
+			<div class="flex-layout align-start">
+				<div class="ub-layout leftBox">
+					<ul>
+						<li>
+							<span class="address">서울특별시 강남구 테헤란로 152 강남파이낸스센터 42층</span>
+						</li>
+						<li>
+							<span class="call"><a href="tel:080-787-1000" >080-787-1000</a></span>
+						</li>
+						<li>
+							<a href="javascript:viewAgreement();" class="policy">이용약관</a>
+						</li>
+					</ul>
+				</div>
+				<div class="ub-layout rightBox">
+					<span class="copy">Copyright © BAT Korea All rights reserved.</span>
+				</div>
+			</div>
+		</div>
+		<div class="txt_warning">
+			<span>흡연은 폐암등 각종 질병의 원인! 그래도 피우시겠습니까?<br /> 담배연기에는 발암성 물질인 나프틸아민, 니켈, 벤젠, 비닐 크롤라이드, 비소, 카드뮴이 들어있습니다.<br /> 금연상담전화 1544-9030</span>
+		</div>
+		<!-- Layer 팝업 로드 위치 -->
+		<div id="divAgreeView"></div>
+		<!-- 첫로그인 환영팝업 -->
+		<div id="divFirstLogin"></div>
+	</div>
+	<!-- //ub-foot -->
+	
+	<!--   inc / scrollup (서브화면에서만 노출) -->
+	<div class="btn_scrollup">
+		<a href="javascript:;"  id="backtotop">위로 이동</a>
+	</div>
+	<!--  //inc / include -->
+</div>
+
+</body>
+</html>
+

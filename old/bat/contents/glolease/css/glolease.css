@@ -1,0 +1,330 @@
+@charset "utf-8";
+
+/* --------------------------------- 글로 리스 전용 css ---------------------------------  */ 
+/* common */
+.glo_lease {width:1150px; margin:35px auto 50px; padding:4px; border:1px solid #dbdbdb; background:#eee;}
+.glo_lease .inner {padding:30px 26px 43px;  background:#fff;}
+.glo_lease .inner .tit {font-size:30px; text-align:center;}
+.glo_lease .inner h3.tit {margin-bottom:27px;}
+.glo_lease .inner .tit:before,
+.glo_lease .inner .tit:after {display:inline-block; content:' '; width:29px; height:15px; margin-right:8px; vertical-align:middle; background:url('../images/bar_ver_tit.gif') no-repeat 0 75%;}
+.glo_lease .inner .tit:after {margin-right:0; margin-left:8px;}
+.glo_lease .inner .tit_small,
+.glo_lease .inner .area_btm {display:block; margin:0; padding:0 0 7px 2px; margin-bottom:8px; font-size:16px; font-weight:bold;  text-align:left; border-bottom:3px solid #ef7b63; background:none;}
+.glo_lease .inner .tit_small .txt_guide {display:block; margin:6px 0 9px; text-align:left; font-weight:normal;}
+.glo_lease .inner .area_select {float:right;}
+.glo_lease .inner .area_select div {display:inline-block;}
+.glo_lease .inner .area_select  input[type="checkbox"] ,
+.glo_lease .inner .area_select  input[type="radio"] {display:none;}
+.glo_lease .inner .area_select input[type="checkbox"] + label span,
+.glo_lease .inner .area_select  input[type="radio"] + label span {display:inline-block;width:16px; height:16px; margin:-2px 7px 0 0; border-radius:3px; vertical-align:middle; cursor:pointer; border:2px solid #c9c9c9; background-color:#fff;}
+.glo_lease .inner .area_select input[type="checkbox"]:checked + label span,
+.glo_lease .inner .area_select  input[type="radio"]:checked + label span {background-color:#c3d880; background-image:url('../images/ico_arr_cbox.gif'); background-repeat:no-repeat; background-position:50% 50%;}
+.glo_lease .inner .area_select label {cursor:pointer;}
+.glo_lease .inner .row {margin-bottom:6px;}
+.glo_lease .inner .row:after,
+.glo_lease .inner .row .inp-text:after {display:block; content:' '; clear:both;}
+.glo_lease .inner .row .inp-text {display:inline-block; width:49.5%; height:38px; padding:0 14px; border:1px solid #c9c9c9; background:#fff;box-sizing: border-box;}
+.glo_lease .inner .row .inp-text:nth-of-type(1) {float:left; }
+.glo_lease .inner .row .inp-text:nth-of-type(2) {float:right;}
+.glo_lease .inner .row .inp-text:only-child {float:none; width:100%;}
+.glo_lease .inner .row .inp-text input[type="text"],
+.glo_lease .inner .row .inp-text input[type="number"] {width:80%; height:34px; padding:0;  border:0; font-size:14px;vertical-align: top;}
+.glo_lease .inner .row .inp-text label {display:inline-block; min-width:40px; margin-right:5px; font-size:14px; font-weight:bold; line-height:35px;}
+.glo_lease .inner .row .inp-text .area_select label {margin-left:25px;}
+.glo_lease .inner .txt_guide {padding-left:2px; color:#444; font-size:14px; line-height:21px; text-align:right;}
+.glo_lease .inner .txt_guide mark {color:#fff; background:#ee1f23;}
+.glo_lease .inner .area_btm {position:relative; padding:0 0 10px 16px;}
+.glo_lease .area_btns {text-align:center;}
+.glo_lease .btn a {display:inline-block; height:40px; margin-top: 20px; padding:0 46px; margin-left:1px;  border:1px solid #656565; color:#fff; font-size:17px; font-weight:bold; line-height:39px; background:#7b7b7b;}
+.glo_lease .btn.orange a {border:1px solid #c84922; background:#e45124;}
+.glo_lease .btn.btn_submit a:before {display:inline-block; content:' '; width:21px; height:24px; margin-right:6px; vertical-align:middle; background:url('../images/ico_form.png') no-repeat 0 0;}
+.glo_lease .inner pre {white-space:pre-line; font-size:14px; line-height:22px;}
+.glo_lease .inner pre .control_space {display:inline-block; padding-left:130px;}
+.glo_lease .inner pre strong {vertical-align: baseline;}
+/* 이미지 뷰어존 */
+.glo_lease .inner .area_image_view {padding:24px 0 30px; margin-bottom:14px; border:1px solid #757575; text-align:center; background:#848484;}
+.glo_lease .inner .area_image_view .view_container {width:910px; margin:0 auto; overflow-x:auto; overflow-y:hidden;}
+.glo_lease .inner .area_image_view .view_container ul {display:table; margin:0 auto; text-align:center;}
+.glo_lease .inner .area_image_view .view_container ul li { display: table-cell;width:413px; padding-left:80px; overflow:hidden;}
+.glo_lease .inner .area_image_view .view_container ul li:first-child,
+.glo_lease .inner .area_image_view .view_container ul li:nth-child(2) {padding-left:0;}
+.glo_lease .inner .area_image_view .view_container ul li:first-child .zone_img {display:table;}
+.glo_lease .inner .area_image_view .view_container ul li:first-child .zone_img span {display:table-cell;}
+.glo_lease .inner .area_image_view .view_container ul li .zone_img {position:relative; width:100%; height:506px;  border:1px dashed #a6a6a6; background:#6e6e6e; z-index:1; box-sizing:border-box; overflow:hidden;}
+.glo_lease .inner .area_image_view .view_container ul li .zone_img span {padding-top:53px; color:#dbdbdb; font-size:14px; font-weight:bold; background:url('../images/ico_noimg.gif') no-repeat 50% 45%;}
+.glo_lease .inner .area_image_view .view_container ul li .zone_img img {position:absolute;left:50%; height:100%; transform:translate(-50%); z-index:2;}
+.glo_lease .inner .area_image_view .view_container ul li .view_control {margin-bottom:3px;}
+.glo_lease .inner .area_image_view .view_container ul li .view_control:after {display:block; content:' '; clear:both;}
+.glo_lease .inner .area_image_view .view_container ul li .view_control .count_page {float:left; color:#fff; font-size:14px;}
+.glo_lease .inner .area_image_view .view_container ul li .view_control .count_page strong {font-size:18px; font-weight:bold; vertical-align:baseline;}
+.glo_lease .inner .area_image_view .view_container ul li .view_control .control_btns {float:right;}
+.glo_lease .inner .area_image_view .view_container ul li .view_control .control_btns button {width:30px; height:30px; text-indent:-9999px; background-repeat:no-repeat; background-position:50% 50%;}
+.glo_lease .inner .area_image_view .view_container ul li .view_control .control_btns .btn_add {border:1px solid #c84922;  background-color:#f85f30; background-image: url('../images/ico_photo.png');}
+.glo_lease .inner .area_image_view .view_container ul li .view_control .control_btns .btn_del {border:1px solid #797979;  background-color:#a0a0a0; background-image: url('../images/ico_del.png');}
+/* 개인정보 수집 및 이용 동의/무료체험 서비스 약정 */
+.glo_lease .inner .area_pi-agt {margin-top:24px;}
+.glo_lease .inner .area_pi-agt .tit,
+.glo_lease .inner .area_contract .tit {display:inline-block; margin-bottom:10px; font-size:15px;}
+.glo_lease .inner .area_pi-agt .tit:before,
+.glo_lease .inner .area_pi-agt .tit:after,
+.glo_lease .inner .area_contract .tit:before,
+.glo_lease .inner .area_contract .tit:after {content:none;}
+.glo_lease .inner .area_pi-agt .pi-agt {margin-bottom:10px; padding:20px; background:#f4f4f4;}
+.glo_lease .inner .area_pi-agt .area_select,
+.glo_lease .inner .area_contract .area_select {float:none; display:block; margin-bottom:10px; padding-right:3px; font-size:14px; font-weight:bold; text-align: right;}
+.glo_lease .inner .area_pi-agt .area_select  label ,
+.glo_lease .inner .area_contract .area_select  label {margin-left:30px;}
+.glo_lease .inner .area_contract .contract {height:288px;padding:20px;margin-bottom:10px; margin-top:20px; border:1px solid #c9c9c9; overflow-y: auto; overflow-x: hidden;}
+/* 서명존 */
+.glo_lease .inner .area_signiture {position:absolute; right:11px; bottom:4px;}
+.glo_lease .inner .area_signiture .txt_sign {display:inline-block; margin-right:10px; font-size:14px;}
+.glo_lease .inner .area_signiture .signiture {position:relative;display:inline-block;width: 140px;height:30px;}
+.glo_lease .inner .area_signiture .signiture img {position:absolute;bottom:0; max-height:80px;}
+.glo_lease .inner .area_signiture .btn.orange a {display:inline-block;  height:24px; padding:0 18px; margin-left:1px;margin-top:0; border:1px solid #c84922;  color:#fff; font-size:14px; font-weight:bold; line-height:23px; background:#e45124;}
+/* 서명팝업 */
+.ui-dialog.rwd .ui-dialog-content.sign_board {padding:20px;}
+.sign_board .board {height:300px;padding:0 10px;border:1px solid #c5c5c5;background:transparent;overflow:hidden;}
+
+
+/* 신청서 메인 */
+.glo_lease.ap_main {width:auto; margin:0; padding:0; border:0; background:none;}
+.glo_lease.ap_main p.txt_guide {font-size:14px;}
+.glo_lease.ap_main .tit_small {margin:0 0 12px; font-weight:bold; background:url('../images/bul_orange.gif') no-repeat 0 3px;}
+.glo_lease.ap_main .sec_top {width:1100px; margin:0 auto; padding:39px 0 36px; text-align:left; border:0; background:none;}
+.glo_lease.ap_main .sec_top h3 {margin:0; padding:0 0 16px 8px; margin-bottom:20px; font-size:16px; font-weight:bold;  text-align:left; border-bottom:3px solid #ef7b63; background:none;}
+.glo_lease.ap_main .sec_top .floatBox {margin:0;}
+.glo_lease.ap_main .sec_top .floatBox .leftBox,
+.glo_lease.ap_main .sec_top .floatBox .rightBox {border:0; padding:0;}
+.glo_lease.ap_main .sec_top .floatBox .leftBox {float:left;}
+.glo_lease.ap_main .sec_top .floatBox .rightBox {float:right;}
+.glo_lease.ap_main .sec_top .ap_guide {padding:0 0 0 10px;}
+.glo_lease.ap_main .sec_top .ap_guide:after {display:block; content:' '; clear:both;}
+.glo_lease.ap_main .sec_top .ap_guide dt {float:left; min-height:40px; margin-right:10px;}
+.glo_lease.ap_main .sec_top .ap_guide dd {font-size:14px; margin-bottom:9px;}
+.glo_lease.ap_main .sec_top .row {padding:0 2px;}
+.glo_lease.ap_main .sec_top .inp-text {position:relative; height:38px; padding:2px; margin-bottom:8px;  border:1px solid #c9c9c9; border-radius:3px; box-sizing:border-box;}
+.glo_lease.ap_main .sec_top .inp-text label {display:inline-block; min-width:110px; height:32px; padding-top:8px; border-radius:3px; vertical-align:top; text-align:center; font-weight:bold; background:#e7e7e7; box-sizing:border-box;}
+.glo_lease.ap_main .sec_top .inp-text input {height:30px; width:50%; margin-left:10px; border:0; font-size:14px; background:transparent;}
+.glo_lease.ap_main .sec_top .inp-text input.readonly {background:transparent !important;}
+.glo_lease.ap_main .sec_top .inp-text .area_btns {position:absolute; right:12px; top:5px;}
+.glo_lease.ap_main .sec_top .inp-text .area_btns .btn a {height:24px; padding:0 21px; margin-top:0; font-size:14px; line-height:24px;}
+.glo_lease.ap_main .sec_top .rightBox .txt_guide {text-align:right;}
+.glo_lease.ap_main .sec_mid {height:273px; background:#f86320;}
+.glo_lease.ap_main .sec_mid .inner {position:relative; width:1100px; margin:0 auto; padding:0; background:none;}
+.glo_lease.ap_main .sec_mid picture {position:absolute; top:-100px; left:0;}
+.glo_lease.ap_main .sec_mid .inner .area_mainbtns {padding:20px 0 0 345px;}
+.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn {display:inline-block; width:347px; height:232px;  margin:0 0 0 40px;  padding:5px; border:1px solid #e05618; background-color:#fff;background-repeat:no-repeat; background-position:bottom right; background-image:url('../images/bg_mainlogo.png'); box-shadow:5px 5px 0px rgba(0, 0, 0, 0.15); box-sizing:border-box;}
+.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn:first-child {margin:0;}
+.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn a {width:100%; height:100%; margin:0; padding:70px 0 0; border:3px solid #fe793e; color:#f86320; font-size:16px; font-weight:bold; background-color:transparent;  box-sizing:border-box;}
+.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn a:before {display:block; content:' '; width:49px; height:42px; margin:0 auto 11px; background-repeat:no-repeat; background-position:0 0;} 
+.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn.btn_ap-forms a:before {background-image:url('../images/ico_fillout.png');} 
+.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn.btn_ap-upload a:before {width:38px; height:38px; margin:0 auto 14px; background-position:0 6px; background-image:url('../images/ico_upload.png');} 
+.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn:hover,
+.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn:focus,
+.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn:active {border:1px solid #374148; background-color:#4e5a63; background-image:url('../images/bg_mainlogo_on.png');}
+.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn:hover a,
+.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn:focus a,
+.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn:active a {border:3px solid #f86320; color:#fff;}
+.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn.btn_ap-forms:hover a:before,
+.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn.btn_ap-forms:focus a:before {background-image:url('../images/ico_fillout_on.png');} 
+.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn.btn_ap-upload:hover a:before,
+.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn.btn_ap-upload:focus a:before {background-image:url('../images/ico_upload_on.png');}
+.glo_lease.ap_main .sec_btm {width:1100px; margin:0 auto 50px; }
+.glo_lease.ap_main .sec_btm .row:after {display:block; content:' '; clear:both;}
+.glo_lease.ap_main .sec_btm .total_count {float:right; margin-top:2px; font-size:14px; text-align:right;}
+.glo_lease.ap_main .sec_btm .list_ap-forms {margin-bottom:15px;}
+.glo_lease.ap_main .sec_btm .list_ap-forms:after {display:block; content:' '; clear:both;}
+.glo_lease.ap_main .sec_btm .list_ap-forms li {float:left; width:49.4%; height:82px; margin:0 0 12px 12px; padding:3px; border:1px solid #cecece; background:#eee; box-sizing:border-box;}
+.glo_lease.ap_main .sec_btm .list_ap-forms li:nth-child(odd) {margin:0 0 12px 0;}
+.glo_lease.ap_main .sec_btm .list_ap-forms li.no_date {width:100%; text-align:center;}
+.glo_lease.ap_main .sec_btm .list_ap-forms li a {position:relative; display:inline-block; width:100%; height:100%;padding: 19px 0 0 75px; background-color:#fff; background-repeat:no-repeat; background-position:12px 12px; box-sizing: border-box;}
+.glo_lease.ap_main .sec_btm .list_ap-forms li.filledout a {background-image:url('../images/ico_fillout_list.gif');}
+.glo_lease.ap_main .sec_btm .list_ap-forms li.uploaded a {background-image:url('../images/ico_upload_list.gif');}
+.glo_lease.ap_main .sec_btm .list_ap-forms li.no_date a {font-size:14px; line-height:32px; pointer-events:none;}
+.glo_lease.ap_main .sec_btm .list_ap-forms li a .info_applicant {display:block; font-size:15px; font-weight:bold;}
+.glo_lease.ap_main .sec_btm .list_ap-forms li a .date {display:block; margin-top:5px; color:#898989; font-size:14px;}
+.glo_lease.ap_main .sec_btm .list_ap-forms li a .status_now {position:absolute; top:29px; right:15px; color:#ed520c; font-size:15px; font-weight:bold;}
+.glo_lease.ap_main .sec_btm .area_btns .btn a {height: 38px; padding:0 57px;}
+
+
+/* 탭 */
+@media (min-width:768px) and (max-width:1024px) {
+	/* common */
+	.glo_lease {width:auto; margin:25px 0; padding:0 2rem 0; border:0; background:#fff;}
+	.glo_lease .inner {padding:0; background:#fff;}
+	.glo_lease .inner .row {width:100% !important; margin:0;}
+	.glo_lease .inner .row .inp-text {width:100% !important; margin-bottom:5px;}
+	.glo_lease .inner .row .inp-text input[type="text"],
+	.glo_lease .inner .row .inp-text input[type="number"] {width:82%; height:30px; color:#444;}
+	.glo_lease .inner .row .inp-text:nth-of-type(1),
+	.glo_lease .inner .row .inp-text:nth-of-type(2) {float:none;}
+	/* 이미지 뷰어존 */
+	.glo_lease .inner .area_image_view .view_container {width:580px;}
+	.glo_lease .inner .area_image_view .view_container ul li {width:250px !important;}
+	.glo_lease .inner .area_image_view .view_container ul li .zone_img {overflow: hidden;}
+	.glo_lease .inner .area_image_view .view_container ul li .zone_img img {height:100%;}
+	.glo_lease .area_image_view .bx-wrapper {max-width:620px !important;}
+	.glo_lease .area_image_view .bx-wrapper .bx-prev {left:-38px;} 
+	.glo_lease .area_image_view .bx-wrapper .bx-next {right:-38px;}
+	/* 신청서 메인 */
+	.glo_lease.ap_main .sec_top {width:auto; margin:0; padding:25px 20px 36px;}
+	.glo_lease.ap_main .sec_top h3 {padding:0; text-align:center; border:0;}
+	.glo_lease.ap_main .sec_top .floatBox .leftBox,
+	.glo_lease.ap_main .sec_top .floatBox .rightBox {float:none; width:100% !important;}
+	.glo_lease.ap_main .sec_top .ap_guide {margin-bottom:15px; padding:20px 15px 11px; background:#fcf1eb;}
+	.glo_lease.ap_main .sec_top .ap_guide dt {display:none;}
+	.glo_lease.ap_main .sec_top .ap_guide dd {line-height:23px;}
+	.glo_lease.ap_main .sec_top .rightBox .txt_guide {font-weight:normal;}
+	.glo_lease.ap_main .sec_mid {margin-top: 165px;}
+	.glo_lease.ap_main .sec_mid .inner {width:100%; margin:0; text-align:center;}
+	.glo_lease.ap_main .sec_mid picture {top:-173px; left:50%; transform: translate(-50%);}
+	.glo_lease.ap_main .sec_mid .inner .area_mainbtns {display:inline-block; padding:20px 0 0;}
+	.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn {width:250px; background-size:165px auto;}
+	.glo_lease.ap_main .sec_btm {width:auto; padding:0 20px;}
+	.glo_lease.ap_main .sec_btm .list_ap-forms li {float:none; width:100%; margin:0 0 12px;}
+	.glo_lease.ap_main .sec_btm .list_ap-forms li a {background-size: 5rem auto;}
+	.glo_lease.ap_main .sec_btm .list_ap-forms li.filledout a {background-image: url(../images/ico_fillout_list_m.gif);}
+	.glo_lease.ap_main .sec_btm .list_ap-forms li.uploaded a {background-image: url(../images/ico_upload_list_m.gif);}
+
+}
+/* 텝 세부 */
+@media (min-width:1025px) and (max-width:1366px){ 
+	.glo_lease .inner .area_image_view .view_container ul li {width:413px !important;}
+	/* bx-slider */
+	.glo_lease .area_image_view .bx-wrapper {max-width:846px !important;}
+}
+
+/* 모바일 */
+@media (max-width:737px) {
+	/* common */
+	.glo_lease {position:relative; width:auto; min-height:75rem; margin:2.5rem 0 0; padding:0; border:0; background:#fff;}
+	.glo_lease.ap_form_page {min-height:165rem; padding-bottom:5rem;}
+	.glo_lease .inner h3.tit {margin-bottom:0.5rem;}
+	.glo_lease .inner .area_select input[type="checkbox"]:checked + label span, 
+	.glo_lease .inner .area_select input[type="radio"]:checked + label span {background-size:1.2rem auto;}
+	.glo_lease .inner .area_select input[type="checkbox"] + label span, 
+	.glo_lease .inner .area_select input[type="radio"] + label span {margin-right:0;}
+	.glo_lease .btn a {padding: 0 2rem; font-size:1.4rem;  box-sizing:border-box;}
+	.glo_lease .btn.btn_submit a:before {height:2.4rem;}
+	.glo_lease .area_btns {position:absolute; bottom:0; left:0; right:0; display:table; width:100%; padding:0; margin-top:1.5rem;}
+	.glo_lease .area_btns .btn {display:table-cell; width:50%; }
+	.glo_lease .area_btns .btn a {width:100%;  margin:0; }
+	.glo_lease .area_btns .btn:only-child {width:100%;}
+	.glo_lease .inner {padding:0; background:#fff;}
+	.glo_lease .inner .area_ap_form {padding-bottom: 6rem; text-align:center;}
+	.glo_lease .inner .tit_small, 
+	.glo_lease .inner .area_btm{padding-top:1rem; font-size:1.4rem; margin:0 2rem 0.8rem !important; text-align:left;}
+	.glo_lease .inner .tit_small .txt_guide {margin:0.8rem 0 1rem;}
+	.glo_lease .inner .row {width:100% !important; margin:0; text-align:left;}
+	.glo_lease .inner .row .inp-text {width:89% !important; margin:0 2rem 0.5rem;}
+	.glo_lease .inner .row .inp-text:nth-of-type(1),
+	.glo_lease .inner .row .inp-text:nth-of-type(2) {float:none;}
+	.glo_lease .inner .row .inp-text label {font-size:1.3rem; line-height:3.4rem;}
+	.glo_lease .inner .row .inp-text input[type="text"],
+	.glo_lease .inner .row .inp-text input[type="number"] {width:70%; height:34px; color:#444; box-sizing:border-box;}
+	.glo_lease .inner .row .inp-text .area_select label {margin-left:1.5rem;}
+	.glo_lease .inner pre {font-size:1.2rem;}
+	.glo_lease .inner pre .control_space {padding-left:0;}
+	.glo_lease .inner .tit {font-size:1.8rem;}
+	.glo_lease .inner .tit:before,
+	.glo_lease .inner .tit:after {width:1.9rem; height:1rem; margin-right:0.5rem;}
+	.glo_lease .inner .tit:after {margin-right:0; margin-left:0.5rem;}
+	.glo_lease .inner .tit img {width:6rem;}
+	.glo_lease .inner .txt_guide {text-align:left; margin:0.7rem 2.2rem 0; font-size:1.2rem; line-height: 1.8rem;}
+	.glo_lease .inner .area_btm .logo_glo img {width:5rem;}
+	/* 이미지 뷰어존 */
+	.glo_lease .inner .area_image_view {margin:0 2rem 1.4rem;}
+	.glo_lease .inner .area_image_view .view_container {width:26rem; min-height:19rem; padding:0 3rem;}
+	.glo_lease .inner .area_image_view .view_container ul li {width:11.5rem; padding-left:3rem;}
+	.glo_lease .inner .area_image_view .view_container ul li .zone_img { height:20rem;  overflow: hidden;}
+	.glo_lease .inner .area_image_view .view_container ul li .zone_img img {height:100%;}
+	.glo_lease .inner .area_image_view .view_container ul li .zone_img span {padding: 5rem 1rem 0; font-size:1.1rem;  line-height: 1.7rem;  word-break: keep-all; background-position:50% 30%; background-size: 2.5rem auto;}
+	.glo_lease .inner .area_image_view .view_container ul li .view_control .control_btns button {width:2.6rem; height:2.6rem;     background-size: 1.3rem auto;}
+	.glo_lease .inner .area_image_view .view_container ul li .view_control .count_page {font-size:1.2rem;}
+	.glo_lease .inner .area_image_view .view_container ul li .view_control .count_page strong {font-size:1.6rem;}
+	/* 개인정보 수집 및 이용 동의/무료체험 서비스 약정 */
+	.glo_lease .inner .area_pi-agt,
+	.glo_lease .inner .area_contract {margin:0 2rem 0; text-align:left;}
+	.glo_lease .inner .area_contract .contract {padding: 1.4rem 1.3rem;}
+	.glo_lease .inner .area_pi-agt {margin-top:1.7rem;}
+	.glo_lease .inner .area_pi-agt .pi-agt {height:24rem; padding: 1.3rem 1.3rem; overflow-x:hidden; overflow-y:auto;}
+	.glo_lease .inner .area_pi-agt .tit, 
+	.glo_lease .inner .area_contract .tit {font-size:1.3rem;}
+	.glo_lease .inner .area_pi-agt .area_select, 
+	.glo_lease .inner .area_contract .area_select {padding:0; font-size:1.25rem;}
+	.glo_lease .inner .area_pi-agt .area_select label, 
+	.glo_lease .inner .area_contract .area_select label {margin-left:1rem; font-size:1.2rem; font-weight:normal;}
+	.glo_lease .inner .area_pi-agt .area_select label:first-child, 
+	.glo_lease .inner .area_contract .area_select label:first-child {margin-left:0;}
+	.glo_lease .inner .area_pi-agt .area_select .txt_agt, 
+	.glo_lease .inner .area_contract .area_select .txt_agt {float:left; letter-spacing:-0.11rem;}
+	.glo_lease .inner .area_select input[type="checkbox"] + label span {margin:-0.2rem 0.2rem 0 0;}
+	/* 서명존 */
+	.ui-dialog.rwd.s-pad {width:340px !important;}
+	.glo_lease .inner .area_signiture {right:0.5rem;}
+	.glo_lease .inner .area_signiture .btn.orange a {padding:0 1.5rem; font-size:1.2rem;}
+	.glo_lease .inner .area_signiture .signiture {width:10rem;}
+	.glo_lease .inner .area_signiture .signiture img {max-height:6.5rem;}
+	.sign_board .board {height:23rem;}
+	/* 신청서 메인 */
+	.glo_lease.ap_main {height: 100%;}
+	.glo_lease.ap_main .tit_small {padding-left: 2rem; margin: 1.2rem 1.2rem 1rem 0 !important; font-size:1.4rem;}
+	.glo_lease.ap_main .sec_top {width:auto; margin:0; padding:2rem 1.5rem 3rem;}
+	.glo_lease.ap_main .sec_top h3 {margin-bottom:0; padding:0; text-align:center; border:0;}
+	.glo_lease.ap_main .sec_top h3 img {width:85%;}
+	.glo_lease.ap_main .sec_top .floatBox {display:block;padding:0;}
+	.glo_lease.ap_main .sec_top .floatBox .leftBox,
+	.glo_lease.ap_main .sec_top .floatBox .rightBox {float:none; width:100% !important;}
+	.glo_lease.ap_main .sec_top .floatBox .rightBox {margin-top:0.5rem;}
+	.glo_lease.ap_main .sec_top .row {padding:0;}
+	.glo_lease.ap_main .sec_top .ap_guide {margin-bottom:0; padding:1.3rem 1.5rem 0.8rem; background:#fcf1eb;}
+	.glo_lease.ap_main .sec_top .ap_guide dt {display:none;}
+	.glo_lease.ap_main .sec_top .ap_guide dd {margin-bottom:0.5rem; line-height: 1.8rem; font-size:1.3rem;}
+	.glo_lease.ap_main .sec_top .rightBox .txt_guide {margin:0.5rem 0.5rem 0; padding:0; font-size:1.2rem; font-weight:normal; background:none;}
+	.glo_lease.ap_main .sec_top .inp-text {height:3.2rem; margin-bottom:0.5rem;}
+	.glo_lease.ap_main .sec_top .inp-text label {height:2.6rem; padding-top:0.5rem;}
+	.glo_lease.ap_main .sec_top .inp-text input {width:60%; height:2.7rem; padding:0; font-size:1.3rem;}
+	.glo_lease.ap_main .sec_top .inp-text input[type="number"] {width:43%;}
+	.glo_lease.ap_main .sec_top .inp-text .area_btns {top:0.3rem; right:0.4rem; left:auto; display:inline-block; width:auto; margin:0;}
+	.glo_lease.ap_main .sec_top .inp-text .area_btns .btn a {height:2.4rem; padding:0 1.2rem; font-size:1.2rem;  line-height: 2.2rem;}
+	.glo_lease.ap_main .sec_mid {height:18.8rem; margin:8.5rem 0 1.5rem;}
+	.glo_lease.ap_main .sec_mid .inner {width:100%; margin:0; text-align:center;}
+	.glo_lease.ap_main .sec_mid picture {top: -9.7rem; left:50%; transform: translate(-50%);}
+	.glo_lease.ap_main .sec_mid picture img {width:25rem;}
+	.glo_lease.ap_main .sec_mid .inner .area_mainbtns {display:inline-block; padding:20px 0 0;}
+	.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn {width:15rem; height:14.5rem; margin:0 0 0 1.5rem; vertical-align: top; background-size:11rem auto; box-shadow:3px 3px 0px rgba(0, 0, 0, 0.15);}
+	.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn a {padding-top:3.8rem; font-size:1.3rem;letter-spacing: -1px;}
+	.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn a:before {width:3.5rem; height:3.5rem; margin:0 auto; background-size:100% auto;} 
+	.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn.btn_ap-forms a:before {background-image: url('../images/ico_fillout_m.png');}
+	.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn.btn_ap-upload a:before {width:38px; background-image: url('../images/ico_upload_m.png');}
+	.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn.btn_ap-forms:hover a:before,
+	.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn.btn_ap-forms:focus a:before,
+	.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn.btn_ap-forms:active a:before {background-image: url('../images/ico_fillout_on_m.png');}
+	.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn.btn_ap-upload:hover a:before,
+	.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn.btn_ap-upload:focus a:before,
+	.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn.btn_ap-upload:active a:before {background-image: url('../images/ico_upload_on_m.png');}
+	.glo_lease.ap_main .sec_mid .inner .area_mainbtns .btn.btn_ap-upload a:before {width:3rem; height:3.4rem; margin:0 auto; background-position: 0 0.3rem;}
+	.glo_lease.ap_main .sec_btm {width:auto; padding:0 2rem; margin:0 auto 5rem;}
+	.glo_lease.ap_main .sec_btm .list_ap-forms li {float:none; width:100%; margin:0 0 1.2rem;}
+	.glo_lease.ap_main .sec_btm .list_ap-forms li a {padding:2rem 0 0 7.5rem; background-size:4.6rem auto; background-position:1.4rem 1.4rem;}
+	.glo_lease.ap_main .sec_btm .list_ap-forms li.filledout a {background-image: url(../images/ico_fillout_list_m.gif);}
+	.glo_lease.ap_main .sec_btm .list_ap-forms li.uploaded a {background-image: url(../images/ico_upload_list_m.gif);}
+	.glo_lease.ap_main .sec_btm .list_ap-forms li.no_date a {padding:2.2rem 0 0; font-size:1.3rem;}
+	.glo_lease.ap_main .sec_btm .list_ap-forms li a .info_applicant {font-size:1.3rem;}
+	.glo_lease.ap_main .sec_btm .list_ap-forms li a .status_now {top:50%; width:8rem; text-align:right; font-size:1.2rem; transform:translateY(-50%); word-break:keep-all;}
+	.glo_lease.ap_main .sec_btm .list_ap-forms li a .date {font-size:1.2rem;}
+	.glo_lease.ap_main .sec_btm .total_count {margin-top:1.3rem; font-size:1.2rem;}
+
+	
+	
+}
+
+/* 모바일 세부 */
+@media  (min-width:640px) and (max-width:736px) {
+	.glo_lease .inner .area_image_view .view_container {width:52rem;}
+	.glo_lease .inner .area_image_view .view_container ul li {width:24.5rem;}
+}
+
+
+

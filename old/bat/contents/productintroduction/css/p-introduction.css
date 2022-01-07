@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/* --------------------------------- 제품 소개서 css ---------------------------------  */ 
+/* header */
+.p-introduction .ub_top {background-color:#353a3d;box-shadow: none;}
+.p-introduction .ub_top.open {background-color: rgba(22,26,30,0.8);}
+.p-introduction .ub_top .top_inner {position:relative; max-width:1280px; margin:0 auto;}
+.p-introduction .ub_top .top_inner .gnb {right:291px;}
+.p-introduction .ub_top h1 .tit1 {display:none;}
+.p-introduction .ub_top h1 .tit2 {display:block;}
+.p-introduction .ub_top .top_inner .gnb ul li a {color:#fff;}
+.p-introduction .ub_top .top_inner .nav_small {right:204px;}
+.p-introduction .ub_top .top_inner .label_private {display:inline-block; width:139px; height:37px; right:50px; background:url('../images/img_private.png') no-repeat 0 0;}
+.p-introduction .ub_top .top_inner .label_private .private1,
+.p-introduction .ub_top .top_inner .label_private .private2 {display:none;}
+.p-introduction .ub_top .top_inner .nav_small a.info_membership {display:none;}
+/* contents */
+.p-introduction .p-list {width:1160px; margin:50px auto;}
+
+/* 탭 */
+@media (min-width:768px) and (max-width:1024px) {
+	/* header */
+	.p-introduction .ub_top .top_inner .btn_nav img:first-child {display:block;}
+	.p-introduction .ub_top .top_inner .btn_nav .tablet,
+	.p-introduction .leftmenu .top .nav_small .info_membership {display:none;}
+	/* contents */
+	.p-introduction .p-list {width:100%; margin:30px auto;}
+	.p-introduction .p-list img {width:100%;}
+}
+
+/* 모바일 */
+@media (max-width:737px) {
+	/* header */
+	.p-introduction .ub_top h1 .tit2,
+	.p-introduction .leftmenu .top .nav_small .info_membership {display:none;}
+	.p-introduction .ub_top .top_inner .label_private {right: 0.8rem; width:auto; height:auto;  background:none;}
+	/* contents */
+	.p-introduction .p-list {display:none;}
+	.p-introduction .p-list.mob {width:100%; margin:0;}
+	.p-introduction .p-list.mob img {width:100%; }
+	.p-introduction .p-list.mob .tit {position: relative; z-index: 1; height:71px; transition: ease-in-out .3s all;}
+	.p-introduction .p-list.mob .tit.fixed {position: fixed; top:60px; left:0; right:0; z-index: 0;}
+	.p-introduction .p-list.mob .tit.fixed.absolute {position: absolute;}
+	
+}
+
+
+

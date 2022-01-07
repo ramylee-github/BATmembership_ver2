@@ -1,0 +1,172 @@
+<!--
+#*
+ *  파 일 명 :  RWD0048.jsp
+ *  설    명 :  서브 페이지 - My 점포 > Glo Lease 신청서 메인
+ *  작 성 자 :  
+ *  작 성 일 :  
+ *  버    전 :  1.0
+ *  기타사항 :
+ *  Copyrights 2017 by ㈜ 유비원. All right reserved.
+*# 
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href='../css/base.css'/>
+	<link rel="stylesheet" type="text/css" href='../css/layout.css'/>
+	<link rel="stylesheet" type="text/css" href='../css/module.css'/>
+	<link rel="stylesheet" type="text/css" href='../css/content.css'/>
+	<link rel="stylesheet" type="text/css" href="../bat/contents/glolease/css/glolease.css" />
+</head>
+<body>
+
+
+
+<div id="ub-container" class="sub mystore"><!-- 메인 : main, 서브 : sub brand, sub news, sub mysuperpass, sub campaign (메뉴별로 서브 클래스 나뉨 단, 보드나 관리자 화면은 예외적일 수 있음)  -->
+	<!-- inc / page-header -->
+	<jsp:include page="/WEB-INF/jsp/include/rwd/pageMenu.jsp"></jsp:include>
+	<!--// inc / page-header -->
+	
+	<!-- page-content -->
+	<div id="ub_content" class="ub_content" style="overflow:hidden;"> 
+		<!-- visual area -->
+		<div class="area_visual">
+			<div class="pattern"></div>
+			<div class="inner">
+				<h2>My 점포</h2>
+				<p>나의 실제 주문량과 적정 주문량을 확인하세요.</p>
+			</div>
+		</div>
+		<!--  visual area -->
+		<!-- inc / page-location -->
+		<jsp:include page="/WEB-INF/jsp/include/rwd/pageLocation.jsp"></jsp:include>
+		<!--// inc / page-location -->
+		<div class="content mystore" style="padding:0; max-width:none;">
+			<div class="glo_lease ap_main">
+				<div class="sec_top">
+					<h3>
+						<picture>
+						  	<source srcset="/bat/contents/glolease/images/txt_ap-form_m.gif" media="(max-width:1024px)">
+						 	 <source  srcset="/bat/contents/glolease/images/txt_ap-form.gif" media="(min-width: 1025px)">
+						  	<img src="/bat/contents/glolease/images/txt_ap-form.gif" alt="글로 4주 무료체험 신청서">
+						</picture>
+					</h3>
+					<div class="ub-layout floatBox">
+						<div class="ub-layout leftBox" style="width:48%;">
+							<dl class="ap_guide">
+								<dt>
+									<span class="tit_small">가이드</span>
+								</dt>
+								<dd>- 신청서를 직접 작성하시려면 신청서 작성버튼을 선택하세요.</dd>
+								<dd>- 저장된 이미지를 등록하시려면 신청서 이미지 업로드 버튼을 선택하세요.</dd>
+							</dl>
+						</div>
+						<div class="ub-layout rightBox" style="width:51%;">
+							<div class="ap_userinfo">
+								<span class="tit_small">신청점포 정보입력</span>
+								<div class="row">
+									<div class="inp-text">
+										<label>점포명</label>
+										<input type="text" name="" readonly value="대한 편의점" >
+									</div>
+								</div>
+								<div class="row">
+									<div class="inp-text">
+										<label>점주님 휴대폰</label>
+										<input type="number" name="" placeholder="(예:010-1234-5678)">
+										<div class="area_btns">
+											<span class="btn orange">
+												<a href="javascript:;">적용</a>
+											</span>
+										</div>
+									</div>
+								</div>
+								<p class="txt_guide">*경품은 입력하신 휴대폰으로 수신됩니다.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sec_mid">
+					<div class="inner">
+						<picture>
+						  	<source srcset="/bat/contents/glolease/images/img_g-device_m.png" media="(max-width:1024px)">
+						 	 <source  srcset="/bat/contents/glolease/images/img_g-device.png" media="(min-width: 1025px)">
+						  	<img src="/bat/contents/glolease/images/img_g-device.png" alt="글로 디바이스">
+						</picture>
+						<div class="area_mainbtns">
+							<span class="btn btn_ap-forms">
+								<a href="javascript:;">신청서 작성</a>
+							</span>
+							<span class="btn btn_ap-upload">
+								<a href="javascript:;">신청서 이미지 업로드</a>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="sec_btm">
+					<div class="row">
+						<span class="tit_small">신청서 목록</span>
+						<span class="total_count">전체 <strong>125</strong>건</span>	
+					</div>
+					<ul class="list_ap-forms">
+					<!-- 데이터가 없을 경우 노출 -->
+						<li class="no_date">
+							<a href="javascript:;">현재 신청서 데이터가 없습니다.</a>
+						</li>
+						<!-- //데이터가 없을 경우 노출 -->
+						<li class="filledout"><!-- 신청서 종류 클래스 - 온라인 작성 : "filledout", 지류 신청서 업로드 : "uploaded" -->
+							<a href="javascript:;">
+								<strong class="info_applicant">홍길동 010-1234-5678</strong>
+								<span class="date">2019-01-08 18:25:31</span>
+								<span class="status_now">접수중</span>
+							</a>
+						</li>
+						<li class="uploaded">
+							<a href="javascript:;">
+								<strong class="info_applicant">장그래</strong>
+								<span class="date">2019-01-08 18:25:31</span>
+								<span class="status_now">신청완료</span>
+							</a>
+						</li>
+						<li class="filledout">
+							<a href="javascript:;">
+								<strong class="info_applicant">홍길동 010-1234-5678</strong>
+								<span class="date">2019-01-08 18:25:31</span>
+								<span class="status_now">접수중</span>
+							</a>
+						</li>
+						<li class="uploaded">
+							<a href="javascript:;">
+								<strong class="info_applicant">장그래</strong>
+								<span class="date">2019-01-08 18:25:31</span>
+								<span class="status_now">신청완료</span>
+							</a>
+						</li>
+					</ul>
+					<div class="area_btns">
+						<span class="btn">
+							<a href="javascript:;">더보기</a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// page-content -->
+
+	<!--  inc / ub-foot -->
+	<jsp:include page="/WEB-INF/jsp/include/rwd/pageFooter.jsp"></jsp:include>
+	<!--//  inc / ub-foot -->
+	
+	<!--   inc / scrollup (서브화면에서만 노출) -->
+	<jsp:include page="/WEB-INF/jsp/include/rwd/pageTopscroll.jsp"></jsp:include>
+	<!--  //inc / include -->
+</div>
+
+	
+</body>
+</html>

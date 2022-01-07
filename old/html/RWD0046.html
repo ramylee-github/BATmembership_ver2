@@ -1,0 +1,204 @@
+<!--
+#*
+ *  파 일 명 :  RWD0046.jsp
+ *  설    명 :  서브 페이지 - My 점포 > Glo Lease 신청서 업로드
+ *  작 성 자 :  
+ *  작 성 일 :  
+ *  버    전 :  1.0
+ *  기타사항 :
+ *  Copyrights 2017 by ㈜ 유비원. All right reserved.
+*# 
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/jquery.bxslider.css"/>
+	
+	<link rel="stylesheet" type="text/css" href='../css/base.css'/>
+	<link rel="stylesheet" type="text/css" href='../css/layout.css'/>
+	<link rel="stylesheet" type="text/css" href='../css/module.css'/>
+	<link rel="stylesheet" type="text/css" href='../css/content.css'/>
+	<link rel="stylesheet" type="text/css" href="../bat/contents/glolease/css/glolease.css" />
+</head>
+<body>
+
+
+<div id="ub-container" class="sub mystore"><!-- 메인 : main, 서브 : sub brand, sub news, sub mysuperpass, sub campaign (메뉴별로 서브 클래스 나뉨 단, 보드나 관리자 화면은 예외적일 수 있음)  -->
+	<!-- inc / page-header -->
+	<jsp:include page="/WEB-INF/jsp/include/rwd/pageMenu.jsp"></jsp:include>
+	<!--// inc / page-header -->
+	
+	<!-- page-content -->
+	<div id="ub_content" class="ub_content" style="overflow:hidden;"> 
+		<!-- visual area -->
+		<div class="area_visual">
+			<div class="pattern"></div>
+			<div class="inner">
+				<h2>My 점포</h2>
+				<p>나의 실제 주문량과 적정 주문량을 확인하세요.</p>
+			</div>
+		</div>
+		<!--  visual area -->
+		<!-- inc / page-location -->
+		<jsp:include page="/WEB-INF/jsp/include/rwd/pageLocation.jsp"></jsp:include>
+		<!--// inc / page-location -->
+		<div class="content mystore" style="padding:0; max-width:none;">
+			<div class="glo_lease">
+				<div class="inner">
+					<h3 class="tit">
+						<img src="/bat/contents/glolease/images/img_logo_glolease.png" alt="글로"  />
+						글로 4주 무료체험 신청서
+					</h3>
+					<div class="area_ap_form">
+						<form id="form1">
+							<fieldset>
+								<span class="tit_small">신청자 정보입력</span>
+								<div class="row" style="width:514px;">
+									<div class="inp-text">
+										<label>이름</label>
+										<input type="text" id="appName" name="NM_APP" placeholder="(예:홍길동)" maxlength="20"/>
+									</div>
+								</div>
+								
+								<span class="tit_small">신청서 이미지</span>
+								<div class="area_image_view">
+									<div class="view_container">
+										<ul class="bxslider">
+											<li id="slideEmpty">
+												<div class="view_control">
+													<span class="count_page">
+													</span>
+													<!-- <div class="control_btns">
+														<button class="btn_del">삭제</button>
+													</div> -->
+												</div>
+												<div class="zone_img">
+													<span>이미지를 업로드 하시려면<br>아래 이미지 업로드 버튼을 클릭하세요.</span>													
+												</div>
+											</li>
+										</ul>
+									</div>
+									<span class="btn orange btn_submit" id="btnSave"><!-- 버튼별 클래스 - 일반 회색 버튼 : "btn", 일반 주황색 버튼 : "btn orange", 제출 버튼 : "btn orange btn_submit"-->
+										<a href="javascript:fileUpload();">이미지 업로드</a>
+									</span>
+								</div>
+								<div class="area_btm">
+									<span class="logo_glo">
+										<img src="/bat/contents/glolease/images/img_logo_glolease.png" alt="글로"  />
+									</span>
+								</div>
+								<div id="msgBox">
+								</div>
+								<div class="area_btns">
+									<span class="btn orange btn_submit" id="btnSave"><!-- 버튼별 클래스 - 일반 회색 버튼 : "btn", 일반 주황색 버튼 : "btn orange", 제출 버튼 : "btn orange btn_submit"-->
+										<a href="javascript:fnSave();">신청하기</a>
+									</span>
+									<span class="btn">
+										<a href="javascript:uxl.moveLocation('BAT0051');">목록 이동</a>
+									</span>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+					<!-- <div class="area_ap_form">
+						<form>
+							<fieldset>
+								<span class="tit_small">신청자 정보입력</span>
+								<div class="row" style="width:514px;">
+									<div class="inp-text">
+										<label>이름</label>
+										<input type="text" name="" placeholder="(예: 홍길동)" />
+									</div>
+								</div>
+								
+								<span class="tit_small">신청서 이미지</span>
+								<div class="area_image_view">
+									<div class="view_container">
+										<ul class="bxslider">
+											<li>
+												<div class="view_control">
+													<span class="count_page">
+														<strong>1</strong>/2
+													</span>
+													<div class="control_btns">
+														<button class="btn_add">추가</button>
+														<button class="btn_del">삭제</button>
+													</div>
+												</div>
+												<div class="zone_img">
+													<img src="/bat/contents/glolease/images/temp_ap-form.jpg" alt="임시 신청서 이미지"  />
+													<span>이미지를 업로드 해주세요.</span>
+												</div>
+											</li>
+											<li>
+												<div class="view_control">
+													<span class="count_page">
+														<strong>2</strong>/2
+													</span>
+													<div class="control_btns">
+														<button class="btn_add">추가</button>
+														<button class="btn_del">삭제</button>
+													</div>
+												</div>	
+												<div class="zone_img">
+													<span>이미지를 업로드 해주세요.</span>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<p class="txt_guide">※ 본 신청서는  <mark>신청자 정보 확인 불가로 등록이 거부</mark> 되었습니다.</p>
+								<div class="area_btm">
+									<span class="logo_glo">
+										<img src="/bat/contents/glolease/images/img_logo_glolease.png" alt="글로"  />
+									</span>
+								</div>
+								<div class="area_btns">
+									<span class="btn orange btn_submit"> 버튼별 클래스 - 일반 회색 버튼 : "btn", 일반 주황색 버튼 : "btn orange", 제출 버튼 : "btn orange btn_submit"-->
+										<a href="javascript:;">신청서 제출</a>
+									</span>
+								</div>
+							</fieldset>
+						</form>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// page-content -->
+
+	<!--  inc / ub-foot -->
+	<jsp:include page="/WEB-INF/jsp/include/rwd/pageFooter.jsp"></jsp:include>
+	<!--//  inc / ub-foot -->
+	
+	<!--   inc / scrollup (서브화면에서만 노출) -->
+	<jsp:include page="/WEB-INF/jsp/include/rwd/pageTopscroll.jsp"></jsp:include>
+	<!--  //inc / include -->
+</div>
+<script type="text/javascript">
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+$(document).ready(function(){
+	
+	$('.bxslider').bxSlider({
+		mode:'horizontal',
+		useCSS:true,
+	    auto:false,
+	    pager:false,
+	    controls:true,
+	    minSlides:1,
+	    maxSlides:3,
+	   	slideWidth:uxl.isMobile()?200:413,
+	    moveSlides:1,
+	    shrinkItems:true,
+	    speed:1000,
+	    slideMargin:uxl.isMobile()?20:80,
+	    pause:8000
+	});
+});
+</script>
+</body>
+</html>

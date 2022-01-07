@@ -1,0 +1,443 @@
+@charset "utf-8";
+
+/* --------------------------------- 글로 미니 보물찾기 이벤트 전용 css ---------------------------------  */ 
+/* 룰렛 */
+.sub.campaign .camp_treasure .sec_top {background-color:#f4e2d1;}
+.sub.campaign .camp_treasure .sec_top .inner {background-repeat:no-repeat; background-position:0 0;}
+.sub.campaign .camp_treasure .area_roulette_info span {display:inline-block; text-indent:-9999px; background-position:0 0; background-repeat:no-repeat;}
+.sub.campaign .camp_treasure .area_roulette_info .area_r-procedure {display:table;}
+.sub.campaign .camp_treasure .area_roulette_info .area_r-procedure .poster {background-position:100% 0;}
+.sub.campaign .camp_treasure .roulette_zone {background-repeat:no-repeat;background-position:0 0;}
+.sub.campaign .camp_treasure .roulette_zone .roulette_wheel {position:absolute;}
+.sub.campaign .camp_treasure .roulette_zone .roulette_wheel .btn_start {position:absolute;  text-indent:-9999px;  border:0; background-color:transparent; background-repeat:no-repeat;background-position:0 0;}
+.sub.campaign .camp_treasure .roulette_zone .roulette_wheel .btn_start:focus {border:0; outline:0;}
+.sub.campaign .camp_treasure .roulette_zone .roulette_pin {position:absolute;}
+.sub.campaign .camp_treasure .roulette_zone .roulette_pin .inner_pin {display:inline-block; background-repeat:no-repeat;background-position:0 0;}
+.sub.campaign .camp_treasure .roulette_result:after  {display:block; content:" "; clear:both;}
+.sub.campaign .camp_treasure .roulette_result .remainder_coupons,
+.sub.campaign .camp_treasure .roulette_result .prize_money {background-repeat:no-repeat;background-position:0 0;}
+.sub.campaign .camp_treasure .roulette_result .tit {float:left; text-indent:-9999px;}
+.sub.campaign .camp_treasure .roulette_result .count {display:block; font-family:"Segoe UI"; text-align:center;}
+.sub.campaign .camp_treasure .roulette_result .count .unit {vertical-align:top;font-weight:normal; font-family:'Nanum Gothic','Malgun Gothic', '맑은 고딕';}
+.sub.campaign .camp_treasure .sec_btm .tit_howto,
+.sub.campaign .camp_treasure .sec_btm .txt_howto_guide {display:inline-block; text-indent:-9999px; background-repeat:no-repeat; background-position:0 0;}
+.sub.campaign .camp_treasure .sec_btm .conts_howto .step:after {display:block; content:" "; clear:both;}
+.sub.campaign .camp_treasure .sec_btm .conts_howto .step dt,
+.sub.campaign .camp_treasure .sec_btm .conts_howto .step dd {float:left; text-indent:-9999px; background-repeat:no-repeat; background-position:0 0;}
+.sub.campaign .camp_treasure .sec_btm .conts_howto .step dd .period {display:block; background-repeat:no-repeat; background-position:0 0;}
+.sub.campaign .camp_treasure .sec_btm .conts_howto .step dd p {display:block; background-repeat:no-repeat; background-position:0 0;}
+
+/* 보물찾기 div 팝업 */
+.pop_treasure {position:fixed;  top:34%; left:33%; width:120px; height:128px; z-index:20;}
+.pop_treasure .treasure1,
+.pop_treasure .treasure2 {position:absolute; display:inline-block; width:120px; height:128px; text-indent:-9999px; background-position:0 0; background-repeat:no-repeat; background-size:100% auto;}
+
+/* 보물찾기 스탬프 효과 */
+.sub.campaign .camp_treasure .stamp_effect {position:absolute; top:650px; display:inline-block; width:93px; height:57px;  transform:rotate(0) scale(1);  transition: all .3s cubic-bezier(0.6, 0.04, 0.98, 0.335);background:url('../images/img_stamp_cleared.png') no-repeat 0 0; opacity:0; z-index:100;}
+.sub.campaign .camp_treasure .stamp_effect.BAT0036 {left:562px;}
+.sub.campaign .camp_treasure .stamp_effect.BAT0063 {left:774px;}
+.sub.campaign .camp_treasure .stamp_effect.loaded {top:550px; width:400px; height:245px;  transform:rotate(360deg) scale(1); opacity:1;  background:url('../images/img_stamp_cleared_big.png') no-repeat 0 0;}
+.sub.campaign .camp_treasure .stamp_effect.BAT0036.loaded {left:420px;}
+.sub.campaign .camp_treasure .stamp_effect.BAT0063.loaded {left:620px;}
+
+/* dialog */
+/* 보물찾기 축하 팝업 */
+.ui-dialog.rwd.c-pop {min-width:465px !important; box-shadow:none;}
+.ui-dialog.rwd.c-pop .ui-dialog-titlebar.ui-widget-header {position:absolute; padding:0; border:0; background:none; z-index:10;}
+.ui-dialog.rwd.c-pop .ui-widget-header .ui-icon {background-repeat:no-repeat; background-position:0 0;}
+.ui-dialog.rwd.c-pop .ui-dialog-content.ui-widget-content {border:0; background-color:transparent; background-repeat:no-repeat; background-position:0 0;}
+.ui-dialog.rwd.c-pop .ui-dialog-content.ui-widget-content  .txt_guide01 {font-weight:bold;}
+.ui-dialog.rwd.c-pop .ui-dialog-content.ui-widget-content  .txt_guide01 .emp {color:#2659bf;}
+.ui-dialog.rwd.c-pop .ui-dialog-content.ui-widget-content  .txt_guide02 {position:absolute; left:50%; width: 100%; font-weight:bold; transform:translate(-50%);}
+.ui-dialog.rwd.c-pop .ui-dialog-content.ui-widget-content  .txt_guide02 .emp {color:#eb4d00;}
+/* 응모권 당첨 축하 팝업 */
+.ui-dialog.rwd.sc-pop {min-width:465px !important; box-shadow:none;}
+.ui-dialog.rwd.sc-pop .ui-dialog-titlebar.ui-widget-header {position:absolute; padding:0; border:0; background:none; z-index:10;}
+.ui-dialog.rwd.sc-pop .ui-widget-header .ui-icon {background-repeat:no-repeat; background-position:0 0;}
+.ui-dialog.rwd.sc-pop .ui-dialog-content.ui-widget-content {border:0; background-color:transparent; background-repeat:no-repeat; background-position:0 0;}
+.ui-dialog.rwd.sc-pop .ui-dialog-content.ui-widget-content  .txt_guide01 {font-weight:bold;}
+.ui-dialog.rwd.sc-pop .ui-dialog-content.ui-widget-content  .txt_guide01 .emp {color:#2051bf;}
+.ui-dialog.rwd.sc-pop .ui-dialog-content.ui-widget-content  .txt_guide02 {position:absolute; left:50%; width: 100%; font-weight:bold; transform:translate(-50%);}
+.ui-dialog.rwd.sc-pop .ui-dialog-content.ui-widget-content  .txt_guide02 .emp {color:#cc1b94;}
+.ui-dialog.rwd.sc-pop .ui-dialog-buttonpane.ui-widget-content {position: absolute; left:50%; bottom:0; padding:0; transform: translate(-50%); border: 0; background: transparent;}
+.ui-dialog.rwd.sc-pop .ui-dialog-buttonpane button {width:100%; margin: 0; border-radius:20px; font-weight: bold; line-height: 20px; border:1px solid #ca580d; background:#de5f0b;}
+
+/* 태블릿공통 ~ 웹 */ 
+@media (min-width:738px) {
+	
+	/* 룰렛 */
+	.sub.campaign .camp_treasure .sec_top .inner {position: relative;width:1235px;min-height: 767px;margin:0 auto;background-image:url('../images/bg_treasure.jpg');background-position:0 0;overflow: hidden;}
+	.sub.campaign .camp_treasure .inner:after {display:block; content:' '; clear:both;}
+	.sub.campaign .camp_treasure .area_roulette_info {position:absolute;top: -71px;left:44px;display:inline-block;width: 711px;height: 254px;}
+	.sub.campaign .camp_treasure .area_roulette_info .tit {width:100%; height:100%; margin:0; background-image:url('../images/txt_treasure.png');}
+	.sub.campaign .camp_treasure .area_roulette_info .area_r-procedure {display:table;margin: 30px 0 0 119px;}
+	.sub.campaign .camp_treasure .area_roulette_info .area_r-procedure .poster01 {width:173px; height:223px;  background-image:url('../images/img_-t-box01.png'); background-position:100% 0;}
+	.sub.campaign .camp_treasure .area_roulette_info .area_r-procedure .poster02 {width:173px;height:223px;margin-left: 37px;background-image:url('../images/img_-t-box02.png');}
+	.sub.campaign .camp_treasure .area_roulette_info .area_r-procedure .poster01.cleared {background-image:url('../images/img_-t-box-cleared01.png');}
+	.sub.campaign .camp_treasure .area_roulette_info .area_r-procedure .poster02.cleared {background-image:url('../images/img_-t-box-cleared02.png');}
+	
+	.sub.campaign .camp_treasure .area_roulette_info .area_txt_info span {height: 98px;background-image:url('../images/txt_e-info.png');}
+	.sub.campaign .camp_treasure .area_roulette_info .area_txt_info {margin: 33px 0 0 28px;}
+	.sub.campaign .camp_treasure .roulette_zone {position:relative;float:right;min-width:604px;min-height:529px;margin: 177px 0 0;background-image:url('../images/bg_w-frame.png');background-position:0 0;}
+	.sub.campaign .camp_treasure .roulette_zone .roulette_wheel {top:30px; left:50%; margin-left:-174px; min-width:426px; min-height:426px;}
+	.sub.campaign .camp_treasure .roulette_zone .roulette_wheel .btn_start {top:156px; left:156px;  width:116px; height:116px;  background-image:url('../images/btn_r_start.png');}
+	.roulette_zone .roulette_wheel .btn_start:focus {border:0; outline:0;}
+	.sub.campaign .camp_treasure .roulette_zone .roulette_pin { left:325px; top:-12px;}
+	.sub.campaign .camp_treasure .roulette_zone .roulette_pin .inner_pin {width:41px; height:80px;  background-image:url('../images/img_pin.png');}
+	.sub.campaign .camp_treasure .roulette_result {position:absolute;left: 53px;bottom: 61px;}
+	.sub.campaign .camp_treasure .roulette_result:after {display:block; content:" "; clear:both;}
+	.sub.campaign .camp_treasure .roulette_result .remainder_coupons,
+	.sub.campaign .camp_treasure .roulette_result .prize_money {float:left;width:313px; height:110px;}
+	.sub.campaign .camp_treasure .roulette_result .remainder_coupons {/* margin-left:5px; */background-image:url('../images/bg_coupon.png');background-position: 0px -1px;}
+	.sub.campaign .camp_treasure .roulette_result .prize_money {margin-left:13px; background-image:url('../images/bg_p-money.png');}
+	.sub.campaign .camp_treasure .roulette_result .tit {width:117px;}
+	.sub.campaign .camp_treasure .roulette_result .count {padding-left:117px; font-size:35px; line-height:105px;}
+	.sub.campaign .camp_treasure .roulette_result .count .unit {margin-left:8px; font-size:17px; line-height:111px;}
+	
+	/* 이벤트 안내 영역 */
+	.sub.campaign .camp_treasure .sec_btm {width:1160px; margin:0 auto;}
+	.sub.campaign .camp_treasure .sec_btm .tit_howto {width:159px;height:22px;margin-top: 50px;background-image:url('../images/tit_howto.gif');}
+	.sub.campaign .camp_treasure .sec_btm .txt_howto_guide {width:428px; height:22px; margin:6px 0 0 10px; background-image:url('../images/txt_attend_guide.gif'); background-position:0 6px;}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto {display:table; width:100%;margin:26px 0 57px;}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step {display:table-cell;}	
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step {border-left:1px solid #d5d5d5;padding-left:30px;height: 141px;vertical-align: middle;}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step:first-child {border-left:0; padding-left:18px;}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step dt {width:104px; height:120px;}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step.one dt {background-image:url('../images/tit_howto_step1.png');}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step.two dt {background-image:url('../images/tit_howto_step2.png');}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step dd {padding: 19px 0 0 18px;}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step dd .period {width:207px; height:17px;}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step.one dd .period {background-image:url('../images/txt_howto_date01.gif');}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step.two dd .period {background-image:url('../images/txt_howto_date02.gif');}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step dd p {width:427px;height:67px;margin-top: 10px;}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step.one dd p {background-image:url('../images/txt_howto01.gif');}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step.two dd p {background-image:url('../images/txt_howto02.gif');}
+
+	/* 보물찾기 팝업 */
+	.pop_treasure .treasure1,
+	.pop_treasure .treasure2 {transform:rotate(0) scale(1);transition: all .3s cubic-bezier(0.6, 0.04, 0.98, 0.335);}
+	.pop_treasure .treasure1 {background-image:url('../images/bg_t-pop01.png');}
+	.pop_treasure .treasure2 {background-image:url('../images/bg_t-pop02.png');}
+	.pop_treasure .treasure1.clicked,
+	.pop_treasure .treasure2.clicked {transform:rotate(340deg) scale(3);}
+	
+	/* dialog */
+	/* 보물찾기 축하 팝업 */
+	.ui-dialog.rwd.c-pop .ui-dialog-titlebar.ui-widget-header {top:-10px; right:74px;}
+	.ui-dialog.rwd.c-pop .ui-widget-header .ui-icon {width:30px; height:30px; background-image: url('../images/ico_e-pop_close.png');}
+	.ui-dialog.rwd.c-pop .ui-dialog-content.ui-widget-content {min-height:295px !important; padding:80px 0 0; background-image: url('../images/bg_c-pop.png');overflow:hidden;}
+	.ui-dialog.rwd.c-pop .ui-dialog-content.ui-widget-content  .txt_guide01 {font-size:20px; line-height:28px;}
+	.ui-dialog.rwd.c-pop .ui-dialog-content.ui-widget-content  .txt_guide02 {bottom:15px; font-size:15px; line-height:22px;}
+	/* 응모권 당첨 축하 팝업 */
+	.ui-dialog.rwd.sc-pop {width:400px !important; min-width:400px !important;}
+	.ui-dialog.rwd.sc-pop .ui-dialog-titlebar.ui-widget-header {top:-15px; right:24px;}
+	.ui-dialog.rwd.sc-pop .ui-widget-header .ui-icon {width:30px; height:30px; background-image: url('../images/ico_e-pop_close.png');}
+	.ui-dialog.rwd.sc-pop .ui-dialog-content.ui-widget-content {min-height:462px !important; padding:105px 0 0; background-image: url('../images/bg_sc-pop.png'); overflow:hidden;}
+	.ui-dialog.rwd.sc-pop .ui-dialog-content.ui-widget-content  .txt_guide01 {font-size:20px; line-height:32px;}
+	.ui-dialog.rwd.sc-pop .ui-dialog-content.ui-widget-content  .txt_guide01 .emp {font-size:26px;}
+	.ui-dialog.rwd.sc-pop .ui-dialog-content.ui-widget-content  .txt_guide02 {bottom:83px; font-size:14px;}
+	.ui-dialog.rwd.sc-pop .ui-dialog-buttonpane.ui-widget-content {bottom:40px;}
+	.ui-dialog.rwd.sc-pop .ui-dialog-buttonpane button {height:28px; padding:0 32px; font-size:15px;}
+}
+
+
+@media (min-width:738px) and (max-width:1024px){
+
+	 
+	 /* 룰렛 */
+	 .sub.campaign .camp_treasure .sec_top {position:relative;}
+	 .sub.campaign .camp_treasure .sec_top .inner { min-height: 1300px; text-align:center;  background-position:50% 0; background-size:cover;}
+	 .sub.campaign .camp_treasure .area_roulette_info {position:static; top:auto; left:auto; height:auto; margin-top:-30px;}
+	 .sub.campaign .camp_treasure .area_roulette_info .tit {height:270px;}
+	 .sub.campaign .camp_treasure .area_roulette_info span {background-image:url('../images/txt_roulette_t.png');}
+	 .sub.campaign .camp_treasure .roulette_zone {top:30px; float:none;  margin: 0 auto; background-position:30% 0;}
+	 .sub.campaign .camp_treasure .roulette_zone .roulette_wheel .web{display:none !important;}
+	  .sub.campaign .camp_treasure .roulette_zone .roulette_wheel .mob{display:block !important; width:427px; height:428px;}
+	 .sub.campaign .camp_treasure .roulette_zone .roulette_pin {left: 50%;margin-left:16px;}
+	 .sub.campaign .camp_treasure .roulette_result {position:static; left:auto; top:auto; display:inline-block; margin-top: 20px;}
+	 .sub.campaign .camp_treasure .roulette_result .remainder_coupons, 
+	 .sub.campaign .camp_treasure .roulette_result .prize_money {margin:20px 0 0 30px;}
+	 .sub.campaign .camp_treasure .area_roulette_info .area_r-procedure {margin:0 auto;}
+	 .sub.campaign .camp_treasure .area_roulette_info .area_txt_info {margin:30px 0 0 100px;}
+	 .sub.campaign .camp_treasure .sec_btm {margin:0 0 0 40px;}
+	 .sub.campaign .camp_treasure .sec_btm .conts_howto .step {display:block; border:0; padding:0 0 0 18px; margin-top:20px;}
+	 .sub.campaign .camp_treasure .sec_btm .conts_howto .step:first-child { margin-top:0;}
+	 
+	 /* 보물찾기 스탬프 효과 */
+	.sub.campaign .camp_treasure .stamp_effect {top:350px}
+	.sub.campaign .camp_treasure .stamp_effect.BAT0036 {left:258px;}
+	.sub.campaign .camp_treasure .stamp_effect.BAT0063 {left:470px;}
+	.sub.campaign .camp_treasure .stamp_effect.loaded {top:250px;}
+	.sub.campaign .camp_treasure .stamp_effect.BAT0036.loaded {left:100px;}
+	.sub.campaign .camp_treasure .stamp_effect.BAT0063.loaded {left:280px;}
+}
+/* 태블릿 상세 */
+@media (min-width:1024px) and (max-width:1024px){
+	 /* 룰렛 */
+	 .sub.campaign .camp_treasure .sec_top .inner {background-position:0 0;}
+	 .sub.campaign .camp_treasure .roulette_zone {background-position: 40.5% 0;}
+	 
+	  /* 보물찾기 스탬프 효과 */
+	.sub.campaign .camp_treasure .stamp_effect.BAT0036 {left:386px;}
+	.sub.campaign .camp_treasure .stamp_effect.BAT0063 {left:598px;}
+	.sub.campaign .camp_treasure .stamp_effect.BAT0036.loaded {left:220px;}
+	.sub.campaign .camp_treasure .stamp_effect.BAT0063.loaded {left:440px;}
+}
+
+@media (max-width:737px) {
+	/* 룰렛 */
+	.sub.campaign .camp_treasure .sec_top {position:relative; padding-bottom:2.2rem;background-color:#fff;}
+	.sub.campaign .camp_treasure .sec_top .inner {background-color:#f4e2d1; background-image:url('../images/bg_treasure_m.png'); background-size:100% auto; background-position: 0 0;}
+	.sub.campaign .camp_treasure .area_roulette_info .tit {width:100%;height: 17rem;margin-bottom:0;background-image:url('../images/txt_treasure_m.png');background-size:32rem auto;background-position: 40% -0.6rem;}
+	.sub.campaign .camp_treasure .area_roulette_info .area_r-procedure {margin: 1.5rem auto 0;}
+	.sub.campaign .camp_treasure .area_roulette_info .area_r-procedure .poster01 {width:15rem; height:20rem; background-image:url('../images/img_-t-box01_m.png'); background-size:15rem auto;}
+	.sub.campaign .camp_treasure .area_roulette_info .area_r-procedure .poster02 {width:15rem; height:20rem; margin-left:2rem; background-image:url('../images/img_-t-box02_m.png'); background-size:15rem auto;}
+	.sub.campaign .camp_treasure .area_roulette_info .area_r-procedure .poster:first-child {padding-left:0;}
+	.sub.campaign .camp_treasure .area_roulette_info .area_r-procedure .poster01.cleared {background-image:url('../images/img_-t-box-cleared01_m.png');}
+	.sub.campaign .camp_treasure .area_roulette_info .area_r-procedure .poster02.cleared {background-image:url('../images/img_-t-box-cleared02_m.png');}
+	.sub.campaign .camp_treasure .area_roulette_info .area_txt_info span.mob {display:inline-block !important;width:32rem;height:15rem;background-image:url('../images/txt_e-info_m.png');background-size:32rem auto;}
+	.sub.campaign .camp_treasure .area_roulette_info .area_txt_info {margin:3rem 0 0;text-align:center;}
+	.sub.campaign .camp_treasure .roulette_zone {position:relative;top:2rem;width: 34rem;min-height: 39rem;margin:0 auto;background-image:url('../images/bg_w-frame_m.png');background-size:100% auto;}
+	.sub.campaign .camp_treasure .roulette_zone .roulette_wheel {top: 2.3rem;left:2.5rem;}
+	.sub.campaign .camp_treasure .roulette_zone .roulette_wheel img {width: 29rem;margin:0 auto;}
+	.sub.campaign .camp_treasure .roulette_zone .roulette_wheel .btn_start {top: 10.3rem;left:50%;width: 8rem;height: 8rem;transform:translate(-50%);background-image:url('../images/btn_r_start_m.png');background-size:100% auto;}
+	.sub.campaign .camp_treasure .roulette_zone .roulette_pin {top: -0.2rem;left: 50%;margin-left: -1.5rem;}
+	.sub.campaign .camp_treasure .roulette_zone .roulette_pin .inner_pin {width:2.8rem; height:5.3rem;  background-image:url('../images/img_pin_m.png');background-size:100% auto;}
+	.sub.campaign .camp_treasure .roulette_result {width: 30rem;margin: 0 auto; padding-bottom: 3rem;}
+	.sub.campaign .camp_treasure .roulette_result .remainder_coupons,
+	.sub.campaign .camp_treasure .roulette_result .prize_money {height:8rem; background-position:50% 0; background-size:30rem auto;}
+	.sub.campaign .camp_treasure .roulette_result .remainder_coupons {background-image:url('../images/bg_coupon_m.png'); }
+	.sub.campaign .camp_treasure .roulette_result .prize_money {margin-top:1rem; background-image:url('../images/bg_p-money_m.png');}
+	.sub.campaign .camp_treasure .roulette_result .count {padding-left:12rem; line-height: 8rem; font-size:3rem;}
+	.sub.campaign .camp_treasure .roulette_result .count .unit {font-size:1.3rem; line-height: 8.8rem;margin-left: 0.5rem;}
+	.sub.campaign .camp_treasure .sec_btm .tit_howto {background-size: 12rem auto;height: 2rem; margin: 0  0 0 2rem;width: 12rem;background-image:url('../images/tit_howto_m.gif');}
+	.sub.campaign .camp_treasure .sec_btm .txt_howto_guide {display:block;height: 2.2rem;margin: 0.7rem 0 0 2.5rem;background-size: 30rem auto;background-image:url('../images/txt_attend_guide_m.gif');}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto {margin-top: 1rem; text-align:center;}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step {display:inline-block;margin-bottom:2rem;}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step:last-child {margin-bottom:4rem;}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step dt {width: 7.2rem; height: 8.5rem;background-size: 7.2rem auto;}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step.one dt {background-image:url('../images/tit_howto_step1_m.png');}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step.two dt {background-image:url('../images/tit_howto_step2_m.png');}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step dd {min-width: 23rem; padding: 1rem 0 0 1.3rem;}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step dd .period {width: 14rem;height: 1.3rem;background-size: 14rem auto;}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step.one dd .period {background-image:url('../images/txt_howto_date01_m.gif');}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step.two dd .period {background-image:url('../images/txt_howto_date02_m.gif');}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step dd p {width: 23rem;height: 5rem;margin-top: 0.5rem;background-size: 23rem auto;}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step.one dd p {background-image:url('../images/txt_howto01_m.gif');}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step.two dd p {background-image:url('../images/txt_howto02_m.gif');}
+	
+	 /* 보물찾기 스탬프 효과 */
+	.sub.campaign .camp_treasure .stamp_effect {top:28.4rem; width:8rem; height:5rem; background-size:7.8rem auto;}
+	.sub.campaign .camp_treasure .stamp_effect.BAT0036 {left:7.8rem;}
+	.sub.campaign .camp_treasure .stamp_effect.BAT0063 {left:24.8rem;}
+	.sub.campaign .camp_treasure .stamp_effect.loaded{top: 25rem; width:22rem; height:14rem; background-size:22rem auto;}
+	.sub.campaign .camp_treasure .stamp_effect.BAT0036.loaded {left:0.8rem;}
+	.sub.campaign .camp_treasure .stamp_effect.BAT0063.loaded {left:13rem;}
+	
+	/* 보물찾기 팝업 */
+	.pop_treasure {left:auto; right:5%; width:10rem; height:11.5rem; }
+	.pop_treasure .treasure1 {width:10rem; height:11.5rem; background-image:url('../images/bg_t-pop01_m.png');}
+	.pop_treasure .treasure2 {width:10rem; height:11.5rem; background-image:url('../images/bg_t-pop02_m.png');}
+	
+	/* dialog */
+	/* 보물찾기 축하 팝업 */
+	.ui-dialog.rwd.c-pop {width:340px !important; min-width:340px !important;}
+	.ui-dialog.rwd.c-pop .ui-dialog-titlebar.ui-widget-header {top:-1rem; right:5.3rem;}
+	.ui-dialog.rwd.c-pop .ui-widget-header .ui-icon {width:3rem; height:3rem; background-image: url('../images/ico_e-pop_close_m.png'); background-size:100% auto;}
+	.ui-dialog.rwd.c-pop .ui-dialog-content.ui-widget-content {height:16rem !important;min-height:22.5rem !important; padding:6.5rem 0 0; background-image: url('../images/bg_c-pop_m.png'); background-size:100% auto;}
+	.ui-dialog.rwd.c-pop .ui-dialog-content.ui-widget-content  .txt_guide01 {font-size:1.3rem; line-height:2rem;}
+	.ui-dialog.rwd.c-pop .ui-dialog-content.ui-widget-content  .txt_guide01 .emp {font-size:1.5rem;}
+	.ui-dialog.rwd.c-pop .ui-dialog-content.ui-widget-content  .txt_guide02 {bottom:1.2rem; font-size:1.1rem;}
+	/* 응모권 당첨 축하 팝업 */
+	.ui-dialog.rwd.sc-pop {width:280px !important; min-width:280px !important;}
+	.ui-dialog.rwd.sc-pop .ui-dialog-titlebar.ui-widget-header {top:-1.8rem; right:1.3rem;}
+	.ui-dialog.rwd.sc-pop .ui-widget-header .ui-icon {width:2.8rem; height:2.8rem; background-image: url('../images/ico_e-pop_close_m.png'); background-size:100% auto;}
+	.ui-dialog.rwd.sc-pop .ui-dialog-content.ui-widget-content {min-height:286px !important; padding:8rem 0 0; background-image: url('../images/bg_sc-pop_m.png'); background-size:100% auto;}
+	.ui-dialog.rwd.sc-pop .ui-dialog-content.ui-widget-content  .txt_guide01 {font-size:1.4rem; line-height:2.2rem;}
+	.ui-dialog.rwd.sc-pop .ui-dialog-content.ui-widget-content  .txt_guide01 .emp {font-size:1.7rem; font-weight:bold;}
+	.ui-dialog.rwd.sc-pop .ui-dialog-content.ui-widget-content  .txt_guide02 {bottom:5.5rem; font-size:1rem;}
+	.ui-dialog.rwd.sc-pop .ui-dialog-buttonpane.ui-widget-content {bottom:2.7rem;}
+	.ui-dialog.rwd.sc-pop .ui-dialog-buttonpane button {height:2.2rem; padding:0 3rem; font-size:1rem;}
+	
+
+}
+
+/* 모바일 상세 */
+@media (min-width:375px) and (max-width:376px) {
+	.sub.campaign .camp_treasure .sec_top {min-height:84.5rem;}
+	.sub.campaign .camp_treasure .area_main_info span {height: 18rem;}
+	.sub.campaign .camp_treasure .area_sub_info span {height:25rem;}
+}
+
+@media (min-width:377px) and (max-width:420px){
+	.sub.campaign .camp_treasure .sec_top {min-height:89.5rem;}
+	.sub.campaign .camp_treasure .area_main_info span {height:20rem;}
+	.sub.campaign .camp_treasure .area_sub_info span {height:27rem;}
+	.sub.campaign .camp_treasure .conts_howto .step dt {width:7.5rem; height:8.7rem;}
+	.sub.campaign .camp_treasure .conts_howto .step dd {padding:0.5rem 0 0 8.5rem;}
+	.sub.campaign .camp_treasure .conts_howto .step dd p {height:6rem;}
+	.sub.campaign .camp_treasure .sec_btm .tit_howto {margin:0 0 0 4rem;}
+	.sub.campaign .camp_treasure .sec_btm .txt_howto_guide {margin: 0.7rem 0 0 4.5rem;}
+	
+	/* 보물찾기 스탬프 효과 */
+	.sub.campaign .camp_treasure .stamp_effect.BAT0036 {left:11rem;}
+	.sub.campaign .camp_treasure .stamp_effect.BAT0063 {left:26.5rem;}
+	.sub.campaign .camp_treasure .stamp_effect.BAT0036.loaded {left:1.8rem;}
+	.sub.campaign .camp_treasure .stamp_effect.BAT0063.loaded {left:16rem;}
+}
+
+/* 핸드폰 가로 사이즈 */
+@media (min-width:640px) and (max-width:736px){
+	/* 룰렛 */
+	.sub.campaign .camp_treasure .sec_top {min-height:173rem;}
+	.sub.campaign .camp_treasure .area_main_info span {width:58rem; height:32rem;background-size:auto;}
+	.sub.campaign .camp_treasure .area_sub_info {position:static;}
+	.sub.campaign .camp_treasure .area_sub_info span {width:58rem; height:42rem;background-size:auto;}
+	.sub.campaign .camp_treasure .tit_howto {height: 3rem; background-size:auto;}
+	.sub.campaign .camp_treasure .conts_howto {width:92%; margin:0 auto;}
+	.sub.campaign .camp_treasure .conts_howto .step dt {width: 12rem; height: 14rem;}
+	.sub.campaign .camp_treasure .conts_howto .step dd {padding:1rem 0 0 14rem;}
+	.sub.campaign .camp_treasure .conts_howto .step dd .period {height:2.4rem; background-size:auto;}
+	.sub.campaign .camp_treasure .conts_howto .step dd p {height:9rem;margin-top:0.5rem;background-size: auto;}
+	.sub.campaign .camp_treasure .txt_howto_guide {height: 4rem; background-size:auto;}
+	.sub.campaign .camp_treasure .area_roulette_info .tit {height:29rem; background-size:54rem auto;}
+	.sub.campaign .camp_treasure .area_roulette_info .area_r-procedure .poster {width: 25rem;height:33rem;background-size: 25rem auto;}
+	.sub.campaign .camp_treasure .area_roulette_info .area_txt_info span.mob {width:55rem; height:29rem; background-size:55rem auto;}
+	.sub.campaign .camp_treasure .roulette_zone {top: 0;width: 55rem;min-height: 61.5rem;}
+	.sub.campaign .camp_treasure .roulette_zone .roulette_wheel {top: 3rem;left: 3.3rem;}
+	.sub.campaign .camp_treasure .roulette_zone .roulette_wheel img {width:48rem;}
+	.sub.campaign .camp_treasure .roulette_zone .roulette_pin {top: 0rem;margin-left: -2.2rem;}
+	.sub.campaign .camp_treasure .roulette_zone .roulette_pin .inner_pin {width: 4.2rem;height:8rem;}
+	.sub.campaign .camp_treasure .roulette_zone .roulette_wheel .btn_start {top:17rem; width:13.2rem; height:13.2rem;}
+	.sub.campaign .camp_treasure .roulette_result {width:54rem; margin:0 auto;}
+	.sub.campaign .camp_treasure .roulette_result .remainder_coupons, 
+	.sub.campaign .camp_treasure .roulette_result .prize_money {height:15rem; background-size:54rem auto;}
+	.sub.campaign .camp_treasure .roulette_result .count {padding-left:21rem; line-height:14rem;    font-size: 5rem;}
+	.sub.campaign .camp_treasure .roulette_result .count .unit {font-size:1.5rem; line-height:15.8rem; margin-left:1rem;}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto {margin-top:2rem;}
+	.sub.campaign .camp_treasure .sec_btm .tit_howto {width:16rem;height: 3rem;margin: 0 0 0 6rem;background-size: 16rem auto;}
+	.sub.campaign .camp_treasure .sec_btm .txt_howto_guide {height: 2.2rem;margin: 0.7rem 0 0 6.5rem;background-size: 46rem auto;}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step dt {width: 11rem; height: 12.5rem; background-size: 10.5rem auto;}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step dd {min-width: 37rem; padding: 1.5rem 0 0 1.5rem;}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step dd .period {width: 20rem;height: 2.3rem;background-size: 20rem auto;}
+	.sub.campaign .camp_treasure .sec_btm .conts_howto .step dd p {width: 37rem;height:7rem;background-size: 32rem auto;}
+
+	/* 보물찾기 스탬프 효과 */
+	.sub.campaign .camp_treasure .stamp_effect {top:40.5rem;}
+	.sub.campaign .camp_treasure .stamp_effect.BAT0036 {left:23.2rem;}
+	.sub.campaign .camp_treasure .stamp_effect.BAT0063 {left:40.3rem;}
+	.sub.campaign .camp_treasure .stamp_effect.loaded{top:36rem; }
+	.sub.campaign .camp_treasure .stamp_effect.BAT0036.loaded {left:16.8rem;}
+	.sub.campaign .camp_treasure .stamp_effect.BAT0063.loaded {left:33.8rem;}
+}
+
+
+/*ANIMATION*/
+@-webkit-keyframes hh {
+  0%, 100%{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  
+  10%{
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+  }
+  
+  20%{
+    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+  }
+  
+  30%{
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+  }
+  
+  40%{
+    transform: rotate(25deg);
+    -webkit-transform: rotate(25deg);
+  }
+  
+  50%{
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+  }
+  
+  60%{
+    transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+  }
+  
+  70%{
+    transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+  }
+  
+  80%{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  90%{
+    transform: rotate(50deg);
+    -webkit-transform: rotate(50deg);
+  }
+}
+
+@keyframes hh {
+  0%, 100%{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  
+  10%{
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+  }
+  
+  20%{
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+  }
+  
+  30%{
+    transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+  }
+  
+  40%{
+    transform: rotate(-25deg);
+    -webkit-transform: rotate(-25deg);
+  }
+  
+  50%{
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+  }
+  
+  60%{
+    transform: rotate(-25deg);
+    -webkit-transform: rotate(-35deg);
+  }
+  
+  70%{
+    transform: rotate(-20deg);
+    -webkit-transform: rotate(-40deg);
+  }
+  
+  80%{
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  90%{
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-50deg);
+  }
+}
+
+.sub.campaign .camp_treasure .roulette_zone .roulette_pin .inner_pin.spin {
+  -webkit-animation: hh 0.1s; /* Chrome, Safari, Opera */
+    animation: hh 0.1s;
+}

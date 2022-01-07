@@ -1,0 +1,819 @@
+<!--
+#*
+ *  파 일 명 :  RWD0036.jsp
+ *  설    명 :  서브 페이지 - 멤버쉽
+ *  작 성 자 :  
+ *  작 성 일 :  
+ *  버    전 :  1.0
+ *  기타사항 :
+ *  Copyrights 2017 by ㈜ 유비원. All right reserved.
+*# 
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href='<spring:url value="/uxl/ext/bxslider/4.2.12/jquery.bxslider.css"/>'/>
+
+	<link rel="stylesheet" type="text/css" href='../css/base.css'/>
+	<link rel="stylesheet" type="text/css" href='../css/layout.css'/>
+	<link rel="stylesheet" type="text/css" href='../css/module.css'/>
+	<link rel="stylesheet" type="text/css" href='../css/content.css'/>
+</head>
+<body>
+
+<div id="ub-container" class="sub membership"><!-- 메인 : main, 서브 : sub brand, sub news, sub mystore, sub membership (메뉴별로 서브 클래스 나뉨 단, 보드나 관리자 화면은 예외적일 수 있음)  -->
+		<!-- page-header -->
+	<!-- gnb -->
+	<div class="ub_top">
+		<div class="top_inner">
+			<!-- 햄버거 메뉴 테블릿, 모바일에서만 노출 -->
+			<a href="javascript:;" class="btn_nav">
+				<img src="../img/main/mob/btn_nav.png" alt="menu" />
+				<img src="../img/main/mob/btn_nav_t.png" alt="menu" class="tablet" />
+			</a>
+			<!-- //테블릿, 모바일에서만 노출 -->
+			<!--title area -->
+			<h1>
+				<a href="javascript:fnMoveHome();">
+					<img src="../img/web/img_logo.png" alt="super pass" class="tit1" />
+					<img src="../img/web/img_logo2.png" alt="super pass" class="tit2" />
+					<img src="../img/mob/img_logo.png" alt="super pass" class="mob" />
+				</a>
+			</h1>
+			<!--//title area -->
+			<!--gnb area -->
+			<nav class="gnb">
+				<ul>
+					<li>
+						<a href="javascript:;" class="depth1">이달의 캠페인</a>
+						<!--2depth area -->
+						<div class="depth2">
+							<ul>
+								<li>
+									<a href="javascript:;">캠페인 소개</a>
+								</li>
+								<li>
+									<a href="javascript:;">제품별 정보</a>
+								</li>
+								<li>
+									<a href="javascript:;">퀴즈풀기</a>
+								</li>
+							</ul>
+						</div>
+						<!--//2depth area -->
+					</li>
+					<li>
+						<a href="javascript:;" class="depth1">My 슈퍼패스</a>
+						<!--2depth area -->
+						<div class="depth2"></div>
+						<!--//2depth area -->
+					</li>
+					<li>
+						<a href="javascript:;" class="depth1">점포운영특강</a>
+						<!--2depth area -->
+						<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;">상권분석</a>
+							</li>
+							<li>
+								<a href="javascript:;">담배판매법규</a>
+							</li>
+							<li>
+								<a href="javascript:;">세제혜택안내</a>
+							</li>
+							<li>
+								<a href="javascript:;">소매 트렌드</a>
+							</li>
+							<li>
+								<a href="javascript:;">편의점 가맹조건</a>
+							</li>
+						</ul>
+						</div>
+						<!--//2depth area -->
+					</li>
+					<li>
+						<a href="javascript:;" class="depth1">브랜드 소개</a>
+						<!--2depth area -->
+						<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;">던힐</a>
+								<!--3depth area -->
+								<div class="depth3">
+									<ul>
+										<li>
+											<a href="javascript:;">-
+												<span>브랜드 이야기</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">-
+												<span>제품소개</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!--//3depth area -->
+							</li>
+							<li>
+								<a href="javascript:;">로스만</a>
+								<!--3depth area -->
+								<div class="depth3">
+									<ul>
+										<li>
+											<a href="javascript:;">-
+												<span>브랜드 이야기</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">-
+												<span>제품소개</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!--//3depth area -->
+							</li>
+						</ul>
+						</div>
+						<!--//2depth area -->
+					</li>
+					<li>
+						<a href="RWD6001.ub" class="depth1">BAT 소식</a>
+						<!--2depth area -->
+						<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;">뉴스</a>
+							</li>
+							<li>
+								<a href="javascript:;">설문  </a>
+							</li>
+						</ul>
+						</div>
+						<!--//2depth area -->
+					</li>
+				</ul>
+			</nav>
+			<!--//gnb area -->
+			<!--small gnb area -->
+			<div class="nav_small">
+				<a href="POR0001.ub" class="info_system">시스템 관리</a>
+				<a href="javascript:;" class="info_change">정보변경</a>
+				<a href="javascript:;" class="logout">로그아웃</a>
+			</div>
+			<!--//small gnb area -->
+			<span class="label_private">
+				<img src="../img/main/web/img_private.png" alt="소매점주전용 본 제작물을 일반 소비자에게 절대 공개하지 마십시오" class="private1" />
+				<img src="../img/main/web/img_private2.png" alt="소매점주전용 본 제작물을 일반 소비자에게 절대 공개하지 마십시오" class="private2" />
+				<img src="../img/main/mob/img_private.png" alt="소매점주전용 본 제작물을 일반 소비자에게 절대 공개하지 마십시오" class="mob" />
+			</span>
+		</div>
+	</div> 
+	<!-- 레프트메뉴(태블릿, 모바일) -->
+	<div class="leftmenu">
+		<div class="top">
+			<!-- small gnb area -->
+			<div class="nav_small">
+				<a href="javascript:;" class="info_change">정보변경</a>
+				<a href="javascript:;" class="logout">로그아웃</a>
+			</div>
+			<!-- //small gnb area -->
+			<!-- point information area -->
+			<div class="info_point">
+				<div class="txt">
+					장그래
+					<span class="branch">[강남점]</span>
+					님의<br />
+					포인트는 
+					<strong>500,000</strong>
+					<span class="unit">P</span>
+					입니다.
+				</div>
+			</div>
+			<!-- //point information area -->
+			<!-- tmr information area -->
+			<div class="info_tmr">
+				<span class="tit">담당광고사원</span>
+				<span class="cont">
+					<strong>김근수 과장</strong>
+					<strong>010-1234-5678</strong>
+				</span>
+			</div>
+			<!-- //tmr information area -->
+		</div>
+		<!-- gnb area -->
+		<nav class="gnb">
+			<ul>
+				<li>
+					<a href="javascript:;" class="menu1 on">브랜드 소개</a>
+					<!-- 2depth area -->
+					<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;" class="menu2 on">던힐</a>
+								<!-- 3depth area -->
+								<div class="depth3">
+									<ul>
+										<li>
+											<a href="javascript:;">- 
+												<span>브랜드 이야기</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">- 
+												<span>제품 소개</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!-- //3depth area -->
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2 on">로스만</a>
+								<!-- 3depth area -->
+								<div class="depth3">
+									<ul>
+									</ul>
+								</div>
+								<!-- //3depth area -->
+							</li>
+						</ul>
+					</div>
+					<!-- //2depth area -->
+				</li>
+				<li>
+					<a href="javascript:;" class="menu1 nosub">My 슈퍼패스</a>
+					<!-- 2depth area --><div class="depth2"></div><!-- //2depth area -->
+				</li>
+				<li>
+					<a href="javascript:;" class="menu1 on">점포운영특강</a>
+					<!-- 2depth area -->
+					<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;">상권분석</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">담배판매법규</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">세제혜택안내</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">소매트렌드</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">편의점 가맹조건</a>
+							</li>
+						</ul>
+					</div>
+					<!-- //2depth area -->
+				</li>
+				<li>
+					<a href="javascript:;" class="menu1 on">BAT 소식</a>
+					<!-- 2depth area -->
+					<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;" class="menu2">뉴스</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">설문</a>
+							</li>
+						</ul>
+					</div>
+					<!-- //2depth area -->
+				</li>
+			</ul>
+		</nav>
+		<!-- //gnb area -->
+	</div>
+	<div class="darkLayer"></div>
+	<!--// page-header -->
+	
+	<!-- page-content -->
+	<div id="ub_content" class="ub_content"> 
+		<!-- visual area -->
+		<div class="area_visual">
+			<div class="pattern"></div>
+			<div class="inner">
+				<h2>멤버쉽</h2>
+				<p>점주님의 멤버쉽 등급을 확인해 보세요.</p>
+			</div>
+		</div>
+		<!--  visual area -->
+		<!-- inc / page-location -->
+		<div class="location">
+			<ul>
+				<li class="home">
+					<a href="javascript:fnMoveHome();">Home</a>
+				</li>
+				<li class="submenu">
+					<select id="navi1" style="display:none;width:180px;">
+						<option value="menu1">사이클컴즈</option>
+						<option value="menu2">프로모션</option>
+						<option value="menu3">My 슈퍼패스</option>
+						<option value="menu4">매출 도우미</option>
+						<option value="menu5">BAT 소식</option>
+						<option value="menu6">시스템관리</option>
+					</select>
+				</li>
+				<li class="submenu">
+					<select id="navi2" style="display:none;width:180px;">
+						<option value="menu21">던힐</option>
+						<option value="menu22">로스만</option>
+					</select>
+				</li>
+			</ul>
+		</div>	
+		<!--// inc / page-location -->
+		<div class="content">
+			<strong class="tit_small">다음 등급으로 가기 위한 단계</strong>
+			<!-- WEB -->
+			<div class="sec_top web">
+				<div class="ub-layout floatBox">
+					<div class="ub-layout leftBox" style="width:33%;">
+						<div class="area_graph">
+							<img src="../../page/images/rwd/web/temp_piegraph.png" alt="임시 그래프 이미지" />
+						</div>
+						<div class="area_g_icon">
+							<img id="web_imgMember"   src="../../page/images/rwd/web/ico_grade_mebmer.png" alt="member" />
+<!-- 							<img src="../../page/images/rwd/web/ico_grade_brz.png" alt="bronze" /> -->
+<!-- 							<img src="../../page/images/rwd/web/ico_grade_sv.png" alt="silver" /> -->
+<!-- 							<img src="../../page/images/rwd/web/ico_grade_gold.png" alt="gold" /> -->
+						</div>
+					</div>
+					<div class="ub-layout rightBox tabs_cont" style="width:67%;" id="tabs-1">
+						<div class="info_grade">
+							<p>점주님의 멤버쉽은 <strong class="grade_now">실버 등급</strong>입니다.</p>
+							<p><strong class="grade_future">골드 등급</strong>으로 상향을 원하시면 <strong class="txt_suggest">상권 추천제품</strong>을 확인해 보세요.</p>
+							
+							<ul class="list_requirement">
+								<li>
+									<span>이달의 캠페인<br />로그인</span>
+								</li>
+								<li>
+									<span>이달의 캠페인<br />퀴즈</span>
+								</li>
+								<li>
+									<span>월별 제안<br />주문량</span>
+								</li> 
+								<li>
+									<span>분기별 제안<br />주문량</span>
+								</li>
+								<li>
+									<span>SAO 90% 달성</span>
+									<strong class="po"></strong>
+								</li>
+								<li>
+									<span class="nonclear">상권 추천제품</span><!-- 등급 상향을 위한 조건 충족여부 클래스 - clear한 항목 : 클래스 없음, nonclear한 항목 : nonclear -->
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="ub-layout rightBox tabs_cont" style="width:67%; display:none;" id="tabs-2">
+						<div class="info_grade">
+							<p>점주님의 멤버쉽은 <strong class="grade_now">실버 등급</strong>입니다.</p>
+							<p><strong class="grade_future">골드 등급</strong>으로 상향을 원하시면 <strong class="txt_suggest">상권 추천제품</strong>을 확인해 보세요.</p>
+							
+							<ul class="list_requirement">
+								<li>
+									<span>이달의 캠페인<br />로그인</span>
+								</li>
+								<li>
+									<span>이달의 캠페인<br />퀴즈</span>
+								</li>
+								<li>
+									<span>월별 제안<br />주문량</span>
+								</li> 
+								<li>
+									<span>분기별 제안<br />주문량</span>
+								</li>
+								<li>
+									<span>SAO 90% 달성</span>
+									<strong class="po"></strong>
+								</li>
+								<li>
+									<span class="nonclear">상권 추천제품</span><!-- 등급 상향을 위한 조건 충족여부 클래스 - clear한 항목 : 클래스 없음, nonclear한 항목 : nonclear -->
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="ub-layout rightBox tabs_cont" style="width:67%; display:none;" id="tabs-3">
+						<div class="info_grade">
+							<p>점주님의 멤버쉽은 <strong class="grade_now">실버 등급</strong>입니다.</p>
+							<p><strong class="grade_future">골드 등급</strong>으로 상향을 원하시면 <strong class="txt_suggest">상권 추천제품</strong>을 확인해 보세요.</p>
+							
+							<ul class="list_requirement">
+								<li>
+									<span>이달의 캠페인<br />로그인</span>
+								</li>
+								<li>
+									<span>이달의 캠페인<br />퀴즈</span>
+								</li>
+								<li>
+									<span>월별 제안<br />주문량</span>
+								</li> 
+								<li>
+									<span>분기별 제안<br />주문량</span>
+								</li>
+								<li>
+									<span>SAO 90% 달성</span>
+									<strong class="po"></strong>
+								</li>
+								<li>
+									<span class="nonclear">상권 추천제품</span><!-- 등급 상향을 위한 조건 충족여부 클래스 - clear한 항목 : 클래스 없음, nonclear한 항목 : nonclear -->
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<ul id="tabs" class="tab_menu_member">
+					<li>
+						<a href="#tabs-1">10월</a>
+					</li>
+					<li>
+						<a href="#tabs-2">11월</a>
+					</li>
+					<li>
+						<a href="#tabs-3">12월</a>
+					</li>
+				</ul>
+			</div>
+			<!-- //WEB -->
+			<!-- MOB -->
+			<div class="sec_top mob">
+				<div class="area_vinfo">
+					<div class="area_graph">
+						<img src="../../page/images/rwd/mob/temp_piegraph.png" alt="임시 그래프 이미지" style="width:100%;" />
+					</div>
+					<div class="area_g_icon">
+						<img id="mob_imgMember"   src="../../page/images/rwd/mob/ico_grade_member.png" alt="member" />
+<!-- 						<img src="../../page/images/rwd/mob/ico_grade_brz.png" alt="bronze" /> -->
+	<!-- 				<img src="../../page/images/rwd/mob/ico_grade_sv.png" alt="silver" /> -->
+	<!-- 				<img src="../../page/images/rwd/mob/ico_grade_gold.png" alt="gold" /> -->
+					</div>
+				</div>
+				<p>
+					점주님의 멤버쉽은 <strong class="grade_now">일반 등급</strong>입니다.
+				</p>
+				<p>
+					<strong class="grade_future">브론즈 등급</strong>으로 상향을 원하시면<br /> <strong class="txt_suggest">상권 추천제품</strong>을 확인해 보세요.
+				</p>
+				<div class="bxslider">
+					<div>
+						<ul class="list_requirement">
+							<li>
+								<span>로그인</span>
+							</li>
+							<li>
+								<span>퀴즈</span>
+							</li>
+							<li>
+								<span>추천 주문량</span>
+							</li> 
+							<li>
+								<span>추천 주문량</span>
+							</li> 
+							<li>
+								<span>추천 주문량</span>
+							</li> 
+							<li>
+								<span>추천 주문량</span>
+							</li> 
+							<li>
+								<span class="nonclear">상권 추천제품</span><!-- 등급 상향을 위한 조건 충족여부 클래스 - clear한 항목 : 클래스 없음, nonclear한 항목 : nonclear -->
+							</li><!-- 등급 업 조건이 4개, 8개 이하 일 경우 없는 조건은 빈 li 태그 유지 해야함(<li></li>) -->
+							<li></li>
+						</ul>
+						<div class="bx-caption r-month"><span>10월</span></div>
+					</div>
+					<div>
+						<ul class="list_requirement">
+							<li>
+								<span>추천 주문량</span>
+							</li> 
+							<li>
+								<span>추천 주문량</span>
+							</li> 
+							<li>
+								<span>추천 주문량</span>
+							</li> 
+							<li>
+								<span>추천 주문량</span>
+							</li> 
+							<li>
+								<span class="nonclear">상권 추천제품</span><!-- 등급 상향을 위한 조건 충족여부 클래스 - clear한 항목 : 클래스 없음, nonclear한 항목 : nonclear -->
+							</li>
+							<li></li><!-- 등급 업 조건이 4개, 8개 이하 일 경우 없는 조건은 빈 li 태그 유지 해야함(<li></li>) -->
+							<li></li>
+							<li></li>
+						</ul>
+						<div class="bx-caption r-month"><span>11월</span></div>
+					</div>
+					<div>
+						<ul class="list_requirement">
+							<li>
+								<span>퀴즈</span>
+							</li>
+							<li>
+								<span>추천 주문량</span>
+							</li> 
+							<li>
+								<span>추천 주문량</span>
+							</li> 
+							<li>
+								<span>추천 주문량</span>
+							</li> 
+							<li>
+								<span>추천 주문량</span>
+							</li> 
+							<li>
+								<span class="nonclear">상권 추천제품</span><!-- 등급 상향을 위한 조건 충족여부 클래스 - clear한 항목 : 클래스 없음, nonclear한 항목 : nonclear -->
+							</li>
+							<li></li><!-- 등급 업 조건이 4개, 8개 이하 일 경우 없는 조건은 빈 li 태그 유지 해야함(<li></li>) -->
+							<li></li>
+						</ul>
+						<div class="bx-caption r-month"><span>12월</span></div>
+					</div>
+				</div>
+			</div>
+			<!-- //MOB -->
+			
+			<strong class="tit_small">등급 조건 및 혜택</strong>
+			<!-- WEB -->
+			<div class="sec_btm web">
+					<table>
+					<colgroup>
+						<col style="width:auto;" />
+						<col style="width:17%;" />
+						<col style="width:23%;" />
+						<col style="width:23%;" />
+						<col style="width:23%;" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th>회원등급</th>
+							<th>
+								<img src="../../page/images/rwd/web/ico_grade_member.png" alt="member" />
+							</th>
+							<th>
+								<img src="../../page/images/rwd/web/ico_grade_brz.png" alt="bronze" />
+							</th>
+							<th>
+								<img src="../../page/images/rwd/web/ico_grade_sv.png" alt="silver" />
+							</th>
+							<th>
+								<img src="../../page/images/rwd/web/ico_grade_gold.png" alt="gold" />
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>등급조건</th>
+							<td>
+								<span class="requirment">회원가입</span>
+							</td>
+							<td>
+								<span class="requirment">회원가입</span>
+								<span class="requirment">
+									매월 로그인
+									<strong>2회</strong>
+									이상
+								</span>
+								<span class="requirment">이달의 캠페인 퀴즈풀기</span>
+							</td>
+							<td>
+								<span class="requirment">회원가입</span>
+								<span class="requirment">
+									매월 로그인
+									<strong>2회</strong>
+									이상
+								</span>
+								<span class="requirment">이달의 캠페인 퀴즈풀기</span>
+								<span class="requirment">
+									이달의 추천제품 3개월중 
+									<strong>2번</strong>
+									달성시
+								</span>
+							</td>
+							<td>
+								<span class="requirment">회원가입</span>
+								<span class="requirment">
+									매월 로그인
+									<strong>2회</strong>
+									이상
+								</span>
+								<span class="requirment">이달의 캠페인 퀴즈풀기</span>
+								<span class="requirment">월별 제안 주문량</span>
+								<span class="requirment">분기별 제안 주문량</span>
+								<span class="requirment">
+									이달의 추천제품 3개월중 
+									<strong>모두</strong>
+									달성시
+								</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- //WEB -->
+			<!-- MOB -->
+			<div class="sec_btm mob">
+				<table>
+					<colgroup>
+						<col style="width:30%;" />
+						<col style="width:auto;" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>
+								<img src="../../page/images/rwd/mob/ico_grade_member.png" alt="member" />
+							</th>
+							<td>
+								<span class="requirment">회원가입</span>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<img src="../../page/images/rwd/web/ico_grade_brz.png" alt="bronze" />
+							</th>
+							<td>
+								<span class="requirment">회원가입</span>
+								<span class="requirment">
+									매월 로그인
+									<strong>2회</strong>
+									이상
+								</span>
+								<span class="requirment">이달의 캠페인 퀴즈풀기</span>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<img src="../../page/images/rwd/web/ico_grade_sv.png" alt="silver" />
+							</th>
+							<td>
+								<span class="requirment">회원가입</span>
+								<span class="requirment">
+									매월 로그인
+									<strong>2회</strong>
+									이상
+								</span>
+								<span class="requirment">이달의 캠페인 퀴즈풀기</span>
+								<span class="requirment">
+									이달의 추천 제품 3개월중 
+									<strong>2번</strong>
+									달성시
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<img src="../../page/images/rwd/web/ico_grade_gold.png" alt="gold" />
+							</th>
+							<td>
+								<span class="requirment">회원가입</span>
+								<span class="requirment">
+									매월 로그인
+									<strong>2회</strong>
+									이상
+								</span>
+								<span class="requirment">이달의 캠페인 퀴즈풀기</span>
+								<span class="requirment">월별 제안 주문량</span>
+								<span class="requirment">분기별 제안 주문량</span>
+								<span class="requirment">
+									이달의 추천 제품 3개월중
+									<strong>모두</strong>
+									달성시
+								</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- //MOB -->
+			
+		
+			<div class="ub-layout floatBox" style="margin-top:10px;">
+				<div class="ub-layout leftBox" style="width:82%;">
+<!-- 					<p class="txt_guide">* 멤버쉽 별로 5팩 묶음판매, 매장관리, 긴급주문 등 다양한 혜택이 제공됩니다.</p> -->
+					<p class="txt_guide">* 멤버쉽 등급은 매 분기마다 상향 조정되며, 하향 조정은 반기마다 이루어집니다.</p>
+				</div>
+				<div class="ub-layout rightBox" style="width:18%; text-align:right;">
+					<span class="btn type1 benefit">
+						<a href="javascript:;">혜택보기</a>
+					</span>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<!--// page-content -->
+
+	<!--  ub-foot -->
+	<div id="ub_foot" class="ub_foot">
+		<div class="inner">
+			<div class="flex-layout align-start">
+				<div class="ub-layout leftBox">
+					<ul>
+						<li>
+							<span class="address">서울특별시 강남구 테헤란로 152 강남파이낸스센터 42층</span>
+						</li>
+						<li>
+							<span class="call"><a href="tel:080-787-1000" >080-787-1000</a></span>
+						</li>
+						<li>
+							<a href="javascript:viewAgreement();" class="policy">이용약관</a>
+						</li>
+					</ul>
+				</div>
+				<div class="ub-layout rightBox">
+					<span class="copy">Copyright © BAT Korea All rights reserved.</span>
+				</div>
+			</div>
+		</div>
+		<div class="txt_warning">
+			<span>흡연은 폐암등 각종 질병의 원인! 그래도 피우시겠습니까?<br /> 담배연기에는 발암성 물질인 나프틸아민, 니켈, 벤젠, 비닐 크롤라이드, 비소, 카드뮴이 들어있습니다.<br /> 금연상담전화 1544-9030</span>
+		</div>
+		<!-- Layer 팝업 로드 위치 -->
+		<div id="divAgreeView"></div>
+		<!-- 첫로그인 환영팝업 -->
+		<div id="divFirstLogin"></div>
+	</div>
+	<!-- //ub-foot -->
+	
+	<!--   inc / scrollup (서브화면에서만 노출) -->
+	<div class="btn_scrollup">
+		<a href="javascript:;"  id="backtotop">위로 이동</a>
+	</div>
+	<!--  //inc / include -->
+</div>
+
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){  
+    $('.datepicker').pickadate({
+    	format: 'yyyy-mm-dd',	
+    });
+    
+    //다음 등급으로 가기 위한 단계 슬라이더
+    $('.bxslider').bxSlider({
+		useCSS:false,
+	    auto:true,
+	    captions:true,
+	    speed:1000,
+	    pause:7000
+	});
+});
+
+/**
+ * 탭 기능 함수
+ */
+function makeTabs(id, options){
+	var $tabs = $('#'+id);
+	$('li > a', $tabs).click(function(){
+		// 선택 비활성
+		$('li > a', $tabs).removeClass('on');
+		$(this).addClass('on');
+
+		// 기존컨텐츠 hide 처리
+		$('.tabs_cont').hide();
+
+		// 선택된 탭의 컨텐츠 표시
+		var tabContentId = $(this).attr('href'); 
+		setTimeout(function(){
+			$(tabContentId).show();
+
+			if(uxl.isFunction(options.click)){
+				options.click.call(this, tabContentId);
+			}
+		}, 100);
+	});
+	$('li > a:first', $tabs).click();
+}
+
+uxl.onLoad(function(){
+	// 탭 생성
+	makeTabs('tabs', {
+			click:function(id){
+				if(id == '#tabs-1'){
+					chart1();
+				}else if(id == '#tabs-2'){
+					chart2();
+				}else if(id == '#tabs-3'){
+					chart3();
+				}else if(id == '#tabs-4'){
+					chart4();
+				}
+			}
+		});
+});
+</script>
+
+</body>
+</html>

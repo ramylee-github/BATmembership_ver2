@@ -1,0 +1,1564 @@
+<!--*
+ *  파 일 명 :  RWD1009.jsp
+ *  설    명 :  서브페이지 - 브랜드 소개 > 로스만 > 제품소개
+ *  작 성 자 :  
+ *  작 성 일 :  
+ *  버    전 :  1.0
+ *  기타사항 :
+ *  Copyrights 2017 by ㈜ 유비원. All right reserved.
+*# 
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" type="text/css" href='../css/base.css'/>
+	<link rel="stylesheet" type="text/css" href='../css/layout.css'/>
+	<link rel="stylesheet" type="text/css" href='../css/module.css'/>
+	<link rel="stylesheet" type="text/css" href='../css/content.css'/>
+</head>
+<body>
+<div id="ub-container" class="sub brand"><!-- 메인 : main, 서브 : sub brand, sub news, sub loyalty, sub communication, sub report, sub hubadmin, sub systemadmin(메뉴별로 서브 클래스 나뉨 단, 보드나 관리자 화면은 예외적일 수 있음)  -->
+	<!-- page-header -->
+	<!-- gnb -->
+	<div class="ub_top">
+		<div class="top_inner">
+			<!-- 햄버거 메뉴 테블릿, 모바일에서만 노출 -->
+			<a href="javascript:;" class="btn_nav">
+				<img src="../img/main/mob/btn_nav.png" alt="menu" />
+				<img src="../img/main/mob/btn_nav_t.png" alt="menu" class="tablet" />
+			</a>
+			<!-- //테블릿, 모바일에서만 노출 -->
+			<!--title area -->
+			<h1>
+				<a href="javascript:fnMoveHome();">
+					<img src="../img/web/img_logo.png" alt="super pass" class="tit1" />
+					<img src="../img/web/img_logo2.png" alt="super pass" class="tit2" />
+					<img src="../img/mob/img_logo.png" alt="super pass" class="mob" />
+				</a>
+			</h1>
+			<!--//title area -->
+			<!--gnb area -->
+			<nav class="gnb">
+				<ul>
+					<li>
+						<a href="javascript:;" class="depth1">이달의 캠페인</a>
+						<!--2depth area -->
+						<div class="depth2">
+							<ul>
+								<li>
+									<a href="javascript:;">캠페인 소개</a>
+								</li>
+								<li>
+									<a href="javascript:;">제품별 정보</a>
+								</li>
+								<li>
+									<a href="javascript:;">퀴즈풀기</a>
+								</li>
+							</ul>
+						</div>
+						<!--//2depth area -->
+					</li>
+					<li>
+						<a href="javascript:;" class="depth1">My 슈퍼패스</a>
+						<!--2depth area -->
+						<div class="depth2"></div>
+						<!--//2depth area -->
+					</li>
+					<li>
+						<a href="javascript:;" class="depth1">점포운영특강</a>
+						<!--2depth area -->
+						<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;">상권분석</a>
+							</li>
+							<li>
+								<a href="javascript:;">담배판매법규</a>
+							</li>
+							<li>
+								<a href="javascript:;">세제혜택안내</a>
+							</li>
+							<li>
+								<a href="javascript:;">소매 트렌드</a>
+							</li>
+							<li>
+								<a href="javascript:;">편의점 가맹조건</a>
+							</li>
+						</ul>
+						</div>
+						<!--//2depth area -->
+					</li>
+					<li>
+						<a href="javascript:;" class="depth1">브랜드 소개</a>
+						<!--2depth area -->
+						<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;">던힐</a>
+								<!--3depth area -->
+								<div class="depth3">
+									<ul>
+										<li>
+											<a href="javascript:;">-
+												<span>브랜드 이야기</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">-
+												<span>제품소개</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!--//3depth area -->
+							</li>
+							<li>
+								<a href="javascript:;">로스만</a>
+								<!--3depth area -->
+								<div class="depth3">
+									<ul>
+										<li>
+											<a href="javascript:;">-
+												<span>브랜드 이야기</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">-
+												<span>제품소개</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!--//3depth area -->
+							</li>
+						</ul>
+						</div>
+						<!--//2depth area -->
+					</li>
+					<li>
+						<a href="RWD6001.ub" class="depth1">BAT 소식</a>
+						<!--2depth area -->
+						<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;">뉴스</a>
+							</li>
+							<li>
+								<a href="javascript:;">설문  </a>
+							</li>
+						</ul>
+						</div>
+						<!--//2depth area -->
+					</li>
+				</ul>
+			</nav>
+			<!--//gnb area -->
+			<!--small gnb area -->
+			<div class="nav_small">
+				<a href="POR0001.ub" class="info_system">시스템 관리</a>
+				<a href="javascript:;" class="info_change">정보변경</a>
+				<a href="javascript:;" class="logout">로그아웃</a>
+			</div>
+			<!--//small gnb area -->
+			<span class="label_private">
+				<img src="../img/main/web/img_private.png" alt="소매점주전용 본 제작물을 일반 소비자에게 절대 공개하지 마십시오" class="private1" />
+				<img src="../img/main/web/img_private2.png" alt="소매점주전용 본 제작물을 일반 소비자에게 절대 공개하지 마십시오" class="private2" />
+				<img src="../img/main/mob/img_private.png" alt="소매점주전용 본 제작물을 일반 소비자에게 절대 공개하지 마십시오" class="mob" />
+			</span>
+		</div>
+	</div> 
+	<!-- 레프트메뉴(태블릿, 모바일) -->
+	<div class="leftmenu">
+		<div class="top">
+			<!-- small gnb area -->
+			<div class="nav_small">
+				<a href="javascript:;" class="info_change">정보변경</a>
+				<a href="javascript:;" class="logout">로그아웃</a>
+			</div>
+			<!-- //small gnb area -->
+			<!-- point information area -->
+			<div class="info_point">
+				<div class="txt">
+					장그래
+					<span class="branch">[강남점]</span>
+					님의<br />
+					포인트는 
+					<strong>500,000</strong>
+					<span class="unit">P</span>
+					입니다.
+				</div>
+			</div>
+			<!-- //point information area -->
+			<!-- tmr information area -->
+			<div class="info_tmr">
+				<span class="tit">담당광고사원</span>
+				<span class="cont">
+					<strong>김근수 과장</strong>
+					<strong>010-1234-5678</strong>
+				</span>
+			</div>
+			<!-- //tmr information area -->
+		</div>
+		<!-- gnb area -->
+		<nav class="gnb">
+			<ul>
+				<li>
+					<a href="javascript:;" class="menu1 on">브랜드 소개</a>
+					<!-- 2depth area -->
+					<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;" class="menu2 on">던힐</a>
+								<!-- 3depth area -->
+								<div class="depth3">
+									<ul>
+										<li>
+											<a href="javascript:;">- 
+												<span>브랜드 이야기</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">- 
+												<span>제품 소개</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!-- //3depth area -->
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2 on">로스만</a>
+								<!-- 3depth area -->
+								<div class="depth3">
+									<ul>
+									</ul>
+								</div>
+								<!-- //3depth area -->
+							</li>
+						</ul>
+					</div>
+					<!-- //2depth area -->
+				</li>
+				<li>
+					<a href="javascript:;" class="menu1 nosub">My 슈퍼패스</a>
+					<!-- 2depth area --><div class="depth2"></div><!-- //2depth area -->
+				</li>
+				<li>
+					<a href="javascript:;" class="menu1 on">점포운영특강</a>
+					<!-- 2depth area -->
+					<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;">상권분석</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">담배판매법규</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">세제혜택안내</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">소매트렌드</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">편의점 가맹조건</a>
+							</li>
+						</ul>
+					</div>
+					<!-- //2depth area -->
+				</li>
+				<li>
+					<a href="javascript:;" class="menu1 on">BAT 소식</a>
+					<!-- 2depth area -->
+					<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;" class="menu2">뉴스</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">설문</a>
+							</li>
+						</ul>
+					</div>
+					<!-- //2depth area -->
+				</li>
+			</ul>
+		</nav>
+		<!-- //gnb area -->
+	</div>
+	<div class="darkLayer"></div>
+	<!--// page-header -->
+	<!-- page-content -->
+	<div id="ub_content" class="ub_content"> 
+		<!--  visual area -->
+		<div class="area_visual">
+			<div class="pattern"></div>
+			<div class="inner">
+				<h2>브랜드 소개</h2>
+				<p>꾸준히 사랑받고 있는 던힐과 로스만을 중심으로 다양하고 혁신적인 제품을 선보이겠습니다.</p>
+			</div>
+		</div>
+		<!-- visual area -->
+		<!-- inc / page-location -->
+		<div class="location">
+			<ul>
+				<li class="home">
+					<a href="javascript:fnMoveHome();">Home</a>
+				</li>
+				<li class="submenu">
+					<select id="navi1" style="display:none;width:180px;">
+						<option value="menu1">사이클컴즈</option>
+						<option value="menu2">프로모션</option>
+						<option value="menu3">My 슈퍼패스</option>
+						<option value="menu4">매출 도우미</option>
+						<option value="menu5">BAT 소식</option>
+						<option value="menu6">시스템관리</option>
+					</select>
+				</li>
+				<li class="submenu">
+					<select id="navi2" style="display:none;width:180px;">
+						<option value="menu21">던힐</option>
+						<option value="menu22">로스만</option>
+					</select>
+				</li>
+			</ul>
+		</div>	
+		<!--// inc / page-location -->
+		<dl class="story rothmans">
+			<dt>로스만 이야기</dt>
+			<dd>
+				125년간 세계 무대에서 사랑받아온 로스만<br />
+				그 이유를 확인해보세요
+			</dd>
+			<dd>
+				<a href="javascript:;" class="btn">더 알아보기</a>
+			</dd>
+		</dl>
+		<!-- web -->
+		<div class="web">
+			<!-- 브랜드 소개 텝 메뉴 -->
+			<div class="tab_menu">
+				<ul style="">
+					<li>
+						<a href="javascript:;" class="on" onclick="scrollMove('1')">
+							<span class="ico_hot">HOT</span>
+							인기 제품
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" onclick="scrollMove('2')">
+							<span class="ico_new">NEW</span>
+							신제품
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" onclick="scrollMove('3')">굵은 담배</a>
+					</li>
+					<li>
+						<a href="javascript:;" onclick="scrollMove('4')">얇은 담배</a>
+					</li>
+					<li>
+						<a href="javascript:;" onclick="scrollMove('5')">
+							가향/캡슐 담배
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- //브랜드 소개 텝 메뉴 -->
+			<div class="content">
+				<div class="tit_big">
+					<h3>
+						로스만
+						<span>Rothmans</span>
+					</h3>
+				</div>
+				<div class="tab_cont">
+					<div id="tab_cont1">
+						<strong class="tit_small">인기 제품</strong>
+						<ul class="list_product">
+							<li>
+								<!-- box_top -->
+								<div class="box_top">
+									<strong class="name_product">로스만 수퍼슬림 1MG</strong>
+									<span class="type2">
+										<img src="/page/images/rwd/brand/img_Rothmans1.jpg" alt="로스만 수퍼슬림 1MG" />
+									</span>
+								</div>
+								<!-- //box_top -->
+								<!-- box_btm -->
+								<div class="box_btm">
+									<!-- detail_product -->
+									<ul class="detail_product">
+										<li>
+											<strong>타르</strong>
+											<span>1.0mg</span>
+										</li>
+										<li>
+											<strong>니코틴</strong>
+											<span>0.10mg</span>
+										</li>
+										<li>
+											<strong>가격</strong>
+											<span>4,100원</span>
+										</li>
+									</ul>
+									<!-- //detail_product -->
+									<!-- btn_tip -->
+									<div class="btn_tip">
+										<a href="javascript:openSalesTip();">판매요령</a>
+										<a href="javascript:;" class="b-code">바코드</a>
+									</div>
+									<!-- //btn_tip -->
+								</div>
+								<!-- //box_btm -->
+							</li>
+							<!-- // -->
+							<li>
+								<!-- box_top -->
+								<div class="box_top">
+									<strong class="name_product">로스만 수퍼슬림 블루 1MG</strong>
+									<span class="type2">
+										<img src="/page/images/rwd/brand/img_Rothmans2.jpg" alt="로스만 수퍼슬림 블루 1MG" />
+									</span>
+								</div>
+								<!-- //box_top -->
+								<!-- box_btm -->
+								<div class="box_btm">
+									<!-- detail_product -->
+									<ul class="detail_product">
+										<li>
+											<strong>타르</strong>
+											<span>1.0mg</span>
+										</li>
+										<li>
+											<strong>니코틴</strong>
+											<span>0.10mg</span>
+										</li>
+										<li>
+											<strong>가격</strong>
+											<span>4,100원</span>
+										</li>
+									</ul>
+									<!-- //detail_product -->
+									<!-- btn_tip -->
+									<div class="btn_tip">
+										<a href="javascript:;">판매요령</a>
+									</div>
+									<!-- //btn_tip -->
+								</div>
+								<!-- //box_btm -->
+							</li>
+							<!-- // -->
+						</ul>
+					</div>
+					<div id="tab_cont2">
+						<strong class="tit_small">신제품</strong>
+						<!-- 브랜드 소개 퀴즈 참여  -->
+						<div class="participation"></div>
+						<!-- //브랜드 소개 퀴즈 참여 -->
+						<ul class="list_product">
+							<li>
+								<!-- box_top -->
+								<div class="box_top">
+									<strong class="name_product">로스만 클릭 6MG</strong>
+									<span class="type1">
+										<img src="/page/images/rwd/brand/img_Rothmans3.jpg" alt="로스만 클릭 6MG" />
+									</span>
+								</div>
+								<!-- //box_top -->
+								<!-- box_btm -->
+								<div class="box_btm">
+									<!-- detail_product -->
+									<ul class="detail_product">
+										<li>
+											<strong>타르</strong>
+											<span>6.0mg</span>
+										</li>
+										<li>
+											<strong>니코틴</strong>
+											<span>0.50mg</span>
+										</li>
+										<li>
+											<strong>가격</strong>
+											<span>4,100원</span>
+										</li>
+									</ul>
+									<!-- //detail_product -->
+									<!-- btn_tip -->
+									<div class="btn_tip">
+										<a href="javascript:;">판매요령</a>
+									</div>
+									<!-- //btn_tip -->
+								</div>
+								<!-- //box_btm -->
+							</li>
+							<!-- // -->
+						</ul>
+					</div>
+					<div id="tab_cont3">
+						<strong class="tit_small">굵은담배</strong>
+						<ul class="list_product">
+							<li>
+								<!-- box_top -->
+								<div class="box_top">
+									<strong class="name_product">로스만 5MG</strong>
+									<span class="type1">
+										<img src="/page/images/rwd/brand/img_Rothmans4.jpg" alt="로스만 5MG" />
+									</span>
+								</div>
+								<!-- //box_top -->
+								<!-- box_btm -->
+								<div class="box_btm">
+									<!-- detail_product -->
+									<ul class="detail_product">
+										<li>
+											<strong>타르</strong>
+											<span>5.0mg</span>
+										</li>
+										<li>
+											<strong>니코틴</strong>
+											<span>0.50mg</span>
+										</li>
+										<li>
+											<strong>가격</strong>
+											<span>4,100원</span>
+										</li>
+									</ul>
+									<!-- //detail_product -->
+									<!-- btn_tip -->
+									<div class="btn_tip">
+										<a href="javascript:;">판매요령</a>
+									</div>
+									<!-- //btn_tip -->
+								</div>
+								<!-- //box_btm -->
+							</li>
+							<!-- // -->
+							<li>
+								<!-- box_top -->
+								<div class="box_top">
+									<strong class="name_product">로스만 1MG</strong>
+									<span class="type1">
+										<img src="/page/images/rwd/brand/img_Rothmans5.jpg" alt="로스만 1MG" />
+									</span>
+								</div>
+								<!-- //box_top -->
+								<!-- box_btm -->
+								<div class="box_btm">
+									<!-- detail_product -->
+									<ul class="detail_product">
+										<li>
+											<strong>타르</strong>
+											<span>1.0mg</span>
+										</li>
+										<li>
+											<strong>니코틴</strong>
+											<span>0.10mg</span>
+										</li>
+										<li>
+											<strong>가격</strong>
+											<span>4,100원</span>
+										</li>
+									</ul>
+									<!-- //detail_product -->
+									<!-- btn_tip -->
+									<div class="btn_tip">
+										<a href="javascript:;">판매요령</a>
+									</div>
+									<!-- //btn_tip -->
+								</div>
+								<!-- //box_btm -->
+							</li>
+							<!-- // -->
+							<li>
+								<!-- box_top -->
+								<div class="box_top">
+									<strong class="name_product">로스만 클릭 6MG</strong>
+									<span class="type1">
+										<img src="/page/images/rwd/brand/img_Rothmans3.jpg" alt="로스만 클릭 6MG" />
+									</span>
+								</div>
+								<!-- //box_top -->
+								<!-- box_btm -->
+								<div class="box_btm">
+									<!-- detail_product -->
+									<ul class="detail_product">
+										<li>
+											<strong>타르</strong>
+											<span>6.0mg</span>
+										</li>
+										<li>
+											<strong>니코틴</strong>
+											<span>0.50mg</span>
+										</li>
+										<li>
+											<strong>가격</strong>
+											<span>4,100원</span>
+										</li>
+									</ul>
+									<!-- //detail_product -->
+									<!-- btn_tip -->
+									<div class="btn_tip">
+										<a href="javascript:;">판매요령</a>
+									</div>
+									<!-- //btn_tip -->
+								</div>
+								<!-- //box_btm -->
+							</li>
+							<!-- // -->
+						</ul>
+					</div>
+					<div id="tab_cont4">
+						<strong class="tit_small">얇은담배</strong>
+						<ul class="list_product">
+							<li>
+								<!-- box_top -->
+								<div class="box_top">
+									<strong class="name_product">로스만 수퍼슬림 프리마 4MG</strong>
+									<span class="type2">
+										<img src="/page/images/rwd/brand/img_Rothmans6.jpg" alt="로스만 수퍼슬림 프리마 4MG" />
+									</span>
+								</div>
+								<!-- //box_top -->
+								<!-- box_btm -->
+								<div class="box_btm">
+									<!-- detail_product -->
+									<ul class="detail_product">
+										<li>
+											<strong>타르</strong>
+											<span>4.0mg</span>
+										</li>
+										<li>
+											<strong>니코틴</strong>
+											<span>0.40mg</span>
+										</li>
+										<li>
+											<strong>가격</strong>
+											<span>4,100원</span>
+										</li>
+									</ul>
+									<!-- //detail_product -->
+									<!-- btn_tip -->
+									<div class="btn_tip">
+										<a href="javascript:;">판매요령</a>
+									</div>
+									<!-- //btn_tip -->
+								</div>
+								<!-- //box_btm -->
+							</li>
+							<!-- // -->
+							<li>
+								<!-- box_top -->
+								<div class="box_top">
+									<strong class="name_product">로스만 수퍼슬림 1MG</strong>
+									<span class="type2">
+										<img src="/page/images/rwd/brand/img_Rothmans1.jpg" alt="로스만 수퍼슬림 1MG" />
+									</span>
+								</div>
+								<!-- //box_top -->
+								<!-- box_btm -->
+								<div class="box_btm">
+									<!-- detail_product -->
+									<ul class="detail_product">
+										<li>
+											<strong>타르</strong>
+											<span>1.0mg</span>
+										</li>
+										<li>
+											<strong>니코틴</strong>
+											<span>0.10mg</span>
+										</li>
+										<li>
+											<strong>가격</strong>
+											<span>4,100원</span>
+										</li>
+									</ul>
+									<!-- //detail_product -->
+									<!-- btn_tip -->
+									<div class="btn_tip">
+										<a href="javascript:openSalesTip();">판매요령</a>
+									</div>
+									<!-- //btn_tip -->
+								</div>
+								<!-- //box_btm -->
+							</li>
+							<!-- // -->
+							<li>
+								<!-- box_top -->
+								<div class="box_top">
+									<strong class="name_product">로스만 수퍼슬림 블루 1MG</strong>
+									<span class="type2">
+										<img src="/page/images/rwd/brand/img_Rothmans2.jpg" alt="로스만 수퍼슬림 블루 1MG" />
+									</span>
+								</div>
+								<!-- //box_top -->
+								<!-- box_btm -->
+								<div class="box_btm">
+									<!-- detail_product -->
+									<ul class="detail_product">
+										<li>
+											<strong>타르</strong>
+											<span>1.0mg</span>
+										</li>
+										<li>
+											<strong>니코틴</strong>
+											<span>0.10mg</span>
+										</li>
+										<li>
+											<strong>가격</strong>
+											<span>4,100원</span>
+										</li>
+									</ul>
+									<!-- //detail_product -->
+									<!-- btn_tip -->
+									<div class="btn_tip">
+										<a href="javascript:;">판매요령</a>
+									</div>
+									<!-- //btn_tip -->
+								</div>
+								<!-- //box_btm -->
+							</li>
+							<!-- // -->
+							<li>
+								<!-- box_top -->
+								<div class="box_top">
+									<strong class="name_product">로스만 수퍼슬림 0.5MG</strong>
+									<span class="type2">
+										<img src="/page/images/rwd/brand/img_Rothmans7.jpg" alt="로스만 수퍼슬림 0.5MG" />
+									</span>
+								</div>
+								<!-- //box_top -->
+								<!-- box_btm -->
+								<div class="box_btm">
+									<!-- detail_product -->
+									<ul class="detail_product">
+										<li>
+											<strong>타르</strong>
+											<span>0.5mg</span>
+										</li>
+										<li>
+											<strong>니코틴</strong>
+											<span>0.07mg</span>
+										</li>
+										<li>
+											<strong>가격</strong>
+											<span>4,100원</span>
+										</li>
+									</ul>
+									<!-- //detail_product -->
+									<!-- btn_tip -->
+									<div class="btn_tip">
+										<a href="javascript:;">판매요령</a>
+									</div>
+									<!-- //btn_tip -->
+								</div>
+								<!-- //box_btm -->
+							</li>
+							<!-- // -->
+							<li>
+								<!-- box_top -->
+								<div class="box_top">
+									<strong class="name_product">로스만 수퍼슬림 클릭</strong>
+									<span class="type2">
+										<img src="/page/images/rwd/brand/img_Rothmans8.jpg" alt="로스만 수퍼슬림 클릭" />
+									</span>
+								</div>
+								<!-- //box_top -->
+								<!-- box_btm -->
+								<div class="box_btm">
+									<!-- detail_product -->
+									<ul class="detail_product">
+										<li>
+											<strong>타르</strong>
+											<span>1.5mg</span>
+										</li>
+										<li>
+											<strong>니코틴</strong>
+											<span>0.10mg</span>
+										</li>
+										<li>
+											<strong>가격</strong>
+											<span>4,100원</span>
+										</li>
+									</ul>
+									<!-- //detail_product -->
+									<!-- btn_tip -->
+									<div class="btn_tip">
+										<a href="javascript:;">판매요령</a>
+									</div>
+									<!-- //btn_tip -->
+								</div>
+								<!-- //box_btm -->
+							</li>
+							<!-- // -->
+						</ul>
+					</div>
+					<div id="tab_cont5">
+						<strong class="tit_small">가향/캡슐담배</strong>
+						<ul class="list_product">
+							<li>
+								<!-- box_top -->
+								<div class="box_top">
+									<strong class="name_product">로스만 클릭 6MG</strong>
+									<span class="type1">
+										<img src="/page/images/rwd/brand/img_Rothmans3.jpg" alt="로스만 클릭 6MG" />
+									</span>
+								</div>
+								<!-- //box_top -->
+								<!-- box_btm -->
+								<div class="box_btm">
+									<!-- detail_product -->
+									<ul class="detail_product">
+										<li>
+											<strong>타르</strong>
+											<span>6.0mg</span>
+										</li>
+										<li>
+											<strong>니코틴</strong>
+											<span>0.50mg</span>
+										</li>
+										<li>
+											<strong>가격</strong>
+											<span>4,100원</span>
+										</li>
+									</ul>
+									<!-- //detail_product -->
+									<!-- btn_tip -->
+									<div class="btn_tip">
+										<a href="javascript:;">판매요령</a>
+									</div>
+									<!-- //btn_tip -->
+								</div>
+								<!-- //box_btm -->
+							</li>
+							<!-- // -->
+							<li>
+								<!-- box_top -->
+								<div class="box_top">
+									<strong class="name_product">로스만 수퍼슬림 클릭</strong>
+									<span class="type2">
+										<img src="/page/images/rwd/brand/img_Rothmans8.jpg" alt="로스만 수퍼슬림 클릭" />
+									</span>
+								</div>
+								<!-- //box_top -->
+								<!-- box_btm -->
+								<div class="box_btm">
+									<!-- detail_product -->
+									<ul class="detail_product">
+										<li>
+											<strong>타르</strong>
+											<span>1.5mg</span>
+										</li>
+										<li>
+											<strong>니코틴</strong>
+											<span>0.10mg</span>
+										</li>
+										<li>
+											<strong>가격</strong>
+											<span>4,100원</span>
+										</li>
+									</ul>
+									<!-- //detail_product -->
+									<!-- btn_tip -->
+									<div class="btn_tip">
+										<a href="javascript:;">판매요령</a>
+									</div>
+									<!-- //btn_tip -->
+								</div>
+								<!-- //box_btm -->
+							</li>
+							<!-- // -->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- web -->
+		
+		<!-- mob -->
+		<div class="mob">
+			<!-- 브랜드 소개 텝 메뉴 -->
+			<div class="tab_menu">
+				<span class="ico_hot">HOT</span><!-- 인기 제품과 함께 보임 -->
+				<span class="ico_new">NEW</span><!-- 신제품과 함께 보임-->
+				<select>
+					<option>인기 제품</option>
+					<option>신제품</option>
+					<option>굵은 담배</option>
+					<option>얇은 담배</option>
+					<option>가향/캡슐 담배</option>
+				</select>
+			</div>
+			<!-- //브랜드 소개 텝 메뉴 -->
+			<div class="content">
+				<div class="tab_cont">
+					<!-- 인기 제품 -->
+					<div id="tab_cont1">
+						<ul class="list_product">
+							<li>
+								<!-- box_left -->
+								<div class="box_left">				
+									<span class="type2">
+										<img src="/page/images/rwd/brand/img_Rothmans1.jpg" alt="로스만 수퍼슬림 1MG" />
+									</span>
+								</div>
+								<!-- //box_left -->
+								<!-- box_right -->
+								<div class="box_right">
+									<!-- detail_product -->
+									<ul class="detail_product">
+										<li>
+											<strong class="name_product">로스만 수퍼슬림 1MG</strong>
+										</li>
+										<li>
+											<span>타르 : 1.0mg</span>
+											<span>니코틴 : 0.10mg</span>
+										</li>
+										<li>
+											<span class="price">4,100원</span>
+										</li>
+										<li class="btn_tip">
+											<a href="javascript:openSalesTip();">판매요령</a>
+										</li>
+									</ul>
+									<!-- //detail_product -->
+								</div>
+								<!-- //box_right -->
+							</li>
+							<!-- // -->
+							<li>
+								<!-- box_left -->
+								<div class="box_left">				
+									<span class="type2">
+										<img src="/page/images/rwd/brand/img_Rothmans2.jpg" alt="로스만 수퍼슬림 블루 1MG" />
+									</span>
+								</div>
+								<!-- //box_left -->
+								<!-- box_right -->
+								<div class="box_right">
+									<!-- detail_product -->
+									<ul class="detail_product">
+										<li>
+											<strong class="name_product">로스만 수퍼슬림 블루 1MG</strong>
+										</li>
+										<li>
+											<span>타르 : 1.0mg</span>
+											<span>니코틴 : 0.10mg</span>
+										</li>
+										<li>
+											<span class="price">4,100원</span>
+										</li>
+										<li class="btn_tip">
+											<a href="javascript:openSalesTip();">판매요령</a>
+										</li>
+									</ul>
+									<!-- //detail_product -->
+								</div>
+								<!-- //box_right -->
+							</li>
+							<!-- // -->
+						</ul>
+					</div>		
+					<!-- //인기 제품 -->
+						
+					<!-- 신제품 -->
+					<div id="tab_cont2">
+						<ul class="list_product">
+							<li>
+								<!-- box_left -->
+								<div class="box_left">				
+									<span class="type1">
+										<img src="/page/images/rwd/brand/img_Rothmans3.jpg" alt="로스만 클릭 6MG" />
+									</span>
+								</div>
+								<!-- //box_left -->
+								<!-- box_right -->
+								<div class="box_right">
+									<!-- detail_product -->
+									<ul class="detail_product">
+										<li>
+											<strong class="name_product">로스만 클릭 6MG</strong>
+										</li>
+										<li>
+											<span>타르 : 6.0mg</span>
+											<span>니코틴 : 0.50mg</span>
+										</li>
+										<li>
+											<span class="price">4,100원</span>
+										</li>
+										<li class="btn_tip">
+											<a href="javascript:openSalesTip();">판매요령</a>
+										</li>
+									</ul>
+									<!-- //detail_product -->
+								</div>
+								<!-- //box_right -->
+							</li>
+							<!-- // -->
+						</ul>
+					</div>
+					<!-- //신제품 -->
+					
+					<!-- 굵은 담배 -->
+					<div id="tab_cont3">
+						<ul class="list_product">
+							<li>
+								<!-- box_left -->
+								<div class="box_left">				
+									<span class="type1">
+										<img src="/page/images/rwd/brand/img_Rothmans4.jpg" alt="로스만 5MG" />
+									</span>
+								</div>
+								<!-- //box_left -->
+								<!-- box_right -->
+								<div class="box_right">
+									<!-- detail_product -->
+									<ul class="detail_product">
+										<li>
+											<strong class="name_product">로스만 5MG</strong>
+										</li>
+										<li>
+											<span>타르 : 5.0mg</span>
+											<span>니코틴 : 0.50mg</span>
+										</li>
+										<li>
+											<span class="price">4,100원</span>
+										</li>
+										<li class="btn_tip">
+											<a href="javascript:openSalesTip();">판매요령</a>
+										</li>
+									</ul>
+									<!-- //detail_product -->
+								</div>
+								<!-- //box_right -->
+							</li>
+							<!-- // -->
+							<li>
+								<!-- box_left -->
+								<div class="box_left">				
+									<span class="type1">
+										<img src="/page/images/rwd/brand/img_Rothmans5.jpg" alt="로스만 1MG" />
+									</span>
+								</div>
+								<!-- //box_left -->
+								<!-- box_right -->
+								<div class="box_right">
+									<!-- detail_product -->
+									<ul class="detail_product">
+										<li>
+											<strong class="name_product">로스만 1MG</strong>
+										</li>
+										<li>
+											<span>타르 : 1.0mg</span>
+											<span>니코틴 : 0.10mg</span>
+										</li>
+										<li>
+											<span class="price">4,100원</span>
+										</li>
+										<li class="btn_tip">
+											<a href="javascript:openSalesTip();">판매요령</a>
+										</li>
+									</ul>
+									<!-- //detail_product -->
+								</div>
+								<!-- //box_right -->
+							</li>
+							<!-- // -->
+							<li>
+								<!-- box_left -->
+								<div class="box_left">				
+									<span class="type1">
+										<img src="/page/images/rwd/brand/img_Rothmans3.jpg" alt="로스만 클릭 6MG" />
+									</span>
+								</div>
+								<!-- //box_left -->
+								<!-- box_right -->
+								<div class="box_right">
+									<!-- detail_product -->
+									<ul class="detail_product">
+										<li>
+											<strong class="name_product">로스만 클릭 6MG</strong>
+										</li>
+										<li>
+											<span>타르 : 6.0mg</span>
+											<span>니코틴 : 0.50mg</span>
+										</li>
+										<li>
+											<span class="price">4,100원</span>
+										</li>
+										<li class="btn_tip">
+											<a href="javascript:openSalesTip();">판매요령</a>
+										</li>
+									</ul>
+									<!-- //detail_product -->
+								</div>
+								<!-- //box_right -->
+							</li>
+							<!-- // -->
+						</ul>
+					</div>
+					<!-- //굵은 담배 -->
+					
+					<!-- 얇은 담배 -->
+					<div id="tab_cont4">
+						<ul class="list_product">
+							<li>
+								<!-- box_left -->
+								<div class="box_left">				
+									<span class="type2">
+										<img src="/page/images/rwd/brand/img_Rothmans6.jpg" alt="로스만 수퍼슬림 프리마 4MG" />
+									</span>
+								</div>
+								<!-- //box_left -->
+								<!-- box_right -->
+								<div class="box_right">
+									<!-- detail_product -->
+									<ul class="detail_product">
+										<li>
+											<strong class="name_product">로스만 수퍼슬림 프리마 4MG</strong>
+										</li>
+										<li>
+											<span>타르 : 4.0mg</span>
+											<span>니코틴 : 0.40mg</span>
+										</li>
+										<li>
+											<span class="price">4,100원</span>
+										</li>
+										<li class="btn_tip">
+											<a href="javascript:openSalesTip();">판매요령</a>
+										</li>
+									</ul>
+									<!-- //detail_product -->
+								</div>
+								<!-- //box_right -->
+							</li>
+							<!-- // -->
+							<li>
+								<!-- box_left -->
+								<div class="box_left">				
+									<span class="type2">
+										<img src="/page/images/rwd/brand/img_Rothmans1.jpg" alt="로스만 수퍼슬림 1MG" />
+									</span>
+								</div>
+								<!-- //box_left -->
+								<!-- box_right -->
+								<div class="box_right">
+									<!-- detail_product -->
+									<ul class="detail_product">
+										<li>
+											<strong class="name_product">로스만 수퍼슬림 1MG</strong>
+										</li>
+										<li>
+											<span>타르 : 1.0mg</span>
+											<span>니코틴 : 0.10mg</span>
+										</li>
+										<li>
+											<span class="price">4,100원</span>
+										</li>
+										<li class="btn_tip">
+											<a href="javascript:openSalesTip();">판매요령</a>
+										</li>
+									</ul>
+									<!-- //detail_product -->
+								</div>
+								<!-- //box_right -->
+							</li>
+							<!-- // -->
+							<li>
+								<!-- box_left -->
+								<div class="box_left">				
+									<span class="type2">
+										<img src="/page/images/rwd/brand/img_Rothmans2.jpg" alt="로스만 수퍼슬림 블루 1MG" />
+									</span>
+								</div>
+								<!-- //box_left -->
+								<!-- box_right -->
+								<div class="box_right">
+									<!-- detail_product -->
+									<ul class="detail_product">
+										<li>
+											<strong class="name_product">로스만 수퍼슬림 블루 1MG</strong>
+										</li>
+										<li>
+											<span>타르 : 1.0mg</span>
+											<span>니코틴 : 0.10mg</span>
+										</li>
+										<li>
+											<span class="price">4,100원</span>
+										</li>
+										<li class="btn_tip">
+											<a href="javascript:openSalesTip();">판매요령</a>
+										</li>
+									</ul>
+									<!-- //detail_product -->
+								</div>
+								<!-- //box_right -->
+							</li>
+							<!-- // -->
+							<li>
+								<!-- box_left -->
+								<div class="box_left">				
+									<span class="type2">
+										<img src="/page/images/rwd/brand/img_Rothmans7.jpg" alt="로스만 수퍼슬림 0.5MG" />
+									</span>
+								</div>
+								<!-- //box_left -->
+								<!-- box_right -->
+								<div class="box_right">
+									<!-- detail_product -->
+									<ul class="detail_product">
+										<li>
+											<strong class="name_product">로스만 수퍼슬림 0.5MG</strong>
+										</li>
+										<li>
+											<span>타르 : 0.5mg</span>
+											<span>니코틴 : 0.07mg</span>
+										</li>
+										<li>
+											<span class="price">4,100원</span>
+										</li>
+										<li class="btn_tip">
+											<a href="javascript:openSalesTip();">판매요령</a>
+										</li>
+									</ul>
+									<!-- //detail_product -->
+								</div>
+								<!-- //box_right -->
+							</li>
+							<!-- // -->
+							<li>
+								<!-- box_left -->
+								<div class="box_left">				
+									<span class="type2">
+										<img src="/page/images/rwd/brand/img_Rothmans8.jpg" alt="로스만 수퍼슬림 클릭" />
+									</span>
+								</div>
+								<!-- //box_left -->
+								<!-- box_right -->
+								<div class="box_right">
+									<!-- detail_product -->
+									<ul class="detail_product">
+										<li>
+											<strong class="name_product">로스만 수퍼슬림 클릭</strong>
+										</li>
+										<li>
+											<span>타르 : 1.5mg</span>
+											<span>니코틴 : 1.0mg</span>
+										</li>
+										<li>
+											<span class="price">4,100원</span>
+										</li>
+										<li class="btn_tip">
+											<a href="javascript:openSalesTip();">판매요령</a>
+										</li>
+									</ul>
+									<!-- //detail_product -->
+								</div>
+								<!-- //box_right -->
+							</li>
+							<!-- // -->
+						</ul>
+					</div>
+					<!-- //얇은 담배 -->
+					
+					<!-- 가향/캡슐 담배 -->
+					<div id="tab_cont5">
+						<ul class="list_product">
+							<li>
+								<!-- box_left -->
+								<div class="box_left">				
+									<span class="type1">
+										<img src="/page/images/rwd/brand/img_Rothmans3.jpg" alt="로스만 클릭 6MG" />
+									</span>
+								</div>
+								<!-- //box_left -->
+								<!-- box_right -->
+								<div class="box_right">
+									<!-- detail_product -->
+									<ul class="detail_product">
+										<li>
+											<strong class="name_product">로스만 클릭 6MG</strong>
+										</li>
+										<li>
+											<span>타르 : 6.0mg</span>
+											<span>니코틴 : 0.50mg</span>
+										</li>
+										<li>
+											<span class="price">4,100원</span>
+										</li>
+										<li class="btn_tip">
+											<a href="javascript:openSalesTip();">판매요령</a>
+										</li>
+									</ul>
+									<!-- //detail_product -->
+								</div>
+								<!-- //box_right -->
+							</li>
+							<!-- // -->
+							<li>
+								<!-- box_left -->
+								<div class="box_left">				
+									<span class="type2">
+										<img src="/page/images/rwd/brand/img_Rothmans8.jpg" alt="로스만 수퍼슬림 클릭" />
+									</span>
+								</div>
+								<!-- //box_left -->
+								<!-- box_right -->
+								<div class="box_right">
+									<!-- detail_product -->
+									<ul class="detail_product">
+										<li>
+											<strong class="name_product">로스만 수퍼슬림 클릭</strong>
+										</li>
+										<li>
+											<span>타르 : 1.5mg</span>
+											<span>니코틴 : 0.10mg</span>
+										</li>
+										<li>
+											<span class="price">4,100원</span>
+										</li>
+										<li class="btn_tip">
+											<a href="javascript:openSalesTip();">판매요령</a>
+										</li>
+									</ul>
+									<!-- //detail_product -->
+								</div>
+								<!-- //box_right -->
+							</li>
+							<!-- // -->
+						</ul>
+					</div>
+					<!-- //가향/캡슐 담배 -->
+				</div>
+			</div>
+		</div>
+		<!-- //mob -->
+	</div>
+	<!--// page-content -->
+
+	<!--  ub-foot -->
+	<div id="ub_foot" class="ub_foot">
+		<div class="inner">
+			<div class="flex-layout align-start">
+				<div class="ub-layout leftBox">
+					<ul>
+						<li>
+							<span class="address">서울특별시 강남구 테헤란로 152 강남파이낸스센터 42층</span>
+						</li>
+						<li>
+							<span class="call"><a href="tel:080-787-1000" >080-787-1000</a></span>
+						</li>
+						<li>
+							<a href="javascript:viewAgreement();" class="policy">이용약관</a>
+						</li>
+					</ul>
+				</div>
+				<div class="ub-layout rightBox">
+					<span class="copy">Copyright © BAT Korea All rights reserved.</span>
+				</div>
+			</div>
+		</div>
+		<div class="txt_warning">
+			<span>흡연은 폐암등 각종 질병의 원인! 그래도 피우시겠습니까?<br /> 담배연기에는 발암성 물질인 나프틸아민, 니켈, 벤젠, 비닐 크롤라이드, 비소, 카드뮴이 들어있습니다.<br /> 금연상담전화 1544-9030</span>
+		</div>
+		<!-- Layer 팝업 로드 위치 -->
+		<div id="divAgreeView"></div>
+		<!-- 첫로그인 환영팝업 -->
+		<div id="divFirstLogin"></div>
+	</div>
+	<!-- //ub-foot -->
+	
+	<!--   inc / scrollup (서브화면에서만 노출) -->
+	<div class="btn_scrollup">
+		<a href="javascript:;"  id="backtotop">위로 이동</a>
+	</div>
+	<!--  //inc / include -->
+</div>
+
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {	
+		//브랜드 소개 페이지 텝 메뉴 스크롤 이벤트
+		$(".ub-frame.body").scroll(function(){
+			var scrollTopWeb = 410;
+			//웹
+			if($(".ub-frame.body").scrollTop() >= scrollTopWeb){
+				// 410 이상으로 스크롤 이동시 텝 메뉴 위치 gnb 하단으로 이동
+				$(".tab_menu").addClass("fixed")
+				$(".tab_menu ul").addClass("pchange")
+			}
+			if($(".ub-frame.body").scrollTop() < scrollTopWeb){
+				// 410 이하로 스크롤 이동시 텝 메뉴가 위치 원복
+				$(".tab_menu").removeClass("fixed")
+				$(".tab_menu ul").removeClass("pchange")
+			}
+		});
+		$(".mobile .ub-frame.body").scroll(function(){
+			var scrollTopMob = 220;
+			//모바일
+			if($(".mobile .ub-frame.body").scrollTop() >= scrollTopMob){
+				// 220 이상으로 스크롤 이동시 텝 메뉴 위치 gnb 하단으로 이동
+				$(".tab_menu").addClass("fixed")
+				$(".tab_menu ul").addClass("pchange")
+			}
+			if($(".mobile .ub-frame.body").scrollTop() < scrollTopMob){
+				// 220 이하로 스크롤 이동시 텝 메뉴가 위치 원복
+				$(".tab_menu").removeClass("fixed")
+				$(".tab_menu ul").removeClass("pchange")
+			}
+		});
+		//브랜드 소개 페이지 텝 메뉴
+		$(".tab_menu a").click(function () {
+			//텝 메뉴 on/off 스타일 컨트롤
+			$(".tab_menu a").removeClass("on")
+			$(this).addClass("on")
+		});
+
+
+		//location navi
+	$(".submenu>a").click(function() {
+		$(this).next().toggleClass("open")
+	});
+
+	//location 구성
+	makeNavigation();
+	
+	$("#navi1").multiselect({
+		multiple: false,
+		header:false,
+		noneSelectedText:'-',
+		appendTo:'section.ub-frame.body',
+		selectedList: 1
+	});
+
+	$("#navi2").multiselect({
+		multiple: false,
+		header:false,
+		noneSelectedText:'-',
+		appendTo:'section.ub-frame.body',
+		selectedList: 1
+	});
+
+	// 현재 선택된 메뉴의 1레벨/2레벨 정보를 검색하여 네비게이션에 설정
+	var selectedMenuId= '<%=selectedMenuId %>';
+	var $selectedMenu = $('#topMenu .ub-menu-item[menuId="'+selectedMenuId+'"]'); 
+	var $menu1 = $selectedMenu.closest('#topMenu > ul > li').children('.ub-menu-item');
+	var $menu2 = $selectedMenu.closest('div.depth2 > ul > li').children('.ub-menu-item');
+	var $menu3 = $selectedMenu.closest('div.depth3 > ul > li').children('.ub-menu-item');
+
+	// 현재 선택된 메뉴1레벨, 메뉴 2레벨 ID
+	var _sel_menu1_id = $menu1.attr('menuId');
+	var _sel_menu2_id = $menu2.attr('menuId');
+	var _sel_menu3_id = $menu3.attr('menuId');
+
+	$('#navi1')[0].defaultValue = _sel_menu1_id;
+	$('#navi2')[0].defaultValue = (uxl.isNotNull(_sel_menu3_id) ? _sel_menu3_id:_sel_menu2_id);
+	if(uxl.isNull($('#navi2')[0].defaultValue)){
+		$('#navi2')[0].defaultValue = "";
+	}
+
+	$('#navi1')[0].value = _sel_menu1_id;
+	$('#navi2')[0].value = _sel_menu2_id;
+
+	$('#navi1').change();
+	$('#navi1').multiselect('refresh');
+	$('#navi2').multiselect('refresh');
+	});
+	//브랜드 소개 페이지 텝메뉴 스크롤 이동 이벤트
+	function scrollMove(seq){
+		var offset = $("#tab_cont" + seq).offset();
+		var scrollTop = $('.ub-frame.body')[0].scrollTop;
+		$('.ub-frame.body').animate({scrollTop : scrollTop+offset.top-150}, 1000); 
+		$('.mobile .ub-frame.body').animate({scrollTop : scrollTop+offset.top-200}, 1000); 
+	}
+
+	/**
+ * 현재 메뉴정보로 네비게이션을 객체를 구성한다.
+ */
+function makeNavigation(){
+	$('#navi1').empty();
+	$('.ub-menu-item.depth1').each(function(){
+		$('#navi1').append('<option value="'+$(this).attr('menuId')+'">'+$(this).text()+'</option>');
+	});
+	
+	$('#navi1').change(function(){
+		
+		// UI갱신
+		$('#navi2').empty();
+		$("#navi2").multiselect('refresh');
+		
+		var $parent = $('.ub-menu-item.depth1[menuId='+$(this).val()+']').parent();
+		var $menu2item = $('.depth2 .ub-menu-item', $parent);
+
+		// 하위 메뉴가 없을 경우 상단 링크로 실행
+		if($menu2item.size() == 0){
+			$('#navi2').parent().hide();
+			// 현재 설정된 값과 동일하면 변경하지 않는다.
+			if(this.value != this.defaultValue){
+				fnMoveTopMenu($(this).val());		
+			}
+		}else{
+			$('#navi2').parent().show();
+			$('#navi2').append('<option value=""></option>');
+			$menu2item.each(function(){
+				// 객체에서 직접읽어야 IE11에서 오류가 데이터는 정상적으로 가져옴. (IE/클롬 정상)
+				if($('#navi2')[0].defaultValue == $(this).attr('menuId')){
+					$('#navi2').append('<option value="'+$(this).attr('menuId')+'" selected>'+$(this).text()+'</option>');
+				}else{					
+					$('#navi2').append('<option value="'+$(this).attr('menuId')+'">'+$(this).text()+'</option>');	
+				}
+			});
+			
+			// UI갱신
+			$("#navi2").multiselect('refresh');
+
+			// 1레벨의 메뉴 실행
+			if(uxl.isNotEmpty(this.value)){
+				if(this.value != this.defaultValue){
+					if(fnHasUrl(this.value)){
+						fnMoveTopMenu(this.value);		
+					}else{
+						selectNextMenu();
+						$("#navi2").change();
+					}
+				}
+			}else{
+				selectNextMenu();
+				$("#navi2").change();
+			}
+		}
+		
+	});
+
+	// Navi2가 변경되면 메뉴를 이동
+	$('#navi2').change(function(){
+		// 현재 설정된 값과 동일하면 변경하지 않는다.
+		if(this.value != this.defaultValue){
+			fnMoveTopMenu($(this).val());		
+		}
+	});
+}
+
+function selectNextMenu(){
+	// 2레벨 메뉴의 연결 URL이 존재하는지 체크하여 없으면 다음 URL이 존재하는 메뉴로 선택되도록 한다.
+	if(!fnHasUrl($('#navi2').val())){
+		// 현재 선택된 메뉴의 다음 option중에서 첫번째 option을 가져오는 selector
+		var $option = $('option:selected ~ option:first', $('#navi2'));
+		$option.attr('selected', true);
+
+		if(!fnHasUrl($option.val())){
+			// 현재 선택된 메뉴의 다음 option중에서 첫번째 option을 가져오는 selector
+			var $option = $('option:selected ~ option:first', $('#navi2'));
+			$option.attr('selected', true);
+		}
+	}
+}
+</script>
+
+</body>
+</html>

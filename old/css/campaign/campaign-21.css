@@ -1,0 +1,461 @@
+@charset "utf-8";
+
+/* --------------------------------- 출석 이벤트 전용 css ---------------------------------  */ 
+/* 출석체크 */
+.sub.campaign .camp_attend {text-align:center;}
+.sub.campaign .camp_attend .sec_top {background:#314460;}
+.sub.campaign .camp_attend .sec_top .inner {background-color:#2a5ee0; background-position:50% 0; background-repeat:no-repeat;}
+.sub.campaign .camp_attend .area_main_info span,
+.sub.campaign .camp_attend .area_sub_info span {display:inline-block; margin:0 auto; text-indent:-9999px; background-position:0 0; background-repeat:no-repeat;}
+.sub.campaign .camp_attend .inner_mid {position:relative; min-height:530px;}
+.sub.campaign .camp_attend .area_sub_info {position:absolute; top:26px;  left:46px;  z-index:5;}
+.sub.campaign .camp_attend .area_at_board {position:absolute; top:21px; right:66px; z-index:6;}
+
+.sub.campaign .camp_attend .area_at_board ul {width:732px;}
+.sub.campaign .camp_attend .area_at_board ul:after {display:block; content:' '; clear:both;}
+.sub.campaign .camp_attend .area_at_board ul li {float:left; width:120px; height:100px; margin:0 0 2px 2px;  background:#4b5f7f;}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(1),
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(2),
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(3),
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(4),
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(5),
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(6),
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(7),
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(8),
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(9),
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(10),
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(11),
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(12) {background:#6086e7;}
+.sub.campaign .camp_attend .area_at_board ul li span {position:relative; display:inline-block; width:120px; height:100px; text-indent:-9999px; background-repeat:no-repeat; background-position:50% 50%; transform:rotate(340deg);z-index:1;}
+.sub.campaign .camp_attend .area_at_board ul li.r_coupon span,
+.sub.campaign .camp_attend .area_at_board ul li.r_coupon.checked span {background-position:65% 40%;}
+.sub.campaign .camp_attend .area_at_board ul li.checked span {background-position:71% 50%;z-index:2;}
+
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(1) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day1.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(2) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day2.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(3) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day3.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(4) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day4.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(5) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day5.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(6) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day6.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(7) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day7.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(8) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day8.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(9) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day9.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(10) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day10.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(11) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day11.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(12) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day12.png');} 
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(13) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day13.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(14) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day14.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(15) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day15.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(16) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day16.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(17) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day17.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(18) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day18.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(19) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day19.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(20) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day20.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(21) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day21.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(22) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day22.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(23) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day23.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(24) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day24.png');} 
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(25) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day25.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(26) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day26.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(27) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day27.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(28) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day28.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(29) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day29.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(30) span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day30.png');}
+
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(1).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day1_on.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(2).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day2_on.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(3).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day3_on.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(4).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day4_on.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(5).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day5_on.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(6).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day6_on.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(7).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day7_on.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(8).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day8_on.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(9).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day9_on.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(10).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day10_on.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(11).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day11_on.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(12).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day12_on.png');} 
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(13).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day13_on.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(14).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day14_on.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(15).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day15_on.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(16).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day16_on.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(17).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day17_on.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(18).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day18_on.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(19).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day19_on.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(20).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day20_on.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(21).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day21_on.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(22).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day22_on.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(23).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day23_on.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(24).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day24_on.png');} 
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(25).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day25_on.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(26).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day26_on.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(27).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day27_on.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(28).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day28_on.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(29).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day29_on.png');}
+.sub.campaign .camp_attend .area_at_board ul li:nth-child(30).checked span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_day30_on.png');} 
+
+.sub.campaign .camp_attend .area_at_board ul li.checked.today span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_ani01.png'); background-size:100% auto; transform-origin: 50% 50%;transform:rotate(360deg) scale(7);transition: all 0s cubic-bezier(0.6, 0.04, 0.98, 0.335); opacity:0.8; z-index:3;}
+.sub.campaign .camp_attend .area_at_board ul li.r_coupon.checked.today span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_ani02.png');}
+.sub.campaign .camp_attend .area_at_board.loaded ul li.checked.today span {opacity:1;transform:rotate(340deg) scale(1);z-index:1;transition: all .3s cubic-bezier(0.6, 0.04, 0.98, 0.335);}
+.sub.campaign .camp_attend .area_at_board.loaded ul li.checked.today span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_ani01.png');}
+.sub.campaign .camp_attend .area_at_board.loaded ul li.r_coupon.checked.today span {background-image:url('../../../images/rwd/campaign/21/bg_stamp_ani02.png');}
+
+.sub.campaign .camp_attend .btn_attend a {display:inline-block; text-indent:-9999px; width:296px; height:66px; margin-top:30px; background-image:url('../../../images/rwd/campaign/21/btn_attend.png'); background-repeat:no-repeat; background-position:0 0;}
+.sub.campaign .camp_attend .tit_howto {display:block; text-indent:-9999px; background-repeat:no-repeat; background-position:50% 0;}
+.sub.campaign .camp_attend .conts_howto {display:table; width:100%;}
+.sub.campaign .camp_attend .conts_howto .step {display:table-cell; width:33.33%;}
+.sub.campaign .camp_attend .conts_howto .step dt,
+.sub.campaign .camp_attend .conts_howto .step dd .period,
+.sub.campaign .camp_attend .conts_howto .step dd p,
+.sub.campaign .camp_attend .txt_howto_guide {text-indent:-9999px; background-repeat:no-repeat; background-position:0 0;}
+.sub.campaign .camp_attend .txt_howto_guide {background-position:50% 0;}
+
+/* 룰렛 */
+.sub.campaign .camp_attend .sec_mid {background-color:#16a6fc; }
+.sub.campaign .camp_attend .sec_mid .inner {background-repeat:no-repeat; background-position:0 0;}
+.sub.campaign .camp_attend .area_roulette_info span {display:inline-block; text-indent:-9999px; background-position:0 0; background-repeat:no-repeat;}
+.sub.campaign .camp_attend .roulette_zone {background-repeat:no-repeat;background-position:0 0;}
+.sub.campaign .camp_attend .roulette_zone .roulette_wheel {position:absolute;}
+.sub.campaign .camp_attend .roulette_zone .roulette_wheel .btn_start {position:absolute;  text-indent:-9999px;  border:0; background-color:transparent; background-repeat:no-repeat;background-position:0 0;}
+.sub.campaign .camp_attend .roulette_zone .roulette_wheel .btn_start:focus {border:0; outline:0;}
+.sub.campaign .camp_attend .roulette_zone .roulette_pin {position:absolute;}
+.sub.campaign .camp_attend .roulette_zone .roulette_pin .inner_pin {display:inline-block; background-repeat:no-repeat;background-position:0 0;}
+.sub.campaign .camp_attend .roulette_result:after  {display:block; content:" "; clear:both;}
+.sub.campaign .camp_attend .roulette_result .remainder_coupons,
+.sub.campaign .camp_attend .roulette_result .prize_money {background-repeat:no-repeat;background-position:0 0;}
+.sub.campaign .camp_attend .roulette_result .tit {float:left; text-indent:-9999px;}
+.sub.campaign .camp_attend .roulette_result .count {display:block; font-family:"Segoe UI";}
+.sub.campaign .camp_attend .roulette_result .count .unit {vertical-align:top;font-weight:normal; font-family:'Nanum Gothic','Malgun Gothic', '맑은 고딕';}
+
+
+/* 태블릿공통 ~ 웹 */ 
+@media (min-width:738px) {
+	/* 출석체크 */
+	.sub.campaign .camp_attend .sec_top {min-height:990px;}
+	.sub.campaign .camp_attend .sec_top .inner {height:502px; background-image:url('../../../images/rwd/campaign/21/bg_attend_pattern.jpg');}
+	.sub.campaign .camp_attend .area_at_board ul li.checked.today span {background-size:100% 100%;}
+	.sub.campaign .camp_attend .area_at_board.loaded ul li.checked.today span,
+	.sub.campaign .camp_attend .area_at_board.loaded ul li.r_coupon.checked.today span {background-size:97px auto;}
+	.sub.campaign .camp_attend .sec_btm {width:1260px; margin:0 auto;}
+	.sub.campaign .camp_attend .inner_mid,
+	.sub.campaign .camp_attend .area_main_info {width:1260px; margin:0 auto;}
+	.sub.campaign .camp_attend .area_main_info span {width:626px; height:299px;padding-top:30px;background-image:url('../../../images/rwd/campaign/21/txt_attend_info01.png'); background-position:0 30px;}
+	.sub.campaign .camp_attend .area_sub_info span {width:471px; height:528px; background-image:url('../../../images/rwd/campaign/21/txt_attend_info02.png');}
+	.sub.campaign .camp_attend .tit_howto {height:23px; margin:21px 0 31px; background-image:url('../../../images/rwd/campaign/21/tit_attend_howto.gif');}
+	.sub.campaign .camp_attend .conts_howto .step {padding:0 20px; border-left:1px solid #c2c2c2; text-align:left;}
+	.sub.campaign .camp_attend .conts_howto .step:after {display:block; content:' '; clear:both;}
+	.sub.campaign .camp_attend .conts_howto .step dt {float:left; width:104px; height:120px;}
+	.sub.campaign .camp_attend .conts_howto .step.one {border-left:0;}
+	.sub.campaign .camp_attend .conts_howto .step.one dt {background-image:url('../../../images/rwd/campaign/21/tit_howto_step1.jpg');}
+	.sub.campaign .camp_attend .conts_howto .step.two dt {background-image:url('../../../images/rwd/campaign/21/tit_howto_step2.jpg');}
+	.sub.campaign .camp_attend .conts_howto .step.three dt {background-image:url('../../../images/rwd/campaign/21/tit_howto_step3.jpg');}
+	.sub.campaign .camp_attend .conts_howto .step dd {padding:10px 0 0 123px;}
+	.sub.campaign .camp_attend .conts_howto .step dd .period {display:block; height:16px;}
+	.sub.campaign .camp_attend .conts_howto .step.one dd .period {background-image:url('../../../images/rwd/campaign/21/txt_howto_date01.gif');}
+	.sub.campaign .camp_attend .conts_howto .step.two dd .period {background-image:url('../../../images/rwd/campaign/21/txt_howto_date02.gif');}
+	.sub.campaign .camp_attend .conts_howto .step.three dd .period {background-image:url('../../../images/rwd/campaign/21/txt_howto_date03.gif');}
+	.sub.campaign .camp_attend .conts_howto .step dd p {width:260px; height:90px; margin-top:10px;}
+	.sub.campaign .camp_attend .conts_howto .step.one dd p {background-image:url('../../../images/rwd/campaign/21/txt_howto01.gif');}
+	.sub.campaign .camp_attend .conts_howto .step.two dd p {background-image:url('../../../images/rwd/campaign/21/txt_howto02.gif');}
+	.sub.campaign .camp_attend .conts_howto .step.three dd p {background-image:url('../../../images/rwd/campaign/21/txt_howto03.gif');}
+	.sub.campaign .camp_attend .txt_howto_guide {height: 16px; margin:30px 0 36px; background-image:url('../../../images/rwd/campaign/21/txt_attend_guide.gif');}
+	
+	/* 룰렛 */
+	.sub.campaign .camp_attend .sec_mid {}
+	.sub.campaign .camp_attend .sec_mid .inner {position: relative; width:1260px; margin:0 auto; padding:52px 0 41px; background-image:url('../../../images/rwd/campaign/21/bg_pattern_swirling.png'); background-position:100% 165%;}
+	.sub.campaign .camp_attend .inner:after {display:block; content:' '; clear:both;}
+	.sub.campaign .camp_attend .area_roulette_info {position:absolute; top:19px; left:55px; display:inline-block; width:433px; height:370px;}
+	.sub.campaign .camp_attend .area_roulette_info span {width:100%; height:100%; background-image:url('../../../images/rwd/campaign/21/txt_roulette.png');}
+	.sub.campaign .camp_attend .roulette_zone {position:relative; float:right; min-width:685px; min-height:529px; margin-right:51px; background-image:url('../../../images/rwd/campaign/21/bg_w-frame.png');background-position:100% 0;}
+	.sub.campaign .camp_attend .roulette_zone .roulette_wheel {top:30px; left:50%; margin-left:-204px; min-width:426px; min-height:426px;}
+	.sub.campaign .camp_attend .roulette_zone .roulette_wheel .btn_start {top:155px; left:155px;  width:116px; height:116px;  background-image:url('../../../images/rwd/campaign/21/btn_r_start.png');}
+	.roulette_zone .roulette_wheel .btn_start:focus {border:0; outline:0;}
+	.sub.campaign .camp_attend .roulette_zone .roulette_pin { left:332px; top:-12px;}
+	.sub.campaign .camp_attend .roulette_zone .roulette_pin .inner_pin {width:41px; height:80px;  background-image:url('../../../images/rwd/campaign/21/img_pin.png');}
+	.sub.campaign .camp_attend .roulette_result {position:absolute; left:86px;; top:302px;}
+	.sub.campaign .camp_attend .roulette_result .remainder_coupons,
+	.sub.campaign .camp_attend .roulette_result .prize_money {width:310px; height:105px;}
+	.sub.campaign .camp_attend .roulette_result .remainder_coupons {background-image:url('../../../images/rwd/campaign/21/bg_coupon.png');}
+	.sub.campaign .camp_attend .roulette_result .prize_money {margin-top:20px; background-image:url('../../../images/rwd/campaign/21/bg_p-money.png');}
+	.sub.campaign .camp_attend .roulette_result .tit {width:117px;}
+	.sub.campaign .camp_attend .roulette_result .count {padding-left:117px; font-size:35px; line-height:100px;}
+	.sub.campaign .camp_attend .roulette_result .count .unit {margin-left:8px; font-size:17px; line-height:111px;}
+
+
+}
+
+
+@media (min-width:738px) and (max-width:1024px){
+	/* 출석체크 */
+	.sub.campaign .camp_attend .sec_top {min-height:1500px;}
+	.sub.campaign .camp_attend .sec_top .inner {height:700px;}
+	.sub.campaign .camp_attend .inner_mid, 
+	.sub.campaign .camp_attend .area_main_info,
+	.sub.campaign .camp_attend .sec_btm {width:100%;}
+	.sub.campaign .camp_attend .area_sub_info,
+	.sub.campaign .camp_attend .area_at_board {position:static;}
+	.sub.campaign .camp_attend .area_at_board ul {margin:10px auto 0;}
+	.sub.campaign .camp_attend .area_at_board ul li:nth-child(1), 
+	.sub.campaign .camp_attend .area_at_board ul li:nth-child(2), 
+	.sub.campaign .camp_attend .area_at_board ul li:nth-child(3), 
+	.sub.campaign .camp_attend .area_at_board ul li:nth-child(4), 
+	.sub.campaign .camp_attend .area_at_board ul li:nth-child(5), 
+	.sub.campaign .camp_attend .area_at_board ul li:nth-child(6), 
+	.sub.campaign .camp_attend .area_at_board ul li:nth-child(7), 
+	.sub.campaign .camp_attend .area_at_board ul li:nth-child(8), 
+	.sub.campaign .camp_attend .area_at_board ul li:nth-child(9), 
+	.sub.campaign .camp_attend .area_at_board ul li:nth-child(10), 
+	.sub.campaign .camp_attend .area_at_board ul li:nth-child(11), 
+	.sub.campaign .camp_attend .area_at_board ul li:nth-child(12) {background:#4b5f7f;}
+	 .sub.campaign .camp_attend .conts_howto {width:auto; margin:0 auto;}
+	 .sub.campaign .camp_attend .conts_howto .step {display:block; width:auto; margin-top:40px; border:0;}
+	 .sub.campaign .camp_attend .conts_howto .step.one {margin-top:0;}
+	 
+	 /* 룰렛 */
+	 .sub.campaign .camp_attend .sec_mid .inner {background-position:100% 0;}
+	 .sub.campaign .camp_attend .area_roulette_info {position:static; top:auto; left:auto; width:631px; height:449px;}
+	 .sub.campaign .camp_attend .area_roulette_info span {background-image:url('../../../images/rwd/campaign/21/txt_roulette_t.png');}
+	 .sub.campaign .camp_attend .roulette_zone {top:-70px; float:none;  margin: 0 auto; background-position: 50% 0;}
+	 .sub.campaign .camp_attend .roulette_zone .roulette_pin {left: 50%;margin-left: -9px;}
+	 .sub.campaign .camp_attend .roulette_result {position:static; left:auto; top:auto; display:inline-block; margin-top:-60px;}
+	 .sub.campaign .camp_attend .roulette_result .remainder_coupons, 
+	 .sub.campaign .camp_attend .roulette_result .prize_money {float: left; margin:20px 0 0 30px;}
+}
+/* 태블릿 상세 */
+@media (min-width:1024px) and (max-width:1024px){
+	 /* 룰렛 */
+	 .sub.campaign .camp_attend .sec_mid .inner {background-position:0 0;}
+}
+
+@media (max-width:737px) {
+	/* 출석체크 */
+	.sub.campaign .camp_attend .sec_top {position:relative; min-height:83.5rem;}
+	.sub.campaign .camp_attend .sec_top .inner {min-height:34rem; background-image:url('../../../images/rwd/campaign/21/bg_attend_pattern_m.jpg');background-size: 100% auto;}
+	.sub.campaign .camp_attend .area_main_info span {display:block; width:90%; height:17rem; padding-top:1.5rem;background-image:url('../../../images/rwd/campaign/21/txt_attend_info01_m.png'); background-position:0 1.5rem;background-size: 100% auto;}
+	.sub.campaign .camp_attend .area_sub_info span {display:block;  width:90%; height:24rem; margin-top:1rem; background-image:url('../../../images/rwd/campaign/21/txt_attend_info02_m.png');background-size: 100% auto;}
+	.sub.campaign .camp_attend .inner_mid {min-height:auto;}
+	.sub.campaign .camp_attend .area_sub_info {position:absolute; top:0;  left:0; width:100%;}
+	.sub.campaign .camp_attend .area_at_board {position:absolute; top:25rem;  left:0; width:100%;}
+	.sub.campaign .camp_attend .area_at_board ul {width:auto; padding:0 0.6rem; margin-top:1rem;}
+	.sub.campaign .camp_attend .area_at_board ul li {width:16.3%; height:6rem; margin:0 0 1px 1px;  background:#4b5f7f;}
+	.sub.campaign .camp_attend .area_at_board ul li:nth-child(1), 
+	.sub.campaign .camp_attend .area_at_board ul li:nth-child(2), 
+	.sub.campaign .camp_attend .area_at_board ul li:nth-child(3), 
+	.sub.campaign .camp_attend .area_at_board ul li:nth-child(4), 
+	.sub.campaign .camp_attend .area_at_board ul li:nth-child(5), 
+	.sub.campaign .camp_attend .area_at_board ul li:nth-child(6),
+	.sub.campaign .camp_attend .area_at_board ul li:nth-child(7), 
+	.sub.campaign .camp_attend .area_at_board ul li:nth-child(8), 
+	.sub.campaign .camp_attend .area_at_board ul li:nth-child(9), 
+	.sub.campaign .camp_attend .area_at_board ul li:nth-child(10), 
+	.sub.campaign .camp_attend .area_at_board ul li:nth-child(11), 
+	.sub.campaign .camp_attend .area_at_board ul li:nth-child(12) {background:#4b5f7f;}
+	.sub.campaign .camp_attend .area_at_board ul li span {width:94%; height:6rem; background-size:87% auto; background-position:44% 55%;}
+	.sub.campaign .camp_attend .area_at_board ul li.r_coupon span, 
+	.sub.campaign .camp_attend .area_at_board ul li.checked span {width:95%; margin-left:0.4rem; background-size:100% auto; background-position:100% 55%;}
+	.sub.campaign .camp_attend .btn_attend {position:absolute; bottom:2rem; transform: translate(-50%, 0);}
+	.sub.campaign .camp_attend .btn_attend a {width:25rem; height:4.5rem; margin-top:0; background-image:url('../../../images/rwd/campaign/21/btn_attend_m.png');background-size: 100% auto;}
+	
+	.sub.campaign .camp_attend .tit_howto {height:2.2rem; margin:2rem 0 1.5rem; background-image:url('../../../images/rwd/campaign/21/tit_attend_howto_m.gif'); background-size: 37% auto;}
+	.sub.campaign .camp_attend .conts_howto .step {display:block; width:auto; padding:0 2rem; margin-bottom:2.5rem; text-align:left;}
+	.sub.campaign .camp_attend .conts_howto .step:after {display:block; content:' '; clear:both;}
+	.sub.campaign .camp_attend .conts_howto .step dt {float:left; width:7rem; height:8.3rem; background-size:100% auto;}
+	.sub.campaign .camp_attend .conts_howto .step.three {margin-bottom:2rem;}
+	.sub.campaign .camp_attend .conts_howto .step.one dt {background-image:url('../../../images/rwd/campaign/21/tit_howto_step1_m.png');}
+	.sub.campaign .camp_attend .conts_howto .step.two dt {background-image:url('../../../images/rwd/campaign/21/tit_howto_step2_m.png');}
+	.sub.campaign .camp_attend .conts_howto .step.three dt {background-image:url('../../../images/rwd/campaign/21/tit_howto_step3_m.png');}
+	.sub.campaign .camp_attend .conts_howto .step dd {padding:1rem 0 0 8.5rem;}
+	.sub.campaign .camp_attend .conts_howto .step dd .period {display:block; height:1.6rem; background-size:55% auto;}
+	.sub.campaign .camp_attend .conts_howto .step.one dd .period {background-image:url('../../../images/rwd/campaign/21/txt_howto_date01_m.gif');}
+	.sub.campaign .camp_attend .conts_howto .step.two dd .period {background-image:url('../../../images/rwd/campaign/21/txt_howto_date02_m.gif');}
+	.sub.campaign .camp_attend .conts_howto .step.three dd .period {background-image:url('../../../images/rwd/campaign/21/txt_howto_date03_m.gif');}
+	.sub.campaign .camp_attend .conts_howto .step dd p {height:5rem; margin-top:0.2rem; background-size: 100% auto;}
+	.sub.campaign .camp_attend .conts_howto .step.one dd p {background-image:url('../../../images/rwd/campaign/21/txt_howto01_m.gif');}
+	.sub.campaign .camp_attend .conts_howto .step.two dd p {background-image:url('../../../images/rwd/campaign/21/txt_howto02_m.gif');}
+	.sub.campaign .camp_attend .conts_howto .step.three dd p {background-image:url('../../../images/rwd/campaign/21/txt_howto03_m.gif');}
+	.sub.campaign .camp_attend .txt_howto_guide {height:3rem; background-color:#e8e8e8; background-size:83% auto; background-image:url('../../../images/rwd/campaign/21/txt_attend_guide_m.gif'); background-position:50% 50%;}
+
+	/* 룰렛 */
+	.sub.campaign .camp_attend .sec_mid {padding-bottom: 3rem;}
+	.sub.campaign .camp_attend .sec_mid .inner {background-image:url('../../../images/rwd/campaign/21/bg_pattern_swirling_m.png'); background-size:100% auto; background-position: 0 49%;}
+	.sub.campaign .camp_attend .area_roulette_info span {width:100%; height:25rem; background-image:url('../../../images/rwd/campaign/21/txt_roulette_m.png'); background-size:32rem auto; background-position:40% 1rem;}
+	.sub.campaign .camp_attend .roulette_zone {position:relative; top: -4.7rem; width:36rem; min-height:40.5rem;  margin:0 auto; background-image:url('../../../images/rwd/campaign/21/bg_w-frame_m.png');background-size:100% auto;}
+	.sub.campaign .camp_attend .roulette_zone .roulette_wheel {top:3.8rem; left:2.5rem;}
+	.sub.campaign .camp_attend .roulette_zone .roulette_wheel img {width:31rem; margin:0 auto;}
+	.sub.campaign .camp_attend .roulette_zone .roulette_wheel .btn_start {top:11rem; left:50%; width:8.8rem; height:8.8rem; transform:translate(-50%); background-image:url('../../../images/rwd/campaign/21/btn_r_start_m.png'); background-size:100% auto;}
+	.sub.campaign .camp_attend .roulette_zone .roulette_pin {top: 1.1rem; left: 50%; margin-left: -0.5rem;}
+	.sub.campaign .camp_attend .roulette_zone .roulette_pin .inner_pin {width:2.8rem; height:5.3rem;  background-image:url('../../../images/rwd/campaign/21/img_pin_m.png');background-size:100% auto;}
+	.sub.campaign .camp_attend .roulette_result {width: 30rem; margin:-3rem auto 0;}
+	.sub.campaign .camp_attend .roulette_result .remainder_coupons,
+	.sub.campaign .camp_attend .roulette_result .prize_money {height:8rem; background-position:50% 0; background-size:30rem auto;}
+	.sub.campaign .camp_attend .roulette_result .remainder_coupons {background-image:url('../../../images/rwd/campaign/21/bg_coupon_m.png'); }
+	.sub.campaign .camp_attend .roulette_result .prize_money {margin-top:1rem; background-image:url('../../../images/rwd/campaign/21/bg_p-money_m.png');}
+	.sub.campaign .camp_attend .roulette_result .count {padding-left:12rem; line-height: 8rem; font-size:3rem;}
+	.sub.campaign .camp_attend .roulette_result .count .unit {font-size:1.3rem; line-height: 8.8rem;margin-left: 0.5rem;}
+
+}
+
+/* 모바일 상세 */
+@media (min-width:375px) and (max-width:376px) {
+	.sub.campaign .camp_attend .sec_top {min-height:84.5rem;}
+	.sub.campaign .camp_attend .area_at_board ul li {width:16.3%;}
+	.sub.campaign .camp_attend .area_main_info span {height: 18rem;}
+	.sub.campaign .camp_attend .area_sub_info span {height:25rem;}
+}
+
+@media (min-width:377px) and (max-width:420px){
+	.sub.campaign .camp_attend .sec_top {min-height:89.5rem;}
+	.sub.campaign .camp_attend .area_at_board {top:28rem;}
+	.sub.campaign .camp_attend .area_at_board ul li {width:16.3%;}
+	.sub.campaign .camp_attend .area_main_info span {height:20rem;}
+	.sub.campaign .camp_attend .area_sub_info span {height:27rem;}
+	.sub.campaign .camp_attend .area_at_board ul li.r_coupon span, 
+	.sub.campaign .camp_attend .area_at_board ul li.checked span {width:90%;}
+	.sub.campaign .camp_attend .conts_howto .step dt {width:7.5rem; height:8.7rem;}
+	.sub.campaign .camp_attend .conts_howto .step dd {padding:0.5rem 0 0 8.5rem;}
+	.sub.campaign .camp_attend .conts_howto .step dd p {height:6rem;}
+}
+
+/* 핸드폰 세로 사이즈 */
+@media (min-width:640px) and (max-width:736px){
+	.sub.campaign .camp_attend .sec_top {min-height:137rem;}
+	.sub.campaign .camp_attend .sec_top .inner {height:64rem; background-size:auto;}
+	.sub.campaign .camp_attend .area_main_info span {width:58rem; height:32rem;background-size:auto;}
+	.sub.campaign .camp_attend .area_sub_info {position:static;}
+	.sub.campaign .camp_attend .area_sub_info span {width:58rem; height:42rem;background-size:auto;}
+	.sub.campaign .camp_attend .area_at_board {position:static; margin:0 auto; width:90%;}
+	.sub.campaign .camp_attend .area_at_board ul li {height:10rem;}
+	.sub.campaign .camp_attend .area_at_board ul li span {height:10rem;}
+	.sub.campaign .camp_attend .btn_attend {position:static; margin-top: 2rem;display: inline-block;transform: inherit;}
+	.sub.campaign .camp_attend .tit_howto {height: 3rem; background-size:auto;}
+	.sub.campaign .camp_attend .conts_howto {width:92%; margin:0 auto;}
+	.sub.campaign .camp_attend .conts_howto .step dt {width: 12rem; height: 14rem;}
+	.sub.campaign .camp_attend .conts_howto .step dd {padding:1rem 0 0 14rem;}
+	.sub.campaign .camp_attend .conts_howto .step dd .period {height:2.4rem; background-size:auto;}
+	.sub.campaign .camp_attend .conts_howto .step dd p {height:9rem;margin-top:0.5rem;background-size: auto;}
+	.sub.campaign .camp_attend .txt_howto_guide {height: 4rem; background-size:auto;}
+	.sub.campaign .camp_attend .roulette_zone {top: -9.7rem; width: 55rem; min-height: 61.5rem;}
+	.sub.campaign .camp_attend .roulette_zone .roulette_wheel {top:5.3rem; left:5rem;}
+	.sub.campaign .camp_attend .roulette_zone .roulette_wheel img {width:48rem;}
+	.sub.campaign .camp_attend .roulette_zone .roulette_pin {top:2rem; margin-left:-0.7rem;}
+	.sub.campaign .camp_attend .roulette_zone .roulette_pin .inner_pin {width:4.2rem; height:8rem;}
+	.sub.campaign .camp_attend .roulette_zone .roulette_wheel .btn_start {top:17.4rem; width:13.2rem; height:13.2rem;}
+	.sub.campaign .camp_attend .roulette_result {width:54rem; margin:-8rem auto 0;}
+	.sub.campaign .camp_attend .roulette_result .remainder_coupons, 
+	.sub.campaign .camp_attend .roulette_result .prize_money {height:15rem; background-size:54rem auto;}
+	.sub.campaign .camp_attend .roulette_result .count {padding-left:21rem; line-height:14rem;    font-size: 5rem;}
+	.sub.campaign .camp_attend .roulette_result .count .unit {font-size:1.5rem; line-height:15.8rem; margin-left:1rem;}
+	
+	/* 룰렛 */
+	.sub.campaign .camp_attend .area_roulette_info span {height: 41rem; background-size:54rem auto;}
+}
+
+
+/*ANIMATION*/
+@-webkit-keyframes hh {
+  0%, 100%{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  
+  10%{
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+  }
+  
+  20%{
+    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+  }
+  
+  30%{
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+  }
+  
+  40%{
+    transform: rotate(25deg);
+    -webkit-transform: rotate(25deg);
+  }
+  
+  50%{
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+  }
+  
+  60%{
+    transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+  }
+  
+  70%{
+    transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+  }
+  
+  80%{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  90%{
+    transform: rotate(50deg);
+    -webkit-transform: rotate(50deg);
+  }
+}
+
+@keyframes hh {
+  0%, 100%{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  
+  10%{
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+  }
+  
+  20%{
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+  }
+  
+  30%{
+    transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+  }
+  
+  40%{
+    transform: rotate(-25deg);
+    -webkit-transform: rotate(-25deg);
+  }
+  
+  50%{
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+  }
+  
+  60%{
+    transform: rotate(-25deg);
+    -webkit-transform: rotate(-35deg);
+  }
+  
+  70%{
+    transform: rotate(-20deg);
+    -webkit-transform: rotate(-40deg);
+  }
+  
+  80%{
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  90%{
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-50deg);
+  }
+}
+
+.sub.campaign .camp_attend .roulette_zone .roulette_pin .inner_pin.spin {
+  -webkit-animation: hh 0.1s; /* Chrome, Safari, Opera */
+    animation: hh 0.1s;
+}

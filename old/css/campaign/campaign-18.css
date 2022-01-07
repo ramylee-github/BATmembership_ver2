@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/* 글로이야기 */
+.sub.brand .glo .area_item .inner {max-width:1160px;}
+.sub.brand .glo .area_item .inner div {padding:0 25px;}
+
+/* 캠페인 소개 */ 
+.sub.campaign .camp_bigbang.ph2 .sec_top, 
+.sub.campaign .camp_bigbang.ph2 .sec_mid {box-shadow:none !important;}
+.sub.campaign .camp_bigbang.ph2 .sec_btm {padding:0 !important;}
+.sub.campaign .camp_bigbang.ph2 .sec_btm .neo_prd {position:relative; width:1160px; margin:0 auto;}
+.sub.campaign .camp_bigbang.ph2 .sec_btm .neo_prd .introduction,
+.sub.campaign .camp_bigbang.ph2 .sec_btm .neo_prd .txt_neoinfo {position:absolute;}
+.sub.campaign .camp_bigbang.ph2 .sec_btm .neo_prd .introduction {bottom:191px; left:50%; margin-left:-411px;}
+.sub.campaign .camp_bigbang.ph2 .sec_btm .neo_prd .txt_neoinfo {bottom:81px; left:50%; margin-left:-310px;}
+
+@media (min-width:738px) and (max-width:1024px){
+	.sub.brand .glo .area_item img.mob {width:auto !important;}
+	
+	.sub.campaign .camp_bigbang.ph2 .sec_btm .neo_prd {width:100%;}
+	.sub.campaign .camp_bigbang.ph2 .sec_btm .neo_prd img.web {display:none !important;}
+	.sub.campaign .camp_bigbang.ph2 .sec_btm .neo_prd img.mob {display:block !important;}
+	.sub.campaign .camp_bigbang.ph2 .sec_btm .neo_prd .introduction {margin-left:-261.5px;}
+	.sub.campaign .camp_bigbang.ph2 .sec_btm .neo_prd .txt_neoinfo {bottom:100px; margin-left:-205.5px;}
+	.sub.campaign .camp_bigbang.ph2 .sec_btm .neo_prd .introduction img {width:auto;}
+	.sub.campaign .camp_bigbang.ph2 .sec_btm .neo_prd .txt_neoinfo img {width:auto;}
+}
+
+@media (max-width:737px) {
+	.sub.campaign .camp_bigbang.ph2 .sec_btm .neo_prd {width:100%; margin:0 0 3rem;}
+	.sub.campaign .camp_bigbang.ph2 .sec_btm .neo_prd .introduction,
+	.sub.campaign .camp_bigbang.ph2 .sec_btm .neo_prd .txt_neoinfo {width:100%; }
+	.sub.campaign .camp_bigbang.ph2 .sec_btm .neo_prd .introduction {bottom:8rem; margin-left:-14.8rem;}
+	.sub.campaign .camp_bigbang.ph2 .sec_btm .txt_neoinfo img {margin:0;}
+	.sub.campaign .camp_bigbang.ph2 .sec_btm .neo_prd .txt_neoinfo {bottom:3rem; margin:0 0 0 -11rem;}
+	.sub.campaign .camp_bigbang.ph2 .sec_btm .neo_prd .introduction img {width:30rem;}
+	.sub.campaign .camp_bigbang.ph2 .sec_btm .neo_prd .txt_neoinfo img {width:24rem;}
+}

@@ -1,0 +1,555 @@
+<!--
+#*
+ *  파 일 명 :  RWD0023.jsp
+ *  설    명 :  서브 페이지 - 이달의 캠페인 - 캠페인 소개 - 노팅힐
+ *  작 성 자 :  
+ *  작 성 일 :  
+ *  버    전 :  1.0
+ *  기타사항 :
+ *  Copyrights 2017 by ㈜ 유비원. All right reserved.
+*# 
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" type="text/css" href='../css/base.css'/>
+	<link rel="stylesheet" type="text/css" href='../css/layout.css'/>
+	<link rel="stylesheet" type="text/css" href='../css/module.css'/>
+	<link rel="stylesheet" type="text/css" href='../css/content.css'/>
+</head>
+<body>
+
+<div id="ub-container" class="sub campaign"><!-- 메인 : main, 서브 : sub brand, sub news, sub mysuperpass, sub campaign (메뉴별로 서브 클래스 나뉨 단, 보드나 관리자 화면은 예외적일 수 있음)  -->
+	<!-- page-header -->
+	<!-- gnb -->
+	<div class="ub_top">
+		<div class="top_inner">
+			<!-- 햄버거 메뉴 테블릿, 모바일에서만 노출 -->
+			<a href="javascript:;" class="btn_nav">
+				<img src="../img/main/mob/btn_nav.png" alt="menu" />
+				<img src="../img/main/mob/btn_nav_t.png" alt="menu" class="tablet" />
+			</a>
+			<!-- //테블릿, 모바일에서만 노출 -->
+			<!--title area -->
+			<h1>
+				<a href="javascript:fnMoveHome();">
+					<img src="../img/web/img_logo.png" alt="super pass" class="tit1" />
+					<img src="../img/web/img_logo2.png" alt="super pass" class="tit2" />
+					<img src="../img/mob/img_logo.png" alt="super pass" class="mob" />
+				</a>
+			</h1>
+			<!--//title area -->
+			<!--gnb area -->
+			<nav class="gnb">
+				<ul>
+					<li>
+						<a href="javascript:;" class="depth1">이달의 캠페인</a>
+						<!--2depth area -->
+						<div class="depth2">
+							<ul>
+								<li>
+									<a href="javascript:;">캠페인 소개</a>
+								</li>
+								<li>
+									<a href="javascript:;">제품별 정보</a>
+								</li>
+								<li>
+									<a href="javascript:;">퀴즈풀기</a>
+								</li>
+							</ul>
+						</div>
+						<!--//2depth area -->
+					</li>
+					<li>
+						<a href="javascript:;" class="depth1">My 슈퍼패스</a>
+						<!--2depth area -->
+						<div class="depth2"></div>
+						<!--//2depth area -->
+					</li>
+					<li>
+						<a href="javascript:;" class="depth1">점포운영특강</a>
+						<!--2depth area -->
+						<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;">상권분석</a>
+							</li>
+							<li>
+								<a href="javascript:;">담배판매법규</a>
+							</li>
+							<li>
+								<a href="javascript:;">세제혜택안내</a>
+							</li>
+							<li>
+								<a href="javascript:;">소매 트렌드</a>
+							</li>
+							<li>
+								<a href="javascript:;">편의점 가맹조건</a>
+							</li>
+						</ul>
+						</div>
+						<!--//2depth area -->
+					</li>
+					<li>
+						<a href="javascript:;" class="depth1">브랜드 소개</a>
+						<!--2depth area -->
+						<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;">던힐</a>
+								<!--3depth area -->
+								<div class="depth3">
+									<ul>
+										<li>
+											<a href="javascript:;">-
+												<span>브랜드 이야기</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">-
+												<span>제품소개</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!--//3depth area -->
+							</li>
+							<li>
+								<a href="javascript:;">로스만</a>
+								<!--3depth area -->
+								<div class="depth3">
+									<ul>
+										<li>
+											<a href="javascript:;">-
+												<span>브랜드 이야기</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">-
+												<span>제품소개</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!--//3depth area -->
+							</li>
+						</ul>
+						</div>
+						<!--//2depth area -->
+					</li>
+					<li>
+						<a href="RWD6001.ub" class="depth1">BAT 소식</a>
+						<!--2depth area -->
+						<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;">뉴스</a>
+							</li>
+							<li>
+								<a href="javascript:;">설문  </a>
+							</li>
+						</ul>
+						</div>
+						<!--//2depth area -->
+					</li>
+				</ul>
+			</nav>
+			<!--//gnb area -->
+			<!--small gnb area -->
+			<div class="nav_small">
+				<a href="POR0001.ub" class="info_system">시스템 관리</a>
+				<a href="javascript:;" class="info_change">정보변경</a>
+				<a href="javascript:;" class="logout">로그아웃</a>
+			</div>
+			<!--//small gnb area -->
+			<span class="label_private">
+				<img src="../img/main/web/img_private.png" alt="소매점주전용 본 제작물을 일반 소비자에게 절대 공개하지 마십시오" class="private1" />
+				<img src="../img/main/web/img_private2.png" alt="소매점주전용 본 제작물을 일반 소비자에게 절대 공개하지 마십시오" class="private2" />
+				<img src="../img/main/mob/img_private.png" alt="소매점주전용 본 제작물을 일반 소비자에게 절대 공개하지 마십시오" class="mob" />
+			</span>
+		</div>
+	</div> 
+	<!-- 레프트메뉴(태블릿, 모바일) -->
+	<div class="leftmenu">
+		<div class="top">
+			<!-- small gnb area -->
+			<div class="nav_small">
+				<a href="javascript:;" class="info_change">정보변경</a>
+				<a href="javascript:;" class="logout">로그아웃</a>
+			</div>
+			<!-- //small gnb area -->
+			<!-- point information area -->
+			<div class="info_point">
+				<div class="txt">
+					장그래
+					<span class="branch">[강남점]</span>
+					님의<br />
+					포인트는 
+					<strong>500,000</strong>
+					<span class="unit">P</span>
+					입니다.
+				</div>
+			</div>
+			<!-- //point information area -->
+			<!-- tmr information area -->
+			<div class="info_tmr">
+				<span class="tit">담당광고사원</span>
+				<span class="cont">
+					<strong>김근수 과장</strong>
+					<strong>010-1234-5678</strong>
+				</span>
+			</div>
+			<!-- //tmr information area -->
+		</div>
+		<!-- gnb area -->
+		<nav class="gnb">
+			<ul>
+				<li>
+					<a href="javascript:;" class="menu1 on">브랜드 소개</a>
+					<!-- 2depth area -->
+					<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;" class="menu2 on">던힐</a>
+								<!-- 3depth area -->
+								<div class="depth3">
+									<ul>
+										<li>
+											<a href="javascript:;">- 
+												<span>브랜드 이야기</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">- 
+												<span>제품 소개</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!-- //3depth area -->
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2 on">로스만</a>
+								<!-- 3depth area -->
+								<div class="depth3">
+									<ul>
+									</ul>
+								</div>
+								<!-- //3depth area -->
+							</li>
+						</ul>
+					</div>
+					<!-- //2depth area -->
+				</li>
+				<li>
+					<a href="javascript:;" class="menu1 nosub">My 슈퍼패스</a>
+					<!-- 2depth area --><div class="depth2"></div><!-- //2depth area -->
+				</li>
+				<li>
+					<a href="javascript:;" class="menu1 on">점포운영특강</a>
+					<!-- 2depth area -->
+					<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;">상권분석</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">담배판매법규</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">세제혜택안내</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">소매트렌드</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">편의점 가맹조건</a>
+							</li>
+						</ul>
+					</div>
+					<!-- //2depth area -->
+				</li>
+				<li>
+					<a href="javascript:;" class="menu1 on">BAT 소식</a>
+					<!-- 2depth area -->
+					<div class="depth2">
+						<ul>
+							<li>
+								<a href="javascript:;" class="menu2">뉴스</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu2">설문</a>
+							</li>
+						</ul>
+					</div>
+					<!-- //2depth area -->
+				</li>
+			</ul>
+		</nav>
+		<!-- //gnb area -->
+	</div>
+	<div class="darkLayer"></div>
+	<!--// page-header -->
+	
+	<!-- page-content -->
+	<div id="ub_content" class="ub_content" style="overflow:hidden;"> 
+		<!-- visual area -->
+		<div class="area_visual">
+			<div class="pattern"></div>
+			<div class="inner">
+				<h2>이달의 캠페인</h2>
+				<p>다양한 이벤트를 통해 새로운 매출창출의 기회를 잡으세요.</p>
+			</div>
+		</div>
+		<!--  visual area -->
+		<!-- inc / page-location -->
+		<div class="location">
+			<ul>
+				<li class="home">
+					<a href="javascript:fnMoveHome();">Home</a>
+				</li>
+				<li class="submenu">
+					<select id="navi1" style="display:none;width:180px;">
+						<option value="menu1">사이클컴즈</option>
+						<option value="menu2">프로모션</option>
+						<option value="menu3">My 슈퍼패스</option>
+						<option value="menu4">매출 도우미</option>
+						<option value="menu5">BAT 소식</option>
+						<option value="menu6">시스템관리</option>
+					</select>
+				</li>
+				<li class="submenu">
+					<select id="navi2" style="display:none;width:180px;">
+						<option value="menu21">던힐</option>
+						<option value="menu22">로스만</option>
+					</select>
+				</li>
+			</ul>
+		</div>	
+		<!--// inc / page-location -->
+		<!-- 노팅힐 캠페인 -->
+		<div class="content" style="padding:0; max-width:none; margin:0;">
+			<div class="tab_cont">
+				<div id="tab_cont1">
+					<div class="introduce web">
+						<div class="ub-layout inner">
+							<div class="top">
+								<img src="../img/campaign/txt_campaign1.png" alt="런던의 프리미엄을 그대로" />
+							</div>
+							<div class="left">
+								<img src="../img/campaign/txt_campaign3.png" alt="점포 배송일 2월 12일 이후" />
+							</div>
+							<div class="right">
+								<img src="../img/campaign/txt_campaign4.png" alt="소비자 가격 4,500원" />
+							</div>
+							<div class="bottom">
+								<img src="../img/campaign/txt_campaign2.png" alt="던힐 런던 한정판 출시" />
+							</div>
+						</div>
+					</div>
+					<div class="introduce mob">
+						<div class="ub-layout inner">
+							<div class="top">
+								<img src="../img/campaign/txt_campaign1_m.png" alt="런던의 프리미엄을 그대로" />
+							</div>
+							<div class="left">
+								<img src="../img/campaign/txt_campaign3_m.png" alt="점포 배송일 2월 12일 이후" />
+							</div>
+							<div class="right">
+								<img src="../img/campaign/txt_campaign4_m.png" alt="소비자 가격 4,500원" />
+							</div>
+							<div class="bottom">
+								<img src="../img/campaign/txt_campaign2_m.png" alt="던힐 런던 한정판 출시" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="tab_cont2" style="position:relative;">
+					<div class="info">
+						<!-- product1 -->
+						<div class="product1">
+							<span class="txt_guide">* 바코드는 기존과 동일합니다</span>
+							<div class="detail">
+								<div class="txt1">
+									<img src="../img/campaign/img_dunhill_campaign.png" alt="던힐 한정판 담배" />
+								</div>
+								<p class="txt2">
+									<strong class="tit">제품특성</strong>
+									시선을 사로잡는 강렬한 유니언잭
+									감각적인 팩 컬러 &amp; 유니크한 디자인으로 폭넓은 고객층 확보
+								</p>
+							</div>
+						</div>
+						<!-- //product1 -->
+						<!-- product2 -->
+						<div class="product2">
+							<strong class="tit">던힐 특별 한정판 제품</strong>
+							<div class="detail">
+								<dl>
+									<dd>
+										<img src="../img/campaign/img_dunhill_campaign1.jpg" alt="던힐 6MG" />
+									</dd>
+									<dt>
+										<strong>던힐 6MG</strong>
+										<span>타르 6.0mg,<br /> 니코틴 0.60mg</span>
+									</dt>
+								</dl>
+								<!-- // -->
+								<dl>
+									<dd>
+										<img src="../img/campaign/img_dunhill_campaign2.jpg" alt="던힐 3MG" />
+									</dd>
+									<dt>
+										<strong>던힐 3MG</strong>
+										<span>타르 3.0mg,<br /> 니코틴 0.30mg</span>
+									</dt>
+								</dl>
+								<!-- // -->
+								<dl>
+									<dd>
+										<img src="../img/campaign/img_dunhill_campaign3.jpg" alt="던힐 1MG" />
+									</dd>
+									<dt>
+										<strong>던힐 1MG</strong>
+										<span>타르 1.0mg,<br /> 니코틴 0.10mg</span>
+									</dt>
+								</dl>
+								<!-- // -->
+								<dl>
+									<dd>
+										<img src="../img/campaign/img_dunhill_campaign4.jpg" alt="던힐 프로스트" />
+									</dd>
+									<dt>
+										<strong>던힐 프로스트</strong>
+										<span>타르 1.0mg,<br /> 니코틴 0.10mg</span>
+									</dt>
+								</dl>
+								<!-- // -->
+							</div>
+						</div>
+						<!-- /product2 -->
+					</div>
+				</div>
+				<div id="tab_cont3">
+					<div class="vod">
+						<span class="tit">
+							<span id="temp">Quiz</span>
+							<strong>VOD</strong>
+						</span>
+						<strong class="txt_guide">
+							영상 확인 후 <span>추가 포인트 혜택</span>을 받아 보세요!
+						</strong>
+						<div class="area_video">
+							<video id="my-player" class="video-js vjs-default-skin" controls="false" preload="auto" width="640" height="359"
+								  poster="/page/images/rwd/web/img_poster.jpg"
+								  data-setup="{}">
+								<source src="/page/images/rwd/video/vod_campaign.mp4" type='video/mp4' />
+							</video>
+							<input type="hidden" name="ID_QUIZ" id="ID_QUIZ"/> 
+							<input type="hidden" name="ATTEND_CNT" id="ATTEND_CNT"/>
+						</div>
+						<div class="area_btn">
+							<span class="btn type2">
+								<a href="BAT0019.ub">퀴즈 풀기</a>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<!-- //노팅힐 캠페인 -->
+	</div>
+	<!--// page-content -->
+
+	<!--  ub-foot -->
+	<div id="ub_foot" class="ub_foot">
+		<div class="inner">
+			<div class="flex-layout align-start">
+				<div class="ub-layout leftBox">
+					<ul>
+						<li>
+							<span class="address">서울특별시 강남구 테헤란로 152 강남파이낸스센터 42층</span>
+						</li>
+						<li>
+							<span class="call"><a href="tel:080-787-1000" >080-787-1000</a></span>
+						</li>
+						<li>
+							<a href="javascript:viewAgreement();" class="policy">이용약관</a>
+						</li>
+					</ul>
+				</div>
+				<div class="ub-layout rightBox">
+					<span class="copy">Copyright © BAT Korea All rights reserved.</span>
+				</div>
+			</div>
+		</div>
+		<div class="txt_warning">
+			<span>흡연은 폐암등 각종 질병의 원인! 그래도 피우시겠습니까?<br /> 담배연기에는 발암성 물질인 나프틸아민, 니켈, 벤젠, 비닐 크롤라이드, 비소, 카드뮴이 들어있습니다.<br /> 금연상담전화 1544-9030</span>
+		</div>
+		<!-- Layer 팝업 로드 위치 -->
+		<div id="divAgreeView"></div>
+		<!-- 첫로그인 환영팝업 -->
+		<div id="divFirstLogin"></div>
+	</div>
+	<!-- //ub-foot -->
+	
+	<!--   inc / scrollup (서브화면에서만 노출) -->
+	<div class="btn_scrollup">
+		<a href="javascript:;"  id="backtotop">위로 이동</a>
+	</div>
+	<!--  //inc / include -->
+</div>
+
+<script type="text/javascript">
+	//브랜드 소개 페이지 텝메뉴 스크롤 이동 이벤트
+	function scrollMove(seq){
+	    var offset = $("#tab_cont" + seq).offset();
+	    var scrollTop = $('.ub-frame.body')[0].scrollTop;
+	    $('.ub-frame.body').animate({scrollTop : scrollTop+offset.top-150}, 1000); 
+	    $('.mobile .ub-frame.body').animate({scrollTop : scrollTop+offset.top-150}, 1000); 
+	}
+	$(document).ready(function () {	
+		//브랜드 소개 페이지 텝 메뉴 스크롤 이벤트
+		$(".ub-frame.body").scroll(function(){
+			var scrollTopWeb = 260;
+			//웹
+			if($(".ub-frame.body").scrollTop() >= scrollTopWeb){
+					// 260 이상으로 스크롤 이동시 텝 메뉴 위치 gnb 하단으로 이동
+					$(".tab_menu").addClass("fixed")
+					$(".tab_menu ul").addClass("pchange")
+				}
+			if($(".ub-frame.body").scrollTop() < scrollTopWeb){
+					// 260 이하로 스크롤 이동시 텝 메뉴가 위치 원복
+					$(".tab_menu").removeClass("fixed")
+					$(".tab_menu ul").removeClass("pchange")
+				}
+		});
+		$(".mobile .ub-frame.body").scroll(function(){
+			var scrollTopMob = 110;
+			//모바일
+			if($(".mobile .ub-frame.body").scrollTop() >= scrollTopMob){
+				// 110 이상으로 스크롤 이동시 텝 메뉴 위치 gnb 하단으로 이동
+				$(".tab_menu").addClass("fixed")
+				$(".tab_menu ul").addClass("pchange")
+			}
+			if($(".mobile .ub-frame.body").scrollTop() < scrollTopMob){
+				// 110 이하로 스크롤 이동시 텝 메뉴가 위치 원복
+				$(".tab_menu").removeClass("fixed")
+				$(".tab_menu ul").removeClass("pchange")
+			}
+		});
+		 //브랜드 소개 페이지 텝 메뉴
+		$(".tab_menu a").click(function () {
+			//텝 메뉴 on/off 스타일 컨트롤
+			$(".tab_menu a").removeClass("on")
+			$(this).addClass("on")
+		});
+	});
+</script>
+</body>
+</html>
