@@ -16,7 +16,7 @@
 		<img src="../../page/images/rwd/main/web/bg_ck_terms.png" alt="" />
 	</span>
 	<strong class="tit">
-		<img src="../../page/images/rwd/main/web/img_logo_superpass.png" alt="super pass" />
+		<img src="../img/rwd/main/web/img_logo_superpass.png" alt="super pass" />
 		이용약관 처리방침 개정 안내
 	</strong>
 	<dl>

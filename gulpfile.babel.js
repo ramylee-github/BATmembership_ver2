@@ -19,10 +19,15 @@ import del from "del";
  * =======================
  */
  const routes = {
-     pug: {
-         watch: "src/**/*.pug",
-         src: "src/*.pug",
+     indexPug: {
+         watch: "src/index.pug",
+         src: "src/index.pug",
          dest: "build"
+     },
+     pug: {
+         watch: "src/templates/**/*.pug",
+         src: "src/templates/*.pug",
+         dest: "build/html"
      },
      scss: {
         watch: "src/scss/**/*.scss",
@@ -66,8 +71,15 @@ import del from "del";
   * Pug to HTML
   * =============
   */
- const pug = () =>
-     gulp.src(routes.pug.src)
+ const indexPug = () =>
+     gulp.src(routes.indexPug.src)
+        .pipe(sourcemap.init())
+        .pipe(gpug())
+        .pipe(sourcemap.write())
+        .pipe(gulp.dest(routes.indexPug.dest));
+
+const pug = () => 
+    gulp.src(routes.pug.src)
         .pipe(sourcemap.init())
         .pipe(gpug())
         .pipe(sourcemap.write())
@@ -162,6 +174,7 @@ const webServer = () =>
  * ========================================
  */
  const watch = () => {
+    gulp.watch(routes.indexPug.watch, indexPug);
     gulp.watch(routes.pug.watch, pug);
     gulp.watch(routes.scss.watch, styles);
     gulp.watch(routes.libScss.watch, libStyles);
@@ -174,7 +187,7 @@ const webServer = () =>
 //prepare step
 const prepare = gulp.series([clean, img]);
 //core step
-const assets =  gulp.series([pug, styles, liblogic, js]);
+const assets =  gulp.series([indexPug, pug, styles, liblogic, js]);
 //extra step for develop environment and automation
 const postDev =  gulp.parallel([webServer, watch]);
 
