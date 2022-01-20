@@ -1,0 +1,80 @@
+/**
+*================
+* status board
+*===============
+*/
+body {
+    width:1000px;
+   margin: 60px auto;
+   padding:0 40px;
+   color:#323232;
+}
+.status-info {
+    @include flexBox(column, center, flex-start);
+    width: 750px;
+    height: 150px;
+    padding: 0 20px;
+    margin-bottom:30px;
+    border:1px solid #999;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+    background-color: #fffcf2;
+
+    h1 {
+        font: {
+            weight:700;
+            size:19px;
+        }
+    }
+}
+
+.status-info__desc {
+    margin-top:10px;
+    
+    li {
+        line-height: 20px;
+
+        &::before {
+            @include pseudoSelector(2px, auto);
+            content:'-';
+            margin-right:10px;
+            color:#333;
+            font-size:15px;
+        }
+    }
+}
+
+.status-tbl {
+    a {
+        color:#323232;
+        text-decoration: underline;
+    }
+    th,
+    td {
+        font-size:14px;
+        line-height: 18px;
+        word-break: keep-all;
+    }
+    thead {
+        th {
+            height: 35px;
+            padding-bottom: 5px;
+            border:1px solid #523aa7;
+            color:#fff;
+            vertical-align: middle;
+            font-weight:700;
+            background-color: #7860cc;
+        }
+    }
+
+    tbody {
+        th,
+        td {
+            padding:15px;
+            border:1px solid #a8a1ca;
+        }
+        th {
+            font-weight: 700;
+            background-color: #d1cce6;
+        }
+    }
+}

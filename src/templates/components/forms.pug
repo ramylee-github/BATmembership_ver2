@@ -1,0 +1,10 @@
+mixin input(inputInfo = {}) 
+    input(type=inputInfo.type, name=inputInfo.name, id=inputInfo.id, placeholder=inputInfo.placeholder, class=inputInfo.class)
+
+mixin textarea(textareaInfo = {})
+    textarea(name=textareaInfo.name, class=textareaInfo.class, placeholder= textareaInfo.placeholder)
+
+mixin select(selectInfo = {})
+    select(name=selectInfo.name, for=selectInfo.for, class=selectInfo.class)  
+        each option in options
+            option(value=$)=selectInfo.text
