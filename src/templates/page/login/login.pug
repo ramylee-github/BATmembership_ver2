@@ -1,0 +1,92 @@
+extends ../../layout
+include ../../components/_visualResource
+include ../../components/_button
+include ../../components/_text
+include ../../utilities/_form_input-label
+
+block content
+    section.login  
+        .login__box
+            .login__header
+                h1 
+                    +image({
+                        _src:'../../img/login/logo_superpass.png',
+                        _alt:'SUPER PASS'
+                    })
+            .login__body
+                form(action="", method="post")
+                    fieldset 
+                        legend.blind login
+                        .input-wrap.insert-id 
+                            +inputWithLabel({
+                                label:'true',
+                                _labelFor:'insertId',
+                                _labelClass:'blind',
+                                _labelText:'아이디',
+                                _inputType:'text',
+                                _inputName:'insertId',
+                                _inputId:'insertId',
+                                _inputPlaceholder:'아이디를 입력해주세요',
+                                _inputClass:'input-text'
+                            })
+                        .input-wrap.insert-pw 
+                            +inputWithLabel({
+                                label:'true',
+                                _labelFor:'insertPw',
+                                _labelClass:'blind',
+                                _labelText:'비밀번호',
+                                _inputType:'password',
+                                _inputName:'insertPw',
+                                _inputId:'insertPw',
+                                _inputPlaceholder:'비밀번호를 입력해주세요',
+                                _inputClass:'input-text'
+                            })
+                        .input-wrap.certify-num 
+                            +inputWithLabel({
+                                label:'true',
+                                _labelFor:'insertNum',
+                                _labelClass:'blind',
+                                _labelText:'번호인증',
+                                _inputType:'text',
+                                _inputName:'insertNum',
+                                _inputId:'insertNum',
+                                _inputClass:'input-text'
+                            })
+                            +button({
+                                _type:'button',
+                                _extraClass:'btn-certification',
+                                _text:'인증번호 요청'
+                            })
+                        .input-wrap.save-id
+                            +inputWithLabel({
+                                label:'true',
+                                _labelFor:'saveId',
+                                _labelText:'아이디 저장',
+                                _inputType:'checkbox',
+                                _inputName:'saveId',
+                                _inputId:'saveId',
+                            })
+                        .btn-wrap 
+                            +button({
+                                _type:'button',
+                                _id:'fnLogin',
+                                _extraClass:'btn-login',
+                                _text:'로그인'
+                            })
+                        .extra-fucntion-wrap 
+                            +button({
+                                _type:'button',
+                                _id:'fnFindId',
+                                _extraClass:'btn-find',
+                                _text:'아이디 찾기'
+                            })
+                            +button({
+                                _type:'button',
+                                _id:'fnFindPw',
+                                _extraClass:'btn-find',
+                                _text:'비밀번호 찾기'
+                            })
+
+            .login__footer 
+                small Copyright © BAT Korea All rights reserved.
+            

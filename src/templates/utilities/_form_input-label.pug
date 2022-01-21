@@ -1,0 +1,17 @@
+include ../components/_forms
+include ../components/_text
+
+mixin inputWithLabel(inputWithIcon = {})
+    +input({
+        _type:inputWithIcon._inputType,
+        _name:inputWithIcon._inputName,
+        _id:inputWithIcon._inputId,
+        _placeholder:inputWithIcon._inputPlaceholder,
+        _class:inputWithIcon._inputClass
+    })
+    if inputWithIcon.label
+        +labelText({
+            _for:inputWithIcon._labelFor,
+            _class:inputWithIcon._labelClass,
+            _text:inputWithIcon._labelText
+        })

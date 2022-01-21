@@ -3,3 +3,15 @@
 * common
 *===============
 */
+* {
+    color:#333;
+    font: {
+        size:14px;
+        family: 'Exo', 'Nanum Gothic', sans-serif;
+    }
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+}

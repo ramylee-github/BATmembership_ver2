@@ -1,0 +1,10 @@
+mixin button(buttonInfo = {})
+    button.btn(type=buttonInfo._type, class=buttonInfo._extraClass, id=buttonInfo.id)=buttonInfo._text
+
+mixin linkButton(linkButtonInfo = {})
+    a.btn(href=linkButtonInfo._href, class=linkButtonInfo._extraClass)=linkButtonInfo._text
+
+mixin topScrollButton(topScrollButtonInfo = {})
+    a.btn.btn-top-scroll(href=topScrollButtonInfo._href, class=topScrollButtonInfo._extraClass) Top
+
+

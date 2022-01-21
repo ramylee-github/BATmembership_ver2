@@ -1,0 +1,8 @@
+mixin image(imageInfo = {})
+    span.img(class=imageInfo._extraClass)
+        img(src=imageInfo._src, alt=imageInfo._alt)
+
+mixin video(videoInfo = {})
+    div.video
+        video(src=videoInfo._src, id=videoInfo._id, poster=videoInfo._posterSrc, preload="auto", autoplay=videoInfo.isAutoplay ? 'autoplay' : '', loop=isLoop ? 'loop' : '', muted=isMuted ? 'muted' : '', controls=isControls ? 'controls' : '', playsinline=isPlaysinline ? 'playsinline' : '') 
+            source(type=videoInfo._type, src=videoInfo._src)

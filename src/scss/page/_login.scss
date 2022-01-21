@@ -1,0 +1,37 @@
+/**
+*================
+* login
+*===============
+*/
+.login {
+    @include positionR(1);
+    height: 100%;
+    background-color:#4f5f74;
+
+    &::before {
+        @include pseudoSelector(100%, 50%);
+        @include bgImg(0 0);
+        background-image: url(../img/login/bg_login.jpg);
+        background-size: cover;
+    }
+}
+
+.login__box {
+    @include positionA(2);
+    top:50%;
+    left:50%;
+    width:450px;
+    height:470px;
+    padding:35px 50px 0;
+    transform: translate(-50%, -60%);
+    transition: $basic-transition;
+    background-color: rgba(255,255,255,0.5);
+
+    &::after {
+        @include positionA(1);
+        bottom:0;
+        left:0;
+        @include pseudoSelector(100%, 40%);
+        background-color: #fff;
+    }
+}

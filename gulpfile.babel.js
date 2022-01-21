@@ -20,13 +20,13 @@ import del from "del";
  */
  const routes = {
      indexPug: {
-         watch: "src/templates/layout.pug",
+         watch: "src/index.pug",
          src: "src/index.pug",
          dest: "build"
      },
      pug: {
          watch: "src/templates/**/*.pug",
-         src: "src/templates/page/*.pug",
+         src: "src/templates/page/**/*.pug",
          dest: "build/html"
      },
      scss: {

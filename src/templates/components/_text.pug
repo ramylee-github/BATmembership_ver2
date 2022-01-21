@@ -1,0 +1,14 @@
+mixin shortText(shortTextInfo = {})
+    span(class=shortText._class)=shortText._text
+
+
+mixin longText(longTextInfo = {})
+    p(class=longText._class)=longText._text
+
+
+mixin linkText(linkTextInfo = {})
+    a(href=linkTextInfo._href, class=imageInfo._xtraClass)=linkTextInfo._text 
+
+
+mixin labelText(labelTextInfo = {})
+    label(for=labelTextInfo._for, class=labelTextInfo._extraClass)=labelTextInfo._text  
